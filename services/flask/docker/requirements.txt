@@ -1,0 +1,10 @@
+flask==1.1.1
+pdf2image
+nltk
+opencv-python==4.1.1.26
+pytesseract
+Pillow==6.1.0
+werkzeug
+scikit-learn==0.21.2
+Flask-SQLAlchemy==2.4.1
+psycopg2-binary==2.8.4

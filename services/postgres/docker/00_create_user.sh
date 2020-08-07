@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+POSTGRES="psql -U postgres"
+
+echo "Creating database role: shared"
+
+$POSTGRES <<-EOSQL
+CREATE USER shared WITH
+	LOGIN
+	NOSUPERUSER
+	NOCREATEDB
+	NOCREATEROLE
+	NOINHERIT
+	NOREPLICATION
+	PASSWORD '$SHARED_PASSWORD';
+EOSQL

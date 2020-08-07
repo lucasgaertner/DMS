@@ -1,0 +1,35 @@
+version: "3"
+services:
+  flask:
+    container_name: "Webservice"
+    restart: always
+    environment:
+      - DATABASE_URL=postgresql://admin:airflow@postgres:5432/flask
+    depends_on: 
+      - postgres
+    build: services/flask/docker/.
+    ports:
+      - 5000:5000
+  postgres:
+    container_name: "postgres_db"
+    hostname: postgres
+    image: postgres
+    env_file:
+      - ./config/postgres.env
+    volumes:
+      - ./pg_volume:/var/lib/postgresql/data:rw
+      - ./services/postgres/docker/:/docker-entrypoint-initdb.d/
+    ports:
+      - 5432:5432      
+  #portainer:
+  #container_name: "Controller"
+  #restart: "always"
+  #image: portainer/portainer
+  #volumes: 
+  #-/var/run/docker.sock:/var/run/docker.sock
+  #ports:
+  #- 9090:9000
+  #command: 
+  #-H unix:///var/run/docker.sock
+volumes:
+  pg_volume:  
