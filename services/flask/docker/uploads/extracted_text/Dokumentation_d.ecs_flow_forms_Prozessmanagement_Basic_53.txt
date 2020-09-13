@@ -1,0 +1,35 @@
+d.vetop
+
+academy
+Tutorial d.ecs forms basis
+
+8.Wizards
+
+ 
+
+ 
+
+8.1. Fall 1: Arbeitsunfahigkeits-Bescheinigung
+
+Der Mitarbeiter kommt gerade vom Arzt und hat dort eine Arbeitsunfahigkeitsbescheinigung
+erhalten. Damit dieser sich nun nicht in die Firma schleppen muss, kann er die Daten schon einmal
+Uber das Intranet bereitstellen und damit sowohl den Vorgesetzten als auch die Personal-Abteilung
+informieren.
+
+8.1.1. d.3 flow: Prozess-Beschreibung
+
+  
+ 
+ 
+
+w Superior
+
+ft
+Information an die Personalabteilung
+
+  
+
+Abbildung 8.1 Prozess-Diagramm Krankmeldung
+
+Th - Wizard
+ema - Wizards sa yet d.velop

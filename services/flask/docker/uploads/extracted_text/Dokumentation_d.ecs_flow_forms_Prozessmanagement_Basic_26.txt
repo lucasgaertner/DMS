@@ -1,0 +1,25 @@
+d.ve.op
+academy
+Tutorial d.ecs forms basis
+
+5. d.ecs forms Architektur
+
+ 
+
+Die d.ecs forms-Technologie kann mit drei unterschiedlichen Layern beschrieben werden.
+
+ 
+
+Abbildung 5.1 d.ecs forms Architektur
+
+5.1. Objektmodell
+
+Auf dieser Ebene werden externe Datenquellen angezapft und mittels Groovy-Skripten
+Wertemengen und Daten-Objekte bereitgestellt.
+
+Uber das Objektmodell kénnen externe Datenquellen integriert werden! Die Dokument-
+Eigenschaften und Workflow-Variablen sind ebenfalls in dieser Ebene angesiedelt, werden aber Uber
+den Formular-Kontext konfiguriert.
+
+Thema - d.ecs forms Architektur
+oe d.velop

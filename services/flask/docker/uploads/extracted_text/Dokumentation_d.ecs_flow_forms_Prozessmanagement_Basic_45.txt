@@ -1,0 +1,69 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+Zur Darstellung der Urlaubsdaten werden nun einzelne Felder bendtigt, welche Uber den d.ecs-
+Designer positioniert werden. Das Zeichen zeigt dabei mdégliche Probleme oder Fehler innerhalb
+des Designs an.
+
+Die Unterscheidung, ob es sich bei dem Eingabefeld um ein Text-, ein Zahlen- oder ein Datumsfeld
+handelt, wird dabei tiber die Zuordnung unterschiedlicher Typen in den Daten-Objekten bestimmt.
+
+ 
+
+ID Typ d.3 Workflow d.3 Dokument Request-Parameter
+> @ EmployeeData
+4 @ VacationData
+
+@ comment Text
+
+@ endDate Datum doc_field[56]
+
+@ overtimeCompensation Nurnmer
+
+@ specialdays Nummer
+
+@ startDate Datum. doc_field[55]
+
+@ sum Nummer
+
+© vacationdays Nurnmer doc_field[1]
+
+ 
+
+ 
+
+ 
+
+Die Daten werden hier nicht in einem serverseitigen Datenobjekt abgelegt, sondern liegen ,nur” im
+Formular-Kontext des Formulars. Zusatzlich werden sie aber Uber die Konfiguration mit Workflow-
+Eigenschaften und Dokument-Eigenschaften verknipft.
+
+Hinweis: Die hier dargestellte Verlinkung mit den d.3-Dokument-Attributen muss nicht mit dem
+Schulungsbeispiel Ubereinstimmen; dies sollte man den Gegebenheiten der Archiv-Umgebung
+anpassen.
+
+7.5.3. Skript-Abhangigkeiten
+Anzeige Die einzelnen Eigenschaften bzgl. der Anzeige-Optionen des groBen Text-
+
+Sichtbar A @P > Eingabefeldes werden alle Uber Skripte definiert und gesteuert.
+
+Pflichtfeld || @P +
+Editierbar Vl” +
+
+ 
+
+Sichtbarkeit und Pflichtfeld
+
+var overtimeComensation = form.context.getValue("VacationData.overtimeCompensation") ;
+
+var specialDays = form.context.getValue("VacationData.specialDays") ;
+
+return ( overtimeComensation > 0 || specialDays > 0);
+
+Damit diese Funktionen abhangig von den Ubergebenen Eigenschaften auch dynamisch aktualisiert
+werden, werden die Skripte Uber die Datenanbindung auch mit den entsprechenden Formular-
+Eigenschaften verknipft.
+
+Thema - Urlaubsantrag Step by Step
+46/81 d.velop

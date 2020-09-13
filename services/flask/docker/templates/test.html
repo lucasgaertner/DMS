@@ -1,0 +1,63 @@
+
+
+<div class="container">
+<div class=”button-wrap”>
+<form method="POST" action="/" enctype="multipart/form-data">
+    <label class ="new-button" for="upload"> Upload CV
+    </label>
+    <input id="upload" type="file" name="files[]" multiple="true" autocomplete="off" accept="image/*" capture="camera" value="upload">
+<p>
+<input id="submit" type="submit" value="Submit">
+</p>
+</form>
+</div>
+</div>
+<style>
+    body{
+        background-color: powderblue;
+    }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+input[type="file"] {
+  z-index: -1;
+  top: 6px;
+  left: 0px;
+  font-size: 15px;
+  color: rgb(153,153,153);
+}
+
+.button-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.new-button {
+    position: relative;
+    display: block;
+    padding: 8px 12px; 
+    cursor: pointer;
+    border: 10px solid whitesmoke;
+    border-width: medium;
+    background-color: transparent; 
+    font-weight: bold;
+    font-size: 14vw;
+    color: whitesmoke; 
+}
+
+#submit{
+    margin-left: 35%;
+    background-color: transparent;
+    font-size: 10vw;
+    font-weight: bold;
+    border-radius: 5px;
+    color: burlywood;
+    border-color: burlywood; 
+}
+</style>

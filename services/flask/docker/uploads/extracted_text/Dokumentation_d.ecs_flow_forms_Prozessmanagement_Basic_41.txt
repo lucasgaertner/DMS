@@ -1,0 +1,65 @@
+d.vetop
+
+ 
+
+ 
+     
+
+ 
+
+ 
+
+academy
+Tutorial d.ecs forms basis
+Option 2: Mit executeAndStore()
+@ EmployeeData
+é personallD
+~ 7
+iB O firstNarne
+ig EmployeeDataScript @ loginName
+EmployeeDB .
+@ superior
+@ surName
+@ unusedVacationdays
+def loadData( def ds )
+{
+String 1PersonalID = ds.params.getValue( "personalID" );
+def 1SQLQuery = "";
+lsQLQuery = """
+
+SELECT dok_dat_feld_2 AS 'loginName', dok_dat_feld_4 AS 'surName',
+dok_dat_feld_3 AS 'firstName', dok_dat_feld_5 AS 'superior',
+dok_dat_feld_80 AS 'unusedVacationDays'
+
+FROM dbo. firmen_spezifisch
+WHERE kue_dokuart = 'APERS' AND dok_dat_feld_l = ? """;
+ds.engine.sql.executeAndStore( "D3-Connection", 1SQLQuery, [ 1PersonalID ] );
+return null;
+}// end of loadData
+Option 3: Mit SQL-ExecuteAndGet()
+def loadData( def ds )
+{
+String 1PersonalID = ds.params.getValue( "personalID" );
+def 1SQLQuery = "";
+lsQLQuery = """
+
+SELECT dok_dat_feld_2, dok_dat_feld_4,
+dok_dat_feld_3, dok_dat_feld_5,
+dok dat feld 80
+
+FROM dbo. firmen_spezifisch
+WHERE kue_dokuart = 'APERS' AND dok_dat_feld_1l1 = ? """;
+def 1ResultRows = ds.engine.sql.executeAndGet ( "D3-Connection", 1SQLQuery,
+[1lPersonalID] );
+if( lResultRows.size() > 0 )
+{
+ds.data.setValue("superior", 1ResultRows[0].dok_dat_feld_5 );
+ds.data.setValue ("loginName", 1ResultRows[0].dok_dat_feld_ 2 );
+ds.data.setValue("firstName", 1ResultRows[0].dok_dat_feld_3 );
+ds.data.setValue("surName", 1ResultRows[0].dok_dat_feld_ 4 );
+ds.data.setValue ("unusedVacationDays", 1lResultRows[0].dok_dat_feld_80 );
+}
+return null;
+}// end of loadData
+Thema - Urlaubsantrag Step by Step d velo
+42/81 ° p

@@ -3,8 +3,8 @@ set -e
 
 POSTGRES="psql -U postgres"
 
-#create a shared database
-echo "Creating s shared database"
+#create a documents database
+echo "Creating s documents database"
 $POSTGRES <<-EOSQL
-CREATE DATABASE shared OWNER shared;
+CREATE DATABASE documents OWNER postgres;
 EOSQL

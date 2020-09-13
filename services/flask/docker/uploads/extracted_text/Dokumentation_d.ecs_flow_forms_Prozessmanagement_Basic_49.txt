@@ -1,0 +1,89 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+Speichern
+
+ 
+
+Sollen die Daten erst einmal nur gespeichert werden, ohne das Formular zu versenden, kann folgende
+Aktion in der Schaltflache hinterlegt werden, es erfolgt dann keine Pflichtfeld-Kontrolle.
+
+A/a USE I a) elt A
+form.ui.setEnabled( "{capsuleName}", false );
+
+A mS SLGES  TT A TOL
+var errMsg = form.modules( "FormControlTools" ).checkInvalidOrEmptyFields( form, null, false );
+
+if( errMsg != "" ){
+
+form.notification.alert( errMsg, form.misc.il8n.getValue( "dhl _DataControl" ) );
+form.ui.setEnabled( "{capsuleName}", true );
+}
+else {
+// STEP 3: Save data in instance and ext. database -------------
+// Success-Callback
+var onSaveInstanceSuccess = function onSaveInstanceSuccess () {
+form.notification.info( form.misc.il8n.getValue( "inf _SaveSuccessfull" ), "Datensicherung" );
+form.ui.setEnabled( "{capsuleName}", true );
+de
+
+// Exrror-Callback
+var onSaveInstanceFailure = function onSavelInstanceFailure() {
+if( errorCode == -3) {
+// There is a conflict with the db. You need to merge instead of alert.
+form.notification.alert( "Unable to save the context since another user has saved the same
+instance in between.", "Save Instance Failed" )
+
+} else {
+form.notification.alert( "Unable to save the context: " + errorMessage, "Save Instance
+Failed" );
+}
+form.ui.setEnabled( "{capsuleName}", true );
+
+di
+
+form.instance.saveInstance( onSaveInstanceSuccess, onSaveInstanceFailure )
+
+}
+
+SchlieBen
+
+ 
+
+Das reine SchlieBen des Fensters kann mit folgendem Skript realisiert werden; zusatzlich konnten
+noch die Daten in den Formular-Kontext gesichert werden.
+
+CA TTY 0 ys CL aaa
+form.misc.window.close();
+
+7.8.1.Client-Ressource
+Die Validierung der Formulardaten wurde in diesem Beispiel in eine Client-Ressource ausgelagert.
+
+eae RRR Eammaninl
+/*e
+
+* Generates the error message depending on the found id's
+
+*
+
+* @param form the form object
+
+* @param inernalIdList myParam
+
+*
+
+* @return errMsg
+
+*/
+
+function generateErrMsg( form, internalIdList ) {
+
+var errMsg = "";
+for( var n = 0; n < internalIdList.length; nt++ ){
+var tmpCaption = form.ui.getCaption( internalIdList[n] );
+
+errMsg += (( tmpCaption != "" ) ? tmpCaption : ( "[" + internalIdList[n] + "]" )) + "\n" ;
+}
+Thema - Urlaubsantrag Step by Step
+50/81 d.velop

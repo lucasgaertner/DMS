@@ -1,0 +1,63 @@
+Tutorial d.ecs forms basis
+
+8.1.4.Ansicht des Formulars im Workflow
+
+d.vetop
+academy
+
+ 
+
+PersonalID
+Vorname
+Nachname
+d3Login
+
+Vorgestzter
+
+Dauer
+
+Startdatum
+
+ 
+
+Steuerung
+
+Krankmeldung
+
+4711
+Peter
+Lustig
+dvelop
+chef
+
+Krankmeldungsdaten
+
+wv AbschlieBen
+
+FE] Speichern
+
+Enddatum
+
+ 
+
+ 
+
+Abbildung 8.4 Formular-Ansicht im Workflow
+
+8.2. Fall 2: Urlaubsantrag
+
+Um hier nicht die Schulungsinhalte vorzugreifen, wird hier auf der Basis der Dokumentart
+,Urlaubsantrag” ein Formular erstellt und mit den bereitgestellten gekapselten Elementen und
+d.velop Templates fertiggestellt; dabei werden die notwendigen Rest-Einstellungen und Skripte
+
+weitestgehend mittels der bereitgestellten ,.Wizards” vorgenommen bzw. erstellt.
+
+Die notwendige Prozess-Definition im d.3 flow designer wird im Zuge der Praxisarbeit und der
+
+Vorstellung der einzelnen Elemente in der Gruppe erstellt.
+
+Thema - Wizards
+
+58/81
+
+d.velop

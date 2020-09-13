@@ -1,0 +1,94 @@
+Tutorial d.ecs forms basis
+
+d.vetop
+academy
+
+Das Prozess-Diagramm wird im d.3 flow designer erstellt, das bendtigte JPL-Skript stellt sich wie folgt
+
+dar:
+
+vars wState
+
+uw
+
+vars wSuperior = dok_dat_feld[3]
+
+vars wRequester
+
+dok_dat_feld[2]
+
+call save _vars( "wState" )
+call save_vars( "wSuperior" )
+call save_vars( "wRequester" )
+
+8.1.2. d.ecs forms: Formularerstellung
+Nun werden die einzelnen bendtigten Elemente fiir das Formular im d.ecs forms designer
+zusammengestellt:
+
+1. STEP: Ein neues Formular anlegen und die Eigenschaften aus der Dokumentart iibernehmen.
+
+PersonallD’
+. ¥orname.
+“Nachname™
+
+d3Login.
+
+Vorgestzter™
+
+. Dauer.
+Startdatum
+
+. Enddatum.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Krankmeldung ©
+
+PersonallD
+> Vorname
+‘Nachname
+
+d3Login:
+
+Vorgestzter
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Krankmeldungsdatén ©
+
+*Dauer -
+Startdatum : [ea |
+
+ 
+
+Thema - Wizards
+
+ 
+
+“Enddatum - t\-
+
+55/81
+
+ 
+
+d.velop

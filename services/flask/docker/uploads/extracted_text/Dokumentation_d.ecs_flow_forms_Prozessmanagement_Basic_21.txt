@@ -1,0 +1,40 @@
+d.ve.op
+
+academy
+Tutorial d.ecs forms basis
+
+3.5.4. Versionierung innerhalb der Ausfiihrungsversion / Workflow-ID
+Werden grdéBere Anpassungen an einer Workflow-Definition notwendig, kann mit einer neuen
+Subversion innerhalb der Ausfihrungsversion gearbeitet werden.
+
+Auch hier ist zu beachten, dass nach Aktivierung der neuen Version alle bis dahin mit der alten
+Version bearbeiteten Dokumente nun direkt mit der neuen Version bearbeitet werden! Sie arbeiten
+IMMER, wenn die Ausfithrungsversion beibehalten wird, am aktuellen Workflow!
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 3.9 Schaubild der Versionierung innerhalb der Ausfithrungsversion
+
+1. Erstellung einer neuen Version mit dem Menipunkt ,,Neue Version erstellen” und unter Nutzung
+der Option ,Ausfthrungsversion beibehalten”. Hierbei sollte nun ein neuer Versionsname, zum
+Beispiel ,,1.1”, vergeben werden.
+
+2. Die so erstellte neue Arbeits-Version kann nun angepasst werden. Eine Uberfiihrung in eine Test-
+Version ist nicht mdglich, wenn die alte Version im Status Freigabe / Aktiv ist, da sich die
+Ausfilhrungsversionen / Workflow-IDs nicht unterscheiden!
+
+3. Nach Aktivierung der neuen Version werden nun auch diese Anderungen sofort in allen aktiven
+Prozessen Ubernommen und somit werden alle Dokumente nun mit dieser Version fortgefuhrt.
+
+4. Die alte Version wird deaktiviert und ist damit im Status ,,Archiv / blau”.
+
+Th - d.3 flow
+ema cee 22/81 d.velop

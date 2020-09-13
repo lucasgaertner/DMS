@@ -1,0 +1,40 @@
+d.ve.op
+
+academy
+Tutorial d.ecs forms basis
+
+Sie miissen den Workflow 'Test-Version' deaktivieren bevor der ausgewéahlte
+Workflow aktiviert werden kann, Méchten Sie ‘Test-Version’ deaktivieren und
+fortfahren?
+
+ 
+
+Abbrechen
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 3.7 Deaktivierung der alten Version!?
+
+Die Deaktivierung hat in diesem Fall zur Folge, dass alle bis dahin aktiven Dokumente in der alten
+Workflow-Version auch mit dieser beendet werden! Neue Dokumente, welche importiert bzw.
+aktualisiert werden, werden dann mit der neuen Version des Workflows gestartet.
+
+b. Manuell
+
+Bei einer manuellen Startoption kann nun natirlich der User entscheiden, welche Version er fiir ein
+Dokument nutzen will. Hier muss also der Administrator dafiir sorgen, dass die alte Version
+deaktiviert wird!
+
+Thema - d.3 flow
+
+20/81 d.velop

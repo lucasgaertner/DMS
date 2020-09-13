@@ -1,0 +1,62 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+Das Panel ist erst einmal leer und kann nun Uber Dialoge noch konfiguriert werden. Wichtigste
+Einstellung ist hier erst einmal das Layout ,Absolutes oder Relatives”-Layout und natiirlich sollte ein
+sprechender Name vergeben werden.
+
+7.3.2. Einfiigen eines Label-Objektes
+
+   
+
+p> HeaderPanelProperties.headline .
+
+Das Label-Objekt kann nun innerhalb des Panels positioniert und Uber den zugehdrigen Dialog
+kénnen verschiedene Einstellungen vorgenommen werden.
+
+Hier kann im ersten Ansatz der Label-Text fest vorgegeben oder mittels JavaScript dynamisch
+angepasst werden.
+
+.3.3. Nutzung eines Bild-Elements
+
+SipHeaderPanelProperties.headline - =. =. . . we w
+
+ 
+
+Das Bild kann nun ebenfalls innerhalb des Panels positioniert werden. Auch hier kann die Bild-URL
+statisch oder dynamisch vergeben werden.
+
+7.3.4. OPTIMIERUNG
+
+Da diese Art der ,,Kopf"-Gestaltung innerhalb der Formulare ofters bendtigt wird,
+kann dieses Element auch gekapselt werden. Damit wird das selektierte Objekt als
+eigenes Objekt bereitgestellt und kann im Folgenden in anderen Formularen
+einfach wiederverwendet werden.
+
+   
+ 
+   
+
+Kopieren
+Einfiigen
+
+@ Eigenschaften
+
+Dazu wird ein zusatzlicher Formular-Kontext , HeaderPanelProperties” mit entsprechenden Steuer-
+Eigenschaften notwendig. Der Formular-Kontext sollte dann auf den neuen Kontext ,umgebogen”
+werden.
+
+ID Typ  Request-Parameter
+4 @ HeaderPanelProperties
+
+@ alternateText Text
+
+@ headline Text
+
+@ imagePath Text
+
+Abbildung 7.1 Formular-Kontext fiir den Header-Bereich
+
+Thema - Urlaubsantrag Step by Step
+39/81 d.velop

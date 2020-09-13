@@ -1,0 +1,29 @@
+d.ve.op
+academy
+Tutorial d.ecs forms basis
+
+3.3. Elemente / Design
+
+All needed variables will be defined and initialised here.
+
+STEP 3:
+Depending on the result the requester will be informed.
+
+ 
+
+ 
+
+Abbildung 3.3 Beispiel Workflow-Prozess-Darstellung
+
+Die einzelnen Schritte innerhalb der Prozess-Definition k6nnen mit einem Kommentar versehen
+werden; damit kann der Prozess auch zu Dokumentations-Zwecken effektiver genutzt werden.
+
+Die hinterlegten Empfanger eines Schrittes werden ebenfalls durch eine weitere Option links vom
+Schritt angezeigt und flhren damit zusatzlich zu einer erhéhten Transparenz der Prozess-Definition.
+
+Die Design-Elemente zur Wegfihrung der Verbindungen wurden minimiert und die
+,Zusammenfuhrungen” und ,,Switche” vereinheitlicht.
+
+Theme-d3fow lp
+
+15/81

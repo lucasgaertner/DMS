@@ -1,0 +1,44 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+7.6.1.Selektion der d.3 Dokumentnotiz
+
+Im Gegensatz zu gekapselten Dokumenten kann dieses Element als Template fur eigene
+Anpassungen genutzt werden. Alle Elemente kénnen nach Integration editiert und angepasst
+werden!
+
+7.7. Aktions-Panel
+
+ 
+
+ 
+
+Ziel
+Action
+
+O genehmigt © abgelehnt © In Bearbeitung
+
+J AbschlieBen FE] Speichern % SchlieBen
+
+Bausteine
+e Panel Positionierung und Gruppierung von Formular-Elementen / Uberschrift
+e Auswahlfeld Moglichkeit der Bereitstellung unterschiedlicher Optionen
+e Schaltflache Moéglichkeiten Aktionen zu konfigurieren
+
+e Daten-Model Anbindung der Text-Felder an ein Daten-Objekt
+
+7.7.1.Positionierung eines Panels im Formular-Kontext
+
+Aktion _
+|
+
+ 
+
+ 
+
+Die Steuerung des Formulars (Beenden, SchlieBen, Abbrechen, ....) schlieBen werden innerhalb eines
+weiteren Panels zusammengefasst.
+
+Thema - Urlaubsantrag Step by Step
+4/81 d.velop

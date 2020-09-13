@@ -1,0 +1,23 @@
+d.vetop
+
+ 
+
+academy
+Tutorial d.ecs forms basis
+if( k == NaN ) k = 0;
+k += (k.indexOf('.') == -1)? '.00' : '00';
+// Retruns the rounded value
+return new Number( k.substring(0, k.indexOf('.') + 3) );
+}#// end of myRound
+Der Aufruf der Funktionen im Formular-Kontext kann dann wie folgt aussehen.
+// Get current row
+var currentRow = form.data.getValue( "index" );
+// Get Values
+var vettoValue = form.context.getValue( "InvoicePositionData.Netto", currentRow );
+var mwstValue = form.context.getValue( "InvoicePositionData.MwSt" , currentRow );
+var tmpValue 0;
+var grossValue = 0;
+grossValue = form.global.calcBrutto( nettoValue, mwstValue );
+form.context.setValue( "InvoicePositionData.Brutto", currentRow, grossValue );
+Thema - Vermischtes d velop
+74/81 °

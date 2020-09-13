@@ -1,0 +1,79 @@
+d.vetop
+
+ 
+
+academy
+Tutorial d.ecs forms basis
+15.Appendix
+15.1. Abbildungsverzeichnis
+Abbildung 1.1 Bendtigte Phasen der Anforderungs-Aufnahime ........csssssssssssssseessesssneeseessnnneeseessnneeseesnnneteeeseee 6
+
+Abbildung 1.2 Projektorganisation....
+Abbildung 3.1 d.3 Cockpit
+Abbildung 3.2 d.3 flow designer
+Abbildung 3.3 Beispiel Workflow-Prozess-Darstellung..
+Abbildung 3.4 WFL-Diagramm mit Swimlanes
+Abbildung 3.5 Beispiel einer Event-Steuerung im d.3 flow designer...
+Abbildung 3.6 Ausfihrungsversion / Workflow-ID beibehalten?.........
+Abbildung 3.7 Deaktivierung der alten Version!? uo... csssssscsssseessesssnessersnneeceennneeeeees
+Abbildung 3.8 Schaubild der Bearbeitung einer aktiven Workflow-Definition
+Abbildung 3.9 Schaubild der Versionierung innerhalb der Ausfhrungsversion........ssssccccssseeserseeeeeees
+Abbildung 3.10 Schaubild der Versionierung inkl. neuer Version und neuer Ausfiihrungsversion....23
+Abbildung 5.1 d.ecs forms Architektur.....sesccsssssessssssssnsesssessseseseesssneeseesssnmescessnmsscessnnnseseessnnseseessnnseeesennnneeeeeesnnneeeeeee
+Abbildung 5.2 Aufbau eines Eingabefeldes....
+Abbildung 5.3 Aufbau einer Suchhilfe
+Abbildung 5.4 Aufbau einer Combobox
+Abbildung 6.1 Workflow-Prozess-Diagramm Urlaubsantrag....
+Abbildung 6.2 Daten-Modell Mitarbeiter-Daten
+Abbildung 6.3 Urlaubs-Antrag User-Interface
+Abbildung 7.1 Formular-Kontext fiir den Header-Bereich .
+Abbildung 7.2 Erweiterte Einstellungen.......
+Abbildung 8.1 Prozess-Diagramm Krankmeldung...
+Abbildung 8.2 Formular-Ansicht im Internet / Intranet
+Abbildung 8.3 Auswahl der im Schulungs-System vorhandenen Personaldaten....
+Abbildung 8.4 Formular-Ansicht im Workflow
+
+Abbildung 8.5 Prozes-Diagramm fir einen einfachen Urlaubsantrags-Workflow..
+Abbildung 8.6 Switch-Konfiguration
+
+Abbildung 8.7 Ansicht des Formulars im Intranet / Internet (ohne Kommentarfeld)
+Abbildung 8.8 Auswahl der im Schulungs-System vorhandenen Personaldaten
+Abbildung 8.9 Ansicht des Formulars im Workflow
+Abbildung 9.1 Administration Prozessportal
+Abbildung 10.1 IE-Konfiguration...
+Abbildung 10.2 Test-Dialog
+Abbildung 11.1 im d.ecs forms designer Workflow-Variablen mappen....
+Abbildung 11.2 Erweiterte Einstellungen - d.3-Systembenuzter.
+Abbildung 12.1 savelnstance vs. save
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+  
+ 
+ 
+  
+ 
+
+ 
+
+   
+ 
+ 
+ 
+  
+
+ 
+
+Thema - Appendix

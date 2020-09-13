@@ -1,0 +1,41 @@
+d.ve.op
+academy
+Tutorial d.ecs forms basis
+
+3.5.5. Versionierung inkl. neuer Version und neuer Ausfiihrungsversion /
+Workflow-ID
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 3.10 Schaubild der Versionierung inkl. neuer Version und neuer Ausftihrungsversion
+
+Bei massiven Anpassungen an der Workflow-Definition bietet sich eine neue Hauptversion inkl. einer
+neuen Ausfihrungsversion / Workflow-ID an.
+
+1. Erstellung einer neuen Version mit dem Mentpunkt ,Neue Version erstellen” und unter
+Ablehnung der Option ,,Ausfihrungsversion beibehalten”. Hierbei sollte nun ein neuer
+Versionsname, zum Beispiel ,,2.0", vergeben werden. Damit wird nun eine komplett neue
+Workflow-Definition auf der Basis der alten Workflow-Definition erstellt, welche auch komplett
+neue ID's erhalten hat.
+
+2. Die so erstellte neue Arbeits-Version kann nun angepasst werden. Da nun auch die
+Ausfiihrungsversion / Workflow-ID eine neue ist, ist auch ein Test mittels Uberfiihrung in eine
+Test-Version wieder mdglich!
+
+3. Eine Aktivierung der neuen Version fuhrt nun zu dem beschriebenen Verhalten im Kapitel ,,2.7.2
+Ausfulhrungsversion / Workflow-|D".
+
+4. Die alte Version wird deaktiviert und ist damit im Status ,Archiv / blau”. Alle bis dahin mit dieser
+Version bearbeiteten Dokumente werden mit dieser Workflow-Version abgearbeitet!
+
+Theme-dsfow SSS
+
+23/81

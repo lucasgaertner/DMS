@@ -1,0 +1,82 @@
+d.vetop
+
+academy
+Tutorial d.ecs forms basis
+
+return errMsg;
+} // end of generateErrMsg
+
+/*e
+* Depending on the parameters the functions checks the invalid and mandatory fields of the given
+form elements
+
+*
+
+* @param form the form object
+
+* @param checkPanels array with internal names of elements to check if null the complete form
+will be checked
+
+* @param mandatoryFlag if set to true there is also a mandatory check involved
+
+*
+
+* @return errMsg or empty string
+
+*/
+
+module.checkInvalidOrEmptyFields = function( form, checkPanels, mandatoryFlag ) {
+
+var errMsgInvalidFields = "";
+var errMsgEmptyFields ?
+var invalidFields = new Array();
+
+ 
+
+AS SE Ta 0 aaa aaa
+if( checkPanels != null ){
+for( var panCount = 0; panCount < checkPanels.length; panCountt++ ){
+invalidFields = form.misc.validation.getInvalidFields( checkPanels[panCount] );
+if( invalidFields.length > 0 ){
+errMsgInvalidFields += generateErrMsg( form, invalidFields );
+}
+}
+}
+else {
+invalidFields = form.misc.validation.getInvalidFields();
+if( invalidFields.length > 0 ){
+errMsgInvalidFields += generateErrMsg( form, invalidFields );
+}
+}
+
+if( errMsgInvalidFields != "" ){ errMsgInvalidFields = form.misc.il8n.getValue(
+“err InvalidFields" ) + "\n" + errMsgInvalidFields; }
+
+1A OE TCT CATT i=) TSE)
+if( mandatoryFlag ) {
+if( checkPanels != null ){
+var emptyFields = new Array();
+for( var panCount = 0; panCount < checkPanels.length; panCountt++ ){
+emptyFields = form.misc.validation.getUnfilledMandatoryFields( checkPanels[panCount] );
+if( emptyFields.length > 0 ){
+errMsgEmptyFields += generateErrMsg( form, emptyFields );
+}
+}
+}
+else {
+emptyFields = form.misc.validation.getUnfilledMandatoryFields();
+if( emptyFields.length > 0 ){
+errMsgEmptyFields += generateErrMsg( form, emptyFields );
+}
+
+}
+
+if( errMsgEmptyFields != "" ){ errMsgEmptyFields = form.misc.il8n.getValue( "err EmptyFields" ) +
+"\n" + errMsgEmptyFields; }
+
+return errMsgInvalidFields + errMsgEmptyFields;
+}; // end of checkInvalidOrEmptyFields
+
+Thema - Urlaubsantrag Step by Step
+
+51/81 d.velop

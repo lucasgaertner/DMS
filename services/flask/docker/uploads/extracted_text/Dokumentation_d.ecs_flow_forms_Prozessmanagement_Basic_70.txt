@@ -1,0 +1,125 @@
+d.ve.op
+academy
+Tutorial d.ecs forms basis
+
+11.5. Workflow-Variablen
+
+Fur die Steuerung des Prozesses innerhalb der Workflow-Verarbeitung werden im d.ecs flow JPL-
+Variablen bendtigt, welche entweder in einer Aktion mittels JPL initialisiert werden mussen oder Uber
+entsprechende Konfigurationen im Formular erzeugt und geschrieben werden.
+
+Innerhalb eines JPL-Skriptes:
+
+ 
+
+// STEP 0: Initialisierung der Variablen
+formInstanceld "XX-" ## doku_id ## "-" ## LUUID
+vars wSuperior dok_dat_feld[29]
+
+vars wApplicaant dok_dat_feld[18]
+
+vars wStepID 1
+
+vars wState ue
+
+// STEP 1: Glolbalisieren der Variablen
+call save_vars( "formInstancelId" )
+
+call save_vars( "wSuperior" )
+call save_vars( "wApplicant" )
+call save_vars( "wStepID" )
+call save_vars( "wState" )
+
+Innerhalb des Formulars
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Formular-Kontext aoe
+
+ 
+
+ 
+
+Anzeige
+
+ 
+
+Formular-Kontext
+
+ 
+
+Eigenschaft bearbeiten
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Objekte Bitte bearbeiten Sie hier die Eigenschaft
+ID Typ d.3 Workfl
+> @ EmployeeData Name
+> @ VacationData btate
+4 @ VacationRequestProperties
+© state Text wState Typ
+@ sstateOptionCaption Text{]
+© stateOptionIDs Textf] Text v
+> @ DocumentNote
+b @ EmployeeDataProperties @ Einzelwert OQ Mehrfachwert
+b @ HeaderPanelProperties
+Validierung
+Datenanbindung
+
+O Standard O Statisch O Request-Parameter @a3
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Seripte 43
+4 (D) Server-Aktionen Dokument-Eigenschaft | doc_field{6] v
+@ d3AddDocumentNote lesen WA Schreiben
+@} d3GetDocumentNote
+4 [B) Suchhilfen Workflow-Variable wiState v
+@®, PersonallDSearch (lLesen [¥jSchreiben
+
+ 
+
+ 
+
+ 
+
+Abbildung 11.1 im d.ecs forms designer Workflow-Variablen mappen
+
+Thema - Vermischtes
+net d.velop

@@ -1,0 +1,17 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+= Zuletzt bearbeitet
+
+In diesem Bereich wird eine Historie der bearbeiteten Workflows angezeigt, diese konnen auch
+Uber einen Klick direkt bearbeitet werden.
+
+" Offline-Bereich
+
+Diese Versionen der Workflows sind aktuell nicht auf dem Server und koénnen daher nur lokal
+bearbeitet werden; bzw. konnen in d.3 abgelegt werden.
+
+Theme-d3fow lp
+
+14/81

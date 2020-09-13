@@ -1,0 +1,67 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+5.2. Formular-Speicher
+
+Der Formular-Kontext nimmt alle Daten aus dem Formular auf und stellt diese innerhalb der Laufzeit
+der Formular-Bearbeitung zur Verfiligung.
+
+Innerhalb des Formular-Kontextes k6nnen nun durch Ableitungen und Kapselungen einzelne
+Bereiche zusammengefasst werden und stehen dann ebenfalls als separater Bereich fur weitere
+Formulare und Elemente zur Verfiigung.
+
+5.3. Formular
+
+Das Formular stellt die Daten aus dem Daten-Modell und dem Formular-Kontext in den
+bereitgestellten Elementen dar, und bietet die notwendigen Interaktions-Elemente zur Bearbeitung
+des Formulars durch den User an.
+
+5.4. Formular-Elemente
+
+Anbei wird eine kurze Ubersicht Uber ausgewahlte Formular-Elemente angeboten.
+
+Mehr Details konnen der d.ecs forms Dokumentation entnommen werden.
+
+5.4.1. Eingabefeld
+
+ 
+
+ixt_Eingabefeld
+
+ 
+
+ 
+
+txt_Eingabefeld__|
+
+ 
+
+ 
+
+xt Eingabefeld__2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.2 Aufbau eines Eingabefeldes
+Ein Eingabefeld besteht aus drei Elementen:
+
+- Der Container als 4uBerer Rahmen, welcher die beiden Elemente
+- Label und
+- Inputfeld beinhaltet.
+
+Das Eingabefeld wird mit einer Eigenschaft aus dem Objektmodell bzw. dem Formular-Kontext
+verbunden.
+
+Thema - d.ecs forms Architektur
+28/1 d.velop

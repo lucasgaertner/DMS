@@ -1,0 +1,80 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+11. Vermischtes
+
+ 
+
+11.1. User Login
+
+e Aktuell angemeldeter d.3-User: form.misc.login.getUsername( );
+
+11.2. | Gekapselte Elemente
+
+Die oberste Ebene eines gekapselten Elements ist nicht mit dem vergebenen internen Namen
+erreichbar, sondern nur mit “{capsuleName}".
+
+Wird nur ein Element gekapselt, zum Beispiel ein Button, so ist der interne Name dieses Elementes
+nur ,{capsuleName}"
+
+11.3. | Mehrsprachigkeit
+
+11.3.1. Schliissel hinzufiigen
+
+Es wird ein eindeutiger Schlussel fir die Referenzierung innerhalb eines Skriptes bendtigt.
+
+Bitte geben Sie hier die Schliissel der im Skript verwendeten Ubersetzungen an
+
+ 
+
+err_DatelnPast
+
+ 
+
+ 
+
+ 
+
+11.3.2. Hinterlegen der Ubersetzungen
+Die Ubersetzungen missen in der Ubersetzungs-Tabelle hinterlegt werden, der Schliissel sollte dabei
+keine Sonderzeichen und Leerzeichen enthalten
+
+Ubersetzungen
+
+Dies sind alle verftigbaren Ubersetzungen
+
+ 
+
+Schliissel Deutsch Englisch
+err_DatelnFuture err_DatelnFuture err_DatelnFuture
+
+ 
+
+  
+ 
+
+ 
+
+   
+
+‘err_DatumInZukunft Daturn muss in der Zukunft liegen... The date should be in the future.
+
+err_EmpyMandatoryFields err_EmpyMandatoryFields
+
+err_GetDocumentNote err_GetDocumentNote
+
+err_GetLinkedDocuments err_GetLinkedDocurnents
+
+err_InvlidFields err_InvlidFields
+
+err_NewNote err_NewNote
+
+err_SaveData err SaveData err SaveData
+
+err_WFLProgress err WWFLProgress
+
+errEmntiMandatoruFielde Ritte heachten Sie die Pflichtfelder! Dlease consider the mandatancfields!
+Thema - Vermischtes d velo
+
+68 / 81 ° p

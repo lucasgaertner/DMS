@@ -1,0 +1,58 @@
+d.vetop
+
+academy
+Tutorial d.ecs forms basis
+
+7.Urlaubsantrag Step by Step
+
+ 
+
+7.1. Allgemein
+
+Die einzelnen Schritte zur Erstellung eines Antrags-Formulars fur einen Urlaub werden hier anhand
+der Gruppierungen im Formular selbst dargestellt. Moglichkeiten der Optimierung wie Kapsellungen
+und die Integration verschiedener Kontexte werden ebenfalls angesprochen.
+
+7.2. Ein neues Formular
+
+‘Fomuar ~~ Im Formular-Reiter kann tiber den Menii-Punkt (iiber rechten
+6 }@ Neues Formular | Mausklick erreichbar) ein neues Formular angelegt werden. Dieses
+
+j Gd Neue Kategorie kann auch durch die Anlage bzw. Selektion einer Kategorie noch
+
+ .&  Exportieren gruppiert werden.
+
+| 3 Importieren
+
+_© | Aktualisieren
+
+   
+
+vvvvy
+
+Weitere Optionen zu dieser Aktion kénnen der Dokumentation
+entnommen werden.
+
+7.3. Kopf-Panel
+
+Ziel
+
+ 
+
+Urlaubs-Antrag @
+
+ 
+
+Bausteine
+
+e Panel Positionierung und Gruppierung von Formular-Elementen
+e Label Darstellung eines Textes
+
+e Bild Darstellung einer Grafik innerhalb des Formulars
+
+7.3.1. Positionierung eines Panels im Formular-Kontext
+Uber die Palette kann ein Panel-Objekt selektiert und per Maus in das Formular gezogen werden.
+
+Thema - Urlaubsantrag Step by Step
+
+38/81 d.velop

@@ -1,0 +1,54 @@
+Tutorial d.ecs forms basis
+
+d.vetop
+academy
+
+6.6. Ziel: User-Interface
+
+Das User-Interface kann mittels d.ecs-forms auch von einem Fach-Verantwortlichen ohne groBes
+Fachwissen in der Erstellung von Eingabe-Masken konfiguriert und erstellt und damit ebenfalls schon
+wahrend der Spezifikations-Phase angelegt werden.
+
+Urlaubs-Antrag
+
+Mitarbeiterdaten
+Vorname Chef
+Nachname
+
+Superior Claus
+
+Urlaubsdaten
+
+von 21.03.2016 mm
+Urlaubstage 4,00
+Sonderurlaub 1,00
+
+Uberstundenabbau
+
+Summe 5,00
+
+Dokument-Notiz
+
+Action
+
+O genehmigt © abgelehnt © In Bearbeitung
+
+av AbschlieBen FE] Speichern
+
+Abbildung 6.3 Urlaubs-Antrag User-Interface
+
+Thema - Urlaubs-Antrags Workflow
+
+©
+
+Personal-ID 1447 Q
+d3Login chef
+Resturlaub 30,00
+
+bis 25.03.2016 th
+
+Weil ich es verdient habe!
+
+% SchlieBen
+
+37/81 d.velop

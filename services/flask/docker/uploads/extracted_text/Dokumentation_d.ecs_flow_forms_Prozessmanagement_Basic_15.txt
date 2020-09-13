@@ -1,0 +1,40 @@
+d.ve.op
+
+academy
+Tutorial d.ecs forms basis
+
+Ein Ende-Element ist als Abschluss eines Workflow-Prozesses hinzugekommen.
+Swimlane
+
+Die Prozess-Erstellung kann nun mit einer ,Swimlane” versehen werden. Dabei handelt es sich um
+ein rein graphisches Element, welches bis auf die Uberschrift keine Funktion besitzt.
+
+[Wird hier bendtait um die Variablen far den Status-Transfer
+
+ 
+
+‘System
+
+ 
+
+   
+
+ 
+
+Vorgesetzter
+
+ 
+
+ 
+
+ 
+
+Personal-Abteilug
+
+ 
+
+Abbildung 3.4 WFL-Diagramm mit Swimlanes
+
+Thema - d.3 flow
+
+16/81 d.velop

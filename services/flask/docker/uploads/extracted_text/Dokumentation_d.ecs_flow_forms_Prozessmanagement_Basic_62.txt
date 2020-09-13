@@ -1,0 +1,50 @@
+Tutorial d.ecs forms basis
+
+8.2.4. Ansicht des Formulars im Workflow
+
+d.ve.op
+academy
+
+ 
+
+PersonalID
+Vorname
+Nachname
+d3Login
+Vorgestzter
+
+Startdatum
+
+Dauer
+
+Status
+
+Status
+
+Steuerung
+
+ 
+
+Urlaubsantrag
+
+4711
+
+Urlaubsdaten
+
+abgelehnt
+
+wv AbschlieBen
+
+Enddatum
+
+ 
+
+ 
+
+Abbildung 8.9 Ansicht des Formulars im Workflow
+
+Thema - Wizards
+
+63/81
+
+d.velop

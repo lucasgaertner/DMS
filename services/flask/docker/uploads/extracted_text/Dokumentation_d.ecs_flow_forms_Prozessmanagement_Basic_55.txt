@@ -1,0 +1,71 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+3. STEP: Vervollstandigung des Formulars mit d.velop Templates
+Krankmeldung ~
+PersonallD. —
+
+> Yorname-
+
+“Nachname
+
+d3Login:
+
+Yorgestzter, Q
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Krankmeldungsdatén ~
+‘ave [J =~ ain. (—_—
+
+ 
+
+ 
+
+ 
+
+Template ,,StoreDocumentAndStartProcess”:
+
+Kein Standard-Template! Dieses Template muss erstellt werden, dazu sind Programmierkenntnisse
+aus der d.ecs forms advanced-Schulung notwendig!
+
+| Krankmeldung einstellen und Workflow starten
+
+Template ,,Workflow-Controls”:
+
+ 
+
+ 
+
+ 
+
+ 
+
+4. STEP: Konfiguration der Elemente
+a) Sichtbarkeit einzelner Elemente abhangig der Verwendung im Intranet oder im Workflow steuern.
+
+// Get the current workflow step id
+var stepId = form.misc.workflow.getStepId();
+
+return ( stepId != null && stepId != "" );
+
+5. STEP: Test des Workflows inkl. Formular
+
+a) Aktivierung des Workflow-Prozesses
+
+b) Nutzung des Formulars zur Erstellung der Krankmeldung.
+
+c) Anmelden als ,chef” und 6ffnen des Formulars im Flow-Connector.
+
+Theme-WeeeSS™S™S™S™S*CS LD
+
+56/81

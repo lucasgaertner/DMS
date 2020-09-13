@@ -1,13 +1,12 @@
 #!/bin/bash
-
 set -e
 
 POSTGRES="psql -U postgres"
 
-echo "Creating database role: shared"
+echo "Creating database role: documents"
 
 $POSTGRES <<-EOSQL
-CREATE USER shared WITH
+CREATE USER postgres WITH
 	LOGIN
 	NOSUPERUSER
 	NOCREATEDB

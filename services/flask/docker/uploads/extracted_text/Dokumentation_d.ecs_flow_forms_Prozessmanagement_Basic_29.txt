@@ -1,0 +1,58 @@
+d.ve.op
+
+academy
+Tutorial d.ecs forms basis
+
+5.4.3. Combobox
+
+ 
+
+ 
+
+sel-ComboBox
+
+ 
+
+sel_ComboBox__!
+
+ 
+
+sel_ComboBox__2
+
+ 
+
+ 
+
+ 
+
+Option! Option2
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.4 Aufbau einer Combobox
+
+Eine Combobox besteht, zumindest aus Sicht des Formulars, auch wieder aus drei Elementen — dem
+Container, dem Label und dem eigentlichen Suchfeld.
+
+Um aber nun eine Optionsliste bereitzustellen, sind noch weitere Elemente beteiligt.
+
+1. Eine Combobox, Checkbox-Gruppe oder RadioButton-Gruppe hat zusatzlich zur Anbindung an
+eine Objekt-Eigenschaft zur Sicherung des selektierten Wertes, noch eine weitere Anbindung an
+das Objektmodell zur Darstellung einer Wertemenge (2) bzw. einer Auswahl von Werten.
+
+2. Wird nun aus der Werteliste ein Wert selektiert, wird dieser automatisch in die Objekt-Eigenschaft
+Ubertragen.
+
+3. Dabei gilt hier aber eine Besonderheit. Der Wert aus Option’ (ID) wird dabei in die Objekt-
+Eigenschaft Ubernommen und der Wert aus Option2 (Caption) zur Darstellung in das Formular-
+Element eingetragen!
+
+Thema - d.ecs forms Architektur
+
+30/81 d.velop

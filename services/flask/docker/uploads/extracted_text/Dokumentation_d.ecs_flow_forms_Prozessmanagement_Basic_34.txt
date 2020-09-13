@@ -1,0 +1,60 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+6.4. Dokument- und Aktenarten
+
+Folgende Dokument- / Akten-Arten werden fiir den Workflow im d.3-Archiv bendtigt:
+
+Personal-Akte
+
+Personal-Akte
+
+  
+
+Kirzel: APERS — Lebensdauer in Monaten: Standard (50 Jahre)
+
+Sekundarspeicher E/A: Nein Cache-Verweildauer in Tagen: Standard des d.3 Servers
+
+Repository-ID: Standard Ungeschiteter Webzugriff: Nein
+
+4-Augen-Prinzip: Nein Vorbuchen: Nein
+Inhalt der Dokumentart
+
+me Madifizierbar Re :
+&® PersonallD da Alphanumerisch
+
+ER y3Login da 2 Nein Alphanumerisch Nein
+&2l Vorname Ja 3 Nein Alphanumerisch Nein
+El Nachname da 4 Nein Alphanumerisch Nein
+ES Vorgestzter Ja 5 Nein Alphanumerisch Nein
+©) Resturlaub Ja 80 Nein Numerisch Nein
+
+Urlaubsantrag
+
+Urlaubsantrag
+
+Kirzel: DURLA = Lebensdauver in Monaten: Standard (50 Jahre)
+Sekundarspeicher E/A: Ja Cache-Verweildauer in Tagen: Standard des d.3 Servers
+Repository-ID: Standard Ungeschitzter Webzuariff. Nein
+4-Augen-Prinzip: Nein Vorbuchen: Nein
+
+Inhalt der Dokumentart
+
+Teen on
+
+ 
+
+&* PersonallD Nein Alphanumerisch Nein
+
+ 
+
+ 
+
+EF d3Login ; Nein Alphanumerisch Nein Nein
+el Vorname 3 Nein Alphanumerisch Nein Nein
+ES Nachname 4 Nein Alphanumerisch Nein Nein
+EE Vorgesteter 5 Nein Alphanumerisch Nein = Nein
+E® status 6 Nein Alphanumerisch Nein Nein
+Thema - Urlaubs-Antrags Workflow
+9 35/81 d.velop

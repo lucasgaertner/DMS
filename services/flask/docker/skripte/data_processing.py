@@ -6,7 +6,8 @@ def normalize(data_path, file_name):
         #     print(os.getcwd())
         ##   print(os.listdir())
         #nltk.download("wordnet", data_path + "/" + "nltk")
-        nltk.data.path.append("/app/" + data_path + "/" + "nltk")
+        print(data_path, "LUCas:w")
+        nltk.data.path.append(os.path.join(data_path ,"nltk"))
         from nltk.stem import WordNetLemmatizer
         import re
 
@@ -43,7 +44,7 @@ def normalize(data_path, file_name):
                 document = document.lower()
                 # Lemmatization
                 document = document.split()
-
+                print(document)
                 document = [stemmer.lemmatize(word) for word in document]
                 document = ' '.join(document)
 

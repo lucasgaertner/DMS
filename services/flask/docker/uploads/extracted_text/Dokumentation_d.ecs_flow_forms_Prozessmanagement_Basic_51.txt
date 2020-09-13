@@ -1,0 +1,53 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+7.8.2. Workflow-Variablen Integration
+
+Action~
+
+  
+
+Um die Entscheidung innerhalb des Formulars abzurufen, wird ein Auswahlfeld aufgenommen,
+welches die Entscheidung dann auch Uber eine Workflow-Variable an den Workflow-Prozess
+weiterroutet.
+
+Die darzustellenden Optionen werden ebenfalls Uber den Formular-Kontext zur Verfiigung gestellt.
+
+ 
+
+ID Typ
+> @ EmployeeData
+4 @ StateOptionList
+@ caption Text[]
+O id Text[]
+
+Die Optionen, welche in der Auswahlliste zur Verfgung stehen, werden in diesem Fall Uber den
+Formular-Kontext statisch bereitgestellt.
+
+Uber die Verlinkung des selektierten Wertes aus dem Auswahlfeld mit einer JPL-Workflow-Variable
+findet nun die Kopplung zwischen Formular und Prozess statt.
+
+ 
+
+ID Typ d.3 Workflow d.3 Dokument
+> @ EmployeeData
+
+b e@ VacationData
+
+4 @ VacationRequestProperties
+| @ state Text wState doc_field[6]
+
+ 
+
+Hinweis: Die hier dargestellte Verlinkung mit den d.3-Dokument-Attributen muss nicht mit dem
+Schulungsbeispiel Ubereinstimmen; dies sollte man den Gegebenheiten der Archiv-Umgebung
+anpassen.
+
+7.8.3. OPTIMIERUNG
+
+Die einzelnen Buttons k6nnen nun ebenfalls gekapselt werden. Diese Mdglichkeit ist eher optional
+zu betrachten, da es wenig ,,Einspar-Potential” gibt.
+
+Thema - Urlaubsantrag Step by Step
+52/81 d.velop

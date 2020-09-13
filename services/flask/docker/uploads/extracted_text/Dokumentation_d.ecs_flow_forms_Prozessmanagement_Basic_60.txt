@@ -1,0 +1,68 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+3. STEP: Erganzung um d.velop Templates
+
+Urlaubsantrag ©
+
+PersonallD
+
+> Vorname:
+
+Nachname
+
+ 
+
+d3Login:
+
+ 
+
+ 
+
+ 
+
+ 
+
+Vorgestzter
+
+ 
+
+ 
+
+Urlaubsdaten,
+
+Startdatum | ra! Enddatum =]
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+Template ,,StoreDocumentAndStartProcess”:
+
+Kein Standard-Template! Dieses Template muss erstellt werden, dazu sind Programmierkenntnisse
+aus der d.ecs forms advanced-Schulung notwendig.
+
+ 
+
+4. STEP: Konfiguration der Elemente
+a) Sichtbarkeit einzelner Elemente abhangig der Verwendung im Intranet oder im Workflow steuern.
+
+// Get the current workflow step id
+var stepId = form.misc.workflow.getStepId();
+
+return ( stepId != null && stepId != "" );
+b) Kommentarfeld erganzen, welches nur dann sichtbar und dann Pflichtfeld ist, wenn der Antrag
+
+abgelehnt wurde.
+c) Anpassung der Workflow-ID im Template zur Ablage des Antrags und zum Start des Prozesses.
+
+Thema - Wizards
+
+sie d.velop

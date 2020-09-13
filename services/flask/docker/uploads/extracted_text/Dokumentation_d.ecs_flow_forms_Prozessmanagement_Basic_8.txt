@@ -1,0 +1,53 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+1.1.6. Prozess-Design
+Das Prozess-Design findet in einer ersten Phase schon wahrend der GPA/GPO statt. Innerhalb dieses
+Bereiches muss aber noch mehr Wert auf die Spezifikation der Detail-Anforderungen gelegt werden.
+
+Prozess-Fluss:
+
+Die Prozess-Steuerung muss im Detail abgestimmt werden und sollte hier schon den Gesamt-
+
+Prozess beinhalten, auch wenn erst mit einem Teilprozess angefangen werden soll.
+
+ 
+
+Welche Wege nimmt eine Aufgabe, ein Dokument durch die Organisation? Besteht die Mdglichkeit
+entsprechende Regelwerke zu integrieren? Ist immer eine manuelle Interaktion notwendig, gibt es
+auch Mdglichkeiten Entscheidungen automatisiert zu treffen?
+
+Benutzer-Schnittstellen:
+Folgende Fragestellungen sind hier besonders zu beachten:
+
+« Wie sollen die bendtigten Daten innerhalb der Bearbeitungs-Masken zur Verfiigung gestellt
+werden?
+# Welche Moglichkeiten sollen bereitgestellt werden Daten einzugeben?
+" Welche Validierungen sollen angeboten werden?
+o zum Start,
+o nach erfolgter Anpassung von Werten
+o zum Abschluss der Bearbeitung
+
+1.1.7. Import
+
+Wichtig ist hier, in welcher Form und Uber welche Wege die bendtigten Dokumente in das Archiv-
+System Uberftihrt werden sollen. Welche Komponenten werden bendtigt und vor allem welche
+Informationen in Form von beschreibenden Parametern miissen den Dokumenten mitgegeben
+werden?
+
+Um einen mdglichst hohen Automatisierungs-Grad zu erreichen, mussen so viele Parameter wie
+modglich Uber automatisierte Verfahren ermittelt (OCR, d.classiy) und _ validiert
+(Schnittstellen,d.classify) werden.
+
+1.1.8. Schnittstellen
+
+Da ein Archiv-System nie alleine im Raum steht, ist die Frage nach der Integration weiterer Systeme
+uber vorhandene oder noch zu definierende Schnittstellen zu klaren. Entsprechende Experten auf
+Auftraggeber-Seite sollten ebenfalls im Projekt-Team vorhanden sein.
+
+1.1.9. d.3-Archiv-Design
+Abhangig von den aufgenommenen Anforderungen aus den vorher behandelten Punkten kénnen
+nun die beteiligten Dokument- und Aktenarten inkl. eines Aktenplans definiert werden.
+
+Thema - Planung o/s d.velop

@@ -1,26 +1,54 @@
-version: "3"
+version: "3.5"
 services:
-  flask:
-    container_name: "Webservice"
-    restart: always
-    environment:
-      - DATABASE_URL=postgresql://admin:airflow@postgres:5432/flask
-    depends_on: 
-      - postgres
-    build: services/flask/docker/.
-    ports:
-      - 5000:5000
   postgres:
-    container_name: "postgres_db"
-    hostname: postgres
+    container_name: postgres_db
     image: postgres
     env_file:
       - ./config/postgres.env
     volumes:
-      - ./pg_volume:/var/lib/postgresql/data:rw
+      - pg_volume:/var/lib/postgresql/data
       - ./services/postgres/docker/:/docker-entrypoint-initdb.d/
     ports:
-      - 5432:5432      
+      - "5432:5432"  
+    networks:
+      - postgres
+    restart: unless-stopped
+  pg_admin:
+    container_name: pg_admin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "bartner@msn.com"
+      PGADMIN_DEFAULT_PASSWORD: "start.123"
+      PGADMIN_LISTEN_PORT: 80
+    volumes:
+       - ./pgadmin:/root/.pgadmin     
+    ports:
+      - 5050:80
+    links:
+      - "postgres:psql-server"
+    depends_on:
+      - postgres
+    networks:
+      - postgres
+    restart: unless-stopped
+    
+  flask:
+    container_name: "Webservice"
+    #environment:
+    #  - DATABASE_URL=postgresql://admin:airflow@postgres:5432/flask
+    # network is new
+    build: services/flask/docker/.
+    volumes:
+      - ./services/flask/docker:/app
+    depends_on: 
+      - postgres
+    ports:
+      - 5000:5000
+    networks:
+      - postgres
+    restart: always
+      
+   
   #portainer:
   #container_name: "Controller"
   #restart: "always"
@@ -31,5 +59,13 @@ services:
   #- 9090:9000
   #command: 
   #-H unix:///var/run/docker.sock
+
+networks:
+  postgres:
+    driver: bridge
+    
 volumes:
-  pg_volume:  
+  pg_volume:
+    external: true
+    driver: local
+  pg_admin:

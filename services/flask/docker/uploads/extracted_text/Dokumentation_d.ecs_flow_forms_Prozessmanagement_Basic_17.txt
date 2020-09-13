@@ -1,0 +1,87 @@
+d.ve.op
+academy
+Tutorial d.ecs forms basis
+
+3.5. Versionierung
+
+3.5.1. Workflows-Status
+
+Workflow-Definitionen werden, sofern der User an einem d.3 Archiv angemeldet ist, direkt und
+automatisch in Systemdokumentklassen abgelegt und unterliegen damit auch den im d.3 System
+bekannten Versionierungen Uber die unterschiedlichen Status.
+
+ 
+
+ 
+
+—, Bearbeitung
+
+al Workflow-Definitionen im Status Bearbeitung dienen als reine Entwicklungs-
+Version und k6énnen nicht zusammen mit Dokumenten im d.3-Client getestet
+werden.
+
+| Priifung bzw. Test
+
+_— Workflow-Definitionen im Status Test k6nnen durch den Workflow-Entwickler - und
+
+nur durch diesen(!) - getestet werden.
+
+Ist der Workflow im Start-Modus manuell konfiguriert, kann der Entwickler diesen
+nun aus den diversen d.3 Clients auf einem Dokument der definierten
+Dokumentklasse starten.
+
+Alle Workflow-Schritte landen dann beim Entwickler im d.3 Postkorb und NICHT bei
+den definierten eigentlichen Empfangern!
+
+Wiedervorlagen, welche Uber API-Funktionen erzeugt werden, landen aber
+naturlich bei den korrekten Empfangern.
+
+Freigabe bzw. Aktiviert
+
+Nun ist der Workflow SCHARF geschaltet. Er ist aktiv! Und nun k6énnen alle
+berechtigten User diesen entweder manuell starten, falls dieser so konfiguriert ist,
+oder der Workflow wird Uber die definierten Events wie Import oder Aktualisierung
+automatisch gestartet.
+
+Es landen ab jetzt auch alle Workflow-Schritte bei den definierten Usern im d.3
+Postkorb und k6énnen dort von diesen bearbeitet werden.
+
+ 
+
+ 
+
+ 
+
+Archiv bzw. Deaktiviert
+
+= Werden Workflows durch eine neuere Version abgelést, sind die , alten” Versionen
+
+des Workflows deaktiviert.
+
+Je nach genutzter Versionierung werden
+
+* dann noch aktuell in den nun deaktivierten Workflows befindliche Dokumente
+auch mit diesem beendet oder
+
+= werden direkt mit der neu-aktivierten Version fortgefuhrt.
+
+ 
+
+Léschen kann man Workflow-Definitionen eigentlich nur im Status ,Bearbeitung
+und Priifung/Test”. Sobald die Workflow-Definition einmal im Status ,,Freigabe” ist,
+kann diese nicht mehr geléscht werden.
+
+Workflows, welche im Test-Modus noch mit Dokumenten verbunden sind, kGnnen
+ebenfalls nicht geloscht werden.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Thema-dsfow SSS
+
+18/81

@@ -18,6 +18,11 @@ RUN apt-get update \
 RUN apt update && apt install -y libsm6 libxext6
 RUN mkdir templates
 RUN mkdir uploads
+RUN mkdir uploads/extracted_text
+RUN mkdir uploads/joined_text
+RUN mkdir uploads/tif
+RUN mkdir uploads/uploaded_files
+RUN mkdir uploads/uploaded_files/non_pdfs
 RUN mkdir skripte
 RUN mkdir model
 RUN mkdir corpora
@@ -30,9 +35,9 @@ COPY ./app.py /app
 COPY ./nltk_download.py /app/uploads/joined_text/nltk
 #COPY ./corpora /app/uploads/joined_text/nltk
 
-RUN mkdir /app/uploads/joined_text/nltk/corpora
+#RUN mkdir /app/uploads/joined_text/nltk/corpora
 
-COPY ./corpora/wordnet  /app/uploads/joined_text/nltk/corpora/wordnet
+#COPY ./corpora/wordnet  /app/uploads/joined_text/nltk/corpora/wordnet
 #COPY ./corpora/wordnet.zip  /app/uploads/joined_text/nltk/corpora
 
 ENV FLASK_APP=app:app

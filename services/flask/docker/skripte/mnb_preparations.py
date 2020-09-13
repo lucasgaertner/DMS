@@ -45,7 +45,7 @@ def normalize(corpus, data_path):
     import nltk
     print(os.getcwd())
     print(os.listdir())
-    nltk.download("wordnet", data_path + "/" + "nltk")
+    nltk.download("wordnet", os.path.join(data_path, "nltk"))
     nltk.data.path.append(data_path + "/nltk")
     from nltk.stem import WordNetLemmatizer
     import re

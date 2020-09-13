@@ -1,0 +1,59 @@
+d.ve.op
+
+academy
+Tutorial d.ecs forms basis
+
+5.4.2. Suchhilfe
+
+ 
+
+  
+ 
+ 
+ 
+  
+     
+
+sef_Suchhilfe
+
+ 
+
+sef_Suchhilfe__|
+
+ 
+
+sef_Suchhilfe__2
+
+ 
+
+ 
+
+jer Nea 18)
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.3 Aufbau einer Suchhilfe
+
+Eine Suchhilfe besteht, zumindest aus Sicht des Formulars, auch wieder aus drei Elementen — dem
+Container, dem Label und dem eigentlichen Suchfeld.
+
+Um aber nun eine Suchliste bereitzustellen und den selektierten Wert zu bernehmen, sind noch
+weitere Elemente beteiligt.
+
+1. Wird in das Suchfeld ein Suchbegriff eingegeben, erfolgt mit Hilfe des bereitgestellten
+,suchskriptes” — dieses muss vom Entwickler erstellt werden - und in Kombination mit dem
+eingegebenen Suchbegriff die Bereitstellung einer Suchliste.
+
+2. Diese Suchliste liefert zwei Spalten zur Darstellung der sichtbaren Auswahl (Caption) und der
+parallelen |D-Werte, welche bei Selektion eines Wertes Ubertragen werden.
+
+3. Wird nun ein Wert aus der Liste selektiert, greift das Default-Verhalten (4) der Liste und es wird
+der korrespondierende ID-Wert in das Feld Ubernommen (5) und somit in der verlinkten Objekt-
+Eigenschaft hinterlegt.
+
+Thema - d.ecs forms Architektur
+29/81 d.velop

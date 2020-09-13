@@ -1,0 +1,63 @@
+d.vetop
+academy
+Tutorial d.ecs forms basis
+
+7.8. Schaltflachen erganzen
+
+ 
+
+ 
+
+Die einzelnen mdglichen Optionen ein Formular zu beenden bzw. zu schlieBen werden mittels
+Schaltflachen realisiert und nun im Detail mit Leben gefiullt.
+
+Senden
+
+ 
+
+Bevor das Formular mit den aufgenommenen Daten versendet wird und die Daten gespeichert
+werden, erfolgt an dieser Stelle noch eine Abfrage, ob alle Pflichtfelder gefullt und die Werte korrekt
+sind. Das bendtigte Skript wird hier als Action hinterlegt.
+
+Zur Kontrolle der Daten ist wird hier auf eine ausgelagerte Client-Ressource
+,checkInvalidOrEmptyFields” zugegriffen.
+
+AAS eB o
+form.ui.setEnabled( "{capsuleName}", false );
+
+A mS SLGES  TT A TOL
+var errMsg = form.modules( "FormControlTools" ).checkInvalidOrEmptyFields( form, null, true );
+
+if( errMsg != "" ){
+
+form.notification.alert( errMsg, form.misc.il8n.getValue( "dhl _DataControl" ) );
+form.ui.setEnabled( "{capsuleName}", true );
+}
+else {
+ACS SCE SN aaa
+// Success-Callback
+var onSaveSuccess = function onSaveSuccess () {
+AS SUG ESCA SKE eR 1 0 Sd
+form.misc.workflow.submit ();
+
+di
+
+// Error-Callback
+var onSaveFailure = function onSaveFailure( errorCode, errorMessage) {
+if( errorCode == -3) {
+// There is a conflict with the db. You need to merge instead of alert.
+form.notification.alert( "Unable to save the context since another user has saved the same
+instance in between.", "Save Failed" );
+
+} else {
+
+form.notification.alert( "Unable to save the context: " + errorMessage, "Save Failed" );
+}
+form.ui.setEnabled( "{capsuleName}", true );
+
+di
+
+form.instance.save( onSaveSuccess, onSaveFailure );
+
+Thema - Urlaubsantrag Step by Step
+49/81 d.velop
