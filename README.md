@@ -35,8 +35,6 @@ DMS uses a number of open source projects to work properly:
 
 ### Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
 Install and start the server with:
 
 ```sh
