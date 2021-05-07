@@ -1,0 +1,33 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+@mixin font-face($name, $font-file, $weight: false, $style: false, $unicode-range: false, $local: false) {
+
+  @font-face {
+    font-family: quote($name);
+    $font-file:
+    url($font-path-default + '#{$font-file}.eot?#iefix') format('embedded-opentype'),
+    url($font-path-default + '#{$font-file}.woff') format('woff'),
+    url($font-path-default + '#{$font-file}.ttf') format('truetype'),
+    url($font-path-default + '#{$font-file}.svg##{$font-file}') format('svg');
+
+    @if $local {
+      src: local(quote($local)), $font-file;
+    } @else {
+      src: $font-file;
+    }
+    @if $unicode-range {
+      unicode-range: $unicode-range;
+    }
+    @if $weight {
+      font-weight: $weight;
+    }
+    @if $style {
+      font-style: $style;
+    }
+  }
+}

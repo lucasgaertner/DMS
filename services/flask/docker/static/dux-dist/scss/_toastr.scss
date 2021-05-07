@@ -1,0 +1,179 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+//Positions and Sizes
+
+$middle-offset: 33%;
+
+.toast-bottom-full-width {
+  @include fixed(bottom fill-h);
+  z-index: $zindex-modal;
+ }
+
+.toast-top-full-width {
+  @include fixed(top fill-h);
+  z-index: $zindex-modal;
+}
+
+.toast-top-center {
+  @include fixed(top $line-height-computed fill-h);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: $zindex-modal;
+}
+
+.toast-bottom-center {
+  @include fixed(bottom $line-height-computed fill-h);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: $zindex-modal;
+}
+
+.toast-top-left {
+  @include fixed(top $line-height-computed left $line-height-computed);
+  z-index: $zindex-modal;
+}
+
+.toast-top-right {
+  @include fixed(top $line-height-computed right $line-height-computed);
+  z-index: $zindex-modal;
+}
+
+.toast-bottom-right {
+  @include fixed(bottom $line-height-computed right $line-height-computed);
+  z-index: $zindex-modal;
+}
+
+.toast-bottom-left {
+  @include fixed(bottom $line-height-computed left $line-height-computed);
+  z-index: $zindex-modal;
+}
+
+.toast-middle-left {
+  @include fixed(top $middle-offset left $line-height-computed);
+  z-index: $zindex-modal;
+}
+
+.toast-middle-center {
+  @include fixed(top $middle-offset fill-h);
+  margin: auto;
+  z-index: $zindex-modal;
+}
+
+.toast-middle-right {
+  @include fixed(top $middle-offset right $line-height-computed);
+  z-index: $zindex-modal;
+}
+.toast-middle-full-width {
+  @include fixed(top $middle-offset fill-h);
+  z-index: $zindex-modal;
+}
+
+// General
+.toast {
+  //@include box-shadow(0 5px 15px rgba(0, 0, 0, .5));
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  color: inherit;
+  margin-bottom: $line-height-computed;
+  padding: $alert-padding;
+  padding-right: ($alert-padding + 20);
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:before {
+    float: left;
+    font-family: $font-family-fa;
+    font-size: $font-size-h4;
+    line-height: $line-height-computed;
+  }
+
+  &-title {
+    font-weight: 600;
+    padding-left: $padding-large-horizontal * 2;
+  }
+
+  &-message {
+    @include word-wrap;
+    background: inherit;
+    padding-left: $padding-large-horizontal * 2;
+
+    a,
+    label {
+      color: inherit;
+    }
+  }
+
+  // Boxes, Icons & Colors
+  &-success {
+    @include toastr-variant($alert-success-bg, $alert-success-border, $alert-success-text, $fa-var-check-circle);
+  }
+
+  &-error {
+    @include toastr-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text, $fa-var-bolt);
+  }
+
+  &-info {
+    @include toastr-variant($alert-info-bg, $alert-info-border, $alert-info-text);
+  }
+
+  &-warning {
+    @include toastr-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text, $fa-var-exclamation-triangle);
+  }
+}
+
+.toast-close-button {
+  @include opacity(.2);
+  color: $close-color;
+  float: right;
+  font-size: ($font-size-base * 1.5);
+  font-weight: $close-font-weight;
+  line-height: 1;
+  position: relative;
+  right: -21px;
+  text-shadow: $close-text-shadow;
+  top: -2px;
+
+  &:hover,
+  &:focus {
+    @include opacity(.5);
+    color: $close-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+button {
+  &.toast-close-button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+// Responsive behavior
+#toast-container:not([class$="-full-width"]) {
+  width: $modal-sm;
+}
+
+@media (min-width: $screen-sm-min) {
+  #toast-container:not([class$="-full-width"]) {
+    width: $modal-md;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  #toast-container:not([class$="-full-width"]) {
+    width: $modal-lg;
+  }
+}

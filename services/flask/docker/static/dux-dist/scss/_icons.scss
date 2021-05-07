@@ -1,0 +1,312 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+// Icons
+//
+// These icons are a part of the d.velop icon font. Feel free to use them.
+// <p class="text-danger"><i class="dv dv-warning dv-fw text-warning"></i>The <strong>dark</strong> color of PNGs was set to deprecated and will be removed in next the major release. Please use <strong>gray</strong> instead.</p>
+// <a class="btn btn-default" href="../images/dux_v1.0.0_PNGs.zip"><i class="dv dv-download dv-fw"></i>Download PNGs</a>
+//
+// Tags: Fonts, Icons, Navigation, Glyphs
+//
+// Alert: If you are in need of further shapes, do not hesitate to contact us.
+//
+// <h3 class="sg-subtitle">Example</h3><pre class="prettyprint"><code class="html"><span class="tag">&lt;i</span> class="dv [modifier] dv-lg"><span class="tag">&lt;/i&gt;</span></code></pre>
+//
+//<div class="row sg-icons"><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-addfav dv-2x"></i><div class="center">addfav</div><div class="label label-default">.dv-addfav</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-attached dv-2x"></i><div class="center">attached</div><div class="label label-default">.dv-attached</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-avatar dv-2x"></i><div class="center">avatar</div><div class="label label-default">.dv-avatar</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-bolt dv-2x"></i><div class="center">bolt</div><div class="label label-default">.dv-bolt</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-camera dv-2x"></i><div class="center">camera</div><div class="label label-default">.dv-camera</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-cancel dv-2x"></i><div class="center">cancel</div><div class="label label-default">.dv-cancel</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-close dv-2x"></i><div class="center">close</div><div class="label label-default">.dv-close</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-connected dv-2x"></i><div class="center">connected</div><div class="label label-default">.dv-connected</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-content dv-2x"></i><div class="center">content</div><div class="label label-default">.dv-content</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-date dv-2x"></i><div class="center">date</div><div class="label label-default">.dv-date</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-decrypt dv-2x"></i><div class="center">decrypt</div><div class="label label-default">.dv-decrypt</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-delete dv-2x"></i><div class="center">delete</div><div class="label label-default">.dv-delete</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-desktop dv-2x"></i><div class="center">desktop</div><div class="label label-default">.dv-desktop</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-disconnected dv-2x"></i><div class="center">disconnected</div><div class="label label-default">.dv-disconnected</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-doctypesmall dv-2x"></i><div class="center">doctypesmall</div><div class="label label-default">.dv-doctypesmall</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-dossier dv-2x"></i><div class="center">dossier</div><div class="label label-default">.dv-dossier</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-dossiersmall dv-2x"></i><div class="center">dossiersmall</div><div class="label label-default">.dv-dossiersmall</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-download dv-2x"></i><div class="center">download</div><div class="label label-default">.dv-download</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-edit dv-2x"></i><div class="center">edit</div><div class="label label-default">.dv-edit</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-error dv-2x"></i><div class="center">error</div><div class="label label-default">.dv-error</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-first dv-2x"></i><div class="center">first</div><div class="label label-default">.dv-first</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-fullscreen dv-2x"></i><div class="center">fullscreen</div><div class="label label-default">.dv-fullscreen</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-graduate dv-2x"></i><div class="center">graduate</div><div class="label label-default">.dv-graduate</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-guard dv-2x"></i><div class="center">guard</div><div class="label label-default">.dv-guard</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-halfscreen dv-2x"></i><div class="center">halfscreen</div><div class="label label-default">.dv-halfscreen</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-height dv-2x"></i><div class="center">height</div><div class="label label-default">.dv-height</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-help dv-2x"></i><div class="center">help</div><div class="label label-default">.dv-help</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-house dv-2x"></i><div class="center">house</div><div class="label label-default">.dv-house</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-ie dv-2x"></i><div class="center">ie</div><div class="label label-default">.dv-ie</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-image dv-2x"></i><div class="center">image</div><div class="label label-default">.dv-image</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-import dv-2x"></i><div class="center">import</div><div class="label label-default">.dv-import</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-infocircle dv-2x"></i><div class="center">infocircle</div><div class="label label-default">.dv-infocircle</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-last dv-2x"></i><div class="center">last</div><div class="label label-default">.dv-last</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-link dv-2x"></i><div class="center">link</div><div class="label label-default">.dv-link</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-mapping dv-2x"></i><div class="center">mapping</div><div class="label label-default">.dv-mapping</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-menue dv-2x"></i><div class="center">menue</div><div class="label label-default">.dv-menue</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-message dv-2x"></i><div class="center">message</div><div class="label label-default">.dv-message</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-money dv-2x"></i><div class="center">money</div><div class="label label-default">.dv-money</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-multidoctype dv-2x"></i><div class="center">multidoctype</div><div class="label label-default">.dv-multidoctype</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-multidossier dv-2x"></i><div class="center">multidossier</div><div class="label label-default">.dv-multidossier</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-next dv-2x"></i><div class="center">next</div><div class="label label-default">.dv-next</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-notallowed dv-2x"></i><div class="center">notallowed</div><div class="label label-default">.dv-notallowed</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-number dv-2x"></i><div class="center">number</div><div class="label label-default">.dv-number</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-openwith dv-2x"></i><div class="center">openwith</div><div class="label label-default">.dv-openwith</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-page dv-2x"></i><div class="center">page</div><div class="label label-default">.dv-page</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-pdf dv-2x"></i><div class="center">pdf</div><div class="label label-default">.dv-pdf</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-pptx dv-2x"></i><div class="center">pptx</div><div class="label label-default">.dv-pptx</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-previous dv-2x"></i><div class="center">previous</div><div class="label label-default">.dv-previous</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-processportal dv-2x"></i><div class="center">processportal</div><div class="label label-default">.dv-processportal</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-read dv-2x"></i><div class="center">read</div><div class="label label-default">.dv-read</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-refresh dv-2x"></i><div class="center">refresh</div><div class="label label-default">.dv-refresh</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-removefav dv-2x"></i><div class="center">removefav</div><div class="label label-default">.dv-removefav</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-restore dv-2x"></i><div class="center">restore</div><div class="label label-default">.dv-restore</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-save dv-2x"></i><div class="center">save</div><div class="label label-default">.dv-save</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-search dv-2x"></i><div class="center">search</div><div class="label label-default">.dv-search</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-selfsign dv-2x"></i><div class="center">selfsign</div><div class="label label-default">.dv-selfsign</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-server dv-2x"></i><div class="center">server</div><div class="label label-default">.dv-server</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-settings dv-2x"></i><div class="center">settings</div><div class="label label-default">.dv-settings</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-share dv-2x"></i><div class="center">share</div><div class="label label-default">.dv-share</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sign dv-2x"></i><div class="center">sign</div><div class="label label-default">.dv-sign</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sortasc dv-2x"></i><div class="center">sortasc</div><div class="label label-default">.dv-sortasc</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sortdesc dv-2x"></i><div class="center">sortdesc</div><div class="label label-default">.dv-sortdesc</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-stretch dv-2x"></i><div class="center">stretch</div><div class="label label-default">.dv-stretch</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-success dv-2x"></i><div class="center">success</div><div class="label label-default">.dv-success</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sync dv-2x"></i><div class="center">sync</div><div class="label label-default">.dv-sync</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-task dv-2x"></i><div class="center">task</div><div class="label label-default">.dv-task</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-thumbsoff dv-2x"></i><div class="center">thumbsoff</div><div class="label label-default">.dv-thumbsoff</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-thumbson dv-2x"></i><div class="center">thumbson</div><div class="label label-default">.dv-thumbson</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-tiff dv-2x"></i><div class="center">tiff</div><div class="label label-default">.dv-tiff</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-txt dv-2x"></i><div class="center">txt</div><div class="label label-default">.dv-txt</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-unknown dv-2x"></i><div class="center">unknown</div><div class="label label-default">.dv-unknown</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-wait dv-2x"></i><div class="center">wait</div><div class="label label-default">.dv-wait</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-warning dv-2x"></i><div class="center">warning</div><div class="label label-default">.dv-warning</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-width dv-2x"></i><div class="center">width</div><div class="label label-default">.dv-width</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-word dv-2x"></i><div class="center">word</div><div class="label label-default">.dv-word</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-workflow dv-2x"></i><div class="center">workflow</div><div class="label label-default">.dv-workflow</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-xlsx dv-2x"></i><div class="center">xlsx</div><div class="label label-default">.dv-xlsx</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-zip dv-2x"></i><div class="center">zip</div><div class="label label-default">.dv-zip</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-zoomin dv-2x"></i><div class="center">zoomin</div><div class="label label-default">.dv-zoomin</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-zoomout dv-2x"></i><div class="center">zoomout</div><div class="label label-default">.dv-zoomout</div></div></div>
+//
+// Style guide: components.icons
+
+// Larger Icons
+//
+// You can display all the icons in different sizes.
+//
+// .dv-lg - To increase icon sizes relative to their container, use the fa-lg (33% increase)
+// .dv-2x - To increase icon sizes 2x
+// .dv-3x - To increase icon sizes 3x
+// .dv-4x - To increase icon sizes 4x
+// .dv-5x - To increase icon sizes 5x
+//
+// Markup: <i class="dv dv-camera {{modifier_class}}"></i>
+//
+// Style guide: components.icons.larger
+
+// Animated Icons
+//
+// Use the `.dv-spin` class to get any icon to rotate. Works well with `.dv-wait`, `.dv-refresh`, or `.dv-settings`.
+//
+// .dv-spin - Spinning icon
+//
+// Markup:
+// <i class="dv dv-wait dv-2x {{modifier_class}}"></i>
+// <i class="dv dv-image dv-2x {{modifier_class}}"></i>
+// <i class="dv dv-settings dv-2x {{modifier_class}}"></i>
+// <i class="dv dv-refresh dv-2x {{modifier_class}}"></i>
+//
+// Style guide: components.icons.animated
+
+// Rotated & Flipped
+//
+// To arbitrarily rotate and flip icons, use the `dv-rotate-*` and `dv-flip-*` classes.
+//
+// .dv-rotate-90 - Rotate 90
+// .dv-rotate-180 - Rotate 180
+// .dv-rotate-270 - Rotate 270
+// .dv-flip-horizontal - Flip horizontal
+// .dv-flip-vertical - Flip vertical
+//
+// Markup:
+// <i class="dv dv-number dv-2x {{modifier_class}}"></i>
+//
+// Style guide: components.icons.rotated-flipped
+
+// Fixed Width Icons
+//
+// Use `dv-fw` to set icons at a fixed width
+//
+// .dv-fw - To increase icon sizes relative to their container, use the fa-lg (33% increase)
+//
+// Markup:
+//<ul class="list-group">
+//  <a class="list-group-item active" href="#"><i class="dv dv-delete dv-fw"></i> Delete</a>
+//  <a class="list-group-item" href="#"><i class="dv dv-camera dv-fw"></i> Picture</a>
+//  <a class="list-group-item" href="#"><i class="dv dv-openwith dv-fw"></i> Share</a>
+//  <a class="list-group-item" href="#"><i class="dv dv-settings dv-fw"></i> Settings</a>
+//</ul>
+//
+// Style guide: components.icons.fixed
+
+@font-face {
+  font-family: 'DvelopIconFont';
+  src: url('#{$font-path-default}DvelopIcons/DvelopIconFont.eot');
+  src: url('#{$font-path-default}DvelopIcons/DvelopIconFont.eot?#iefix') format('eot'),
+  url('#{$font-path-default}DvelopIcons/DvelopIconFont.woff') format('woff'),
+  url('#{$font-path-default}DvelopIcons/DvelopIconFont.ttf') format('truetype'),
+  url('#{$font-path-default}DvelopIcons/DvelopIconFont.svg#DvelopIconFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+%icon-base-styles {
+  display: inline-block;
+  font: normal normal normal #{$font-size-base}/1 DvelopIconFont; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-transform: none;
+  line-height: 1;
+  //text-decoration: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+}
+
+$dv-map : (
+addfav: "\EA01",
+ attached: "\EA02",
+ avatar: "\EA03",
+ bolt: "\EA04",
+ camera: "\EA05",
+ cancel: "\EA06",
+ close: "\EA07",
+ connected: "\EA08",
+ content: "\EA09",
+ date: "\EA0A",
+ decrypt: "\EA0B",
+ delete: "\EA0C",
+ desktop: "\EA0D",
+ disconnected: "\EA0E",
+ doctypesmall: "\EA0F",
+ dossier: "\EA10",
+ dossiersmall: "\EA11",
+ download: "\EA12",
+ edit: "\EA13",
+ error: "\EA14",
+ first: "\EA15",
+ fullscreen: "\EA16",
+ graduate: "\EA17",
+ guard: "\EA18",
+ halfscreen: "\EA19",
+ height: "\EA1A",
+ help: "\EA1B",
+ house: "\EA1C",
+ ie: "\EA1D",
+ image: "\EA1E",
+ import: "\EA1F",
+ infocircle: "\EA20",
+ last: "\EA21",
+ link: "\EA22",
+ mapping: "\EA23",
+ menue: "\EA24",
+ message: "\EA25",
+ money: "\EA26",
+ multidoctype: "\EA27",
+ multidossier: "\EA28",
+ next: "\EA29",
+ notallowed: "\EA2A",
+ number: "\EA2B",
+ openwith: "\EA2C",
+ page: "\EA2D",
+ pdf: "\EA2E",
+ pptx: "\EA2F",
+ previous: "\EA30",
+ processportal: "\EA31",
+ read: "\EA32",
+ refresh: "\EA33",
+ removefav: "\EA34",
+ restore: "\EA35",
+ save: "\EA36",
+ search: "\EA37",
+ selfsign: "\EA38",
+ server: "\EA39",
+ settings: "\EA3A",
+ share: "\EA3B",
+ sign: "\EA3C",
+ sortasc: "\EA3D",
+ sortdesc: "\EA3E",
+ stretch: "\EA3F",
+ success: "\EA40",
+ sync: "\EA41",
+ task: "\EA42",
+ thumbsoff: "\EA43",
+ thumbson: "\EA44",
+ tiff: "\EA45",
+ txt: "\EA46",
+ unknown: "\EA47",
+ wait: "\EA48",
+ warning: "\EA49",
+ width: "\EA4A",
+ word: "\EA4B",
+ workflow: "\EA4C",
+ xlsx: "\EA4D",
+ zip: "\EA4E",
+ zoomin: "\EA4F",
+ zoomout: "\EA50" );
+
+.dv {
+  @extend %icon-base-styles;
+}
+
+.dv-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+
+.dv-fw {
+  text-align: center;
+  width: (18em / 14);
+}
+
+@for $size from 2 through 5 {
+  .dv-#{$size}x {
+    font-size: #{$size}em;
+  }
+}
+
+@each $name, $icon in $dv-map {
+  .dv-#{$name} {
+    &:before {
+      content: $icon;
+    }
+  }
+}
+
+// Rotated & Flipped Icons
+// -------------------------
+
+.dv-rotate-90  {
+  @include dv-icon-rotate(90deg, 1);
+}
+
+.dv-rotate-180 {
+  @include dv-icon-rotate(180deg, 2);
+ }
+
+.dv-rotate-270 {
+  @include dv-icon-rotate(270deg, 3);
+ }
+
+.dv-flip-horizontal {
+  @include dv-icon-flip(-1, 1, 0);
+ }
+
+.dv-flip-vertical {
+  @include dv-icon-flip(1, -1, 2);
+ }
+
+// Hook for IE8-9
+// -------------------------
+
+:root .dv-rotate-90,
+:root .dv-rotate-180,
+:root .dv-rotate-270,
+:root .dv-flip-horizontal,
+:root .dv-flip-vertical {
+  filter: none;
+}
+
+
+// Spinning & Pulsing Icons
+// -------------------------
+
+.dv-spin {
+  -webkit-animation: dv-spin 2s infinite linear;
+  animation: dv-spin 2s infinite linear;
+}
+
+.dv-pulse {
+  -webkit-animation: dv-spin 1s infinite steps(8);
+  animation: dv-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes dv-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+
+}
+
+@keyframes dv-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+   }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+// List Icons
+// -------------------------
+
+.dv-ul {
+  padding-left: 0;
+  margin-left: $dv-li-width;
+  list-style-type: none;
+
+  > li { position: relative; }
+}
+
+.dv-li {
+  position: absolute;
+  left: -$dv-li-width;
+  width: $dv-li-width;
+  top: (2em / 14);
+  text-align: center;
+
+  &.dv-lg {
+    left: -$dv-li-width + (4em / 14);
+  }
+}

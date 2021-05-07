@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="public/styleguide.css" type="text/css" />
+    <link rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="../css/dux.min.css">
+
+</head>
+<body id="styleguide" data-target="#navbar-sub">
+<noscript>
+You're using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+</noscript>
+<div class="modal" role="dialog" aria-labelledby="about" tabindex="-1" id="modal-about">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">About</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h3><span class="text-uppercase">dux</span> v1.0.0</h3>
+                            <p>The most valuable front-end framework around the d.velop group for developing web-based projects.</p>
+                            <p class="text-muted">Copyright d.velop AG. All rights reserved.</p>
+                        </div>
+                        <div class="col-xs-5">
+                            <address>
+                                <strong>d.velop AG</strong><br>
+                                Schildarpstraße 6-8<br>
+                                48712 Gescher<br>
+                                Germany<br>
+                            </address>
+                            <address>
+                                <span class="text-muted">Phone:</span> +49 2542 93070
+                            </address>
+                            <address>
+                                <span class="text-muted">Email:</span> info@d-velop.de
+                            </address>
+                            <address>
+                                <span class="text-muted">Web:</span> <a href="http://www.d-velop.de" target="_blank">http://www.d-velop.de</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><span class="text-uppercase">dux</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav" data-kss-ref="javascript">
+                    <li><a href="section-css.html"><strong>CSS</strong></a></li>
+                    <li><a href="section-components.html"><strong>Components</strong></a></li>
+                    <li><a href="section-javascript.html"><strong>Javascript</strong></a></li>
+                    <li><a href="section-helpers.html"><strong>Helpers</strong></a></li>
+                </ul>
+                <form action="section-search.html" class="navbar-form navbar-left" role="search">
+                    <div class="input-group">
+                        <input id="tipue_search_input" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="toastrTry"><strong>Toast it!</strong></a></li>
+                    <li><a href="section-changes.html"><strong>What's new</strong></a></li>
+                    <li><a href="" data-toggle="modal" data-target="#modal-about"><strong>About</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                <header class="page-header bg-primary container-fluid">
+                    <div class="container bg-primary">
+                    <h1>Javascript</h1>
+                        <p>Bring dux components to life.</p>
+
+                    </div>
+                </header>
+    <article class="container sg-container">
+        <div class="row">
+            <nav class="hidden-xs fixed-top" id="navbar-sub">
+                        <ul class="nav nav-pills nav-stacked" data-kss-ref="javascript">
+                                            <li><a href="#sg-javascript-noscript"><strong>No Script</strong></a></li>
+                                            <li><a href="#sg-javascript-modals"><strong>Modals</strong></a></li>
+                                            <!--3.2.1.-->
+                                            <li><a href="#sg-javascript-modals-basic">Basic modal</a></li>
+                                            <!--3.2.2.-->
+                                            <li><a href="#sg-javascript-modals-sizes">Optional sizes</a></li>
+                                            <!--3.2.3.-->
+                                            <li><a href="#sg-javascript-modals-individual-usage">Individual usage</a></li>
+                                            <!--3.2.4.-->
+                                            <li><a href="#sg-javascript-modals-events">Events</a></li>
+                                            <li><a href="#sg-javascript-tabs"><strong>Tabs</strong></a></li>
+                                            <!--3.3.1.-->
+                                            <li><a href="#sg-javascript-tabs-individual-usage">Individual usage</a></li>
+                                            <li><a href="#sg-javascript-tooltip"><strong>Tooltip</strong></a></li>
+                        </ul>
+            </nav>
+            <section class="col-sm-9 col-sm-offset-3">
+                        <span class="sg-anchor" id="sg-javascript-noscript"></span>
+                        <h2>No Script</h2>
+                            <p><span class="label label-primary">Messages</span>&nbsp;<span class="label label-primary">Javascript</span>&nbsp;<span class="label label-primary">noscript</span>&nbsp;<span class="label label-primary">Helpers</span></p>
+                            <div class="alert alert-info" role="alert"><ul class="fa-ul"><li><i class="fa fa-info-circle fa-li fa-lg"></i>Disable your javascript temporarily and reload the page to get the message. Re-enable and reload to get rid of it.</li></ul></div>
+                            <p>Please use <code>&lt;noscript&gt;</code> and a short text to make the user aware about javascript is disabled.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;noscript&gt;
+You&#x27;re using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+&lt;/noscript&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <noscript>
+You're using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+</noscript>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-javascript-modals"></span>
+                        <h2>Modals</h2>
+                            <p><span class="label label-primary">Forms</span>&nbsp;<span class="label label-primary">Lightbox</span>&nbsp;<span class="label label-primary">Dialogs</span>&nbsp;<span class="label label-primary">Documents</span>&nbsp;<span class="label label-primary">PopUp</span>&nbsp;<span class="label label-primary">Modals</span></p>
+                            <p>A lightweight multi-purpose JavaScript popup that is customizable and responsive. It can be used  to display e. g. terms and conditions as a part of a sign-up process, as a wizard-like form or just to show extra information in front of your content.</p>
+
+                        <span class="sg-anchor" id="sg-javascript-modals-basic"></span>
+                        <h3>Basic modal</h3>
+                            <div class="alert alert-success" role="alert"><ul class="fa-ul"><li><i class="fa fa-check-circle fa-li fa-lg"></i>Please keep in mind, that the link element has two custom data attributes: data-toggle and data-target. The toggle tells us what to do and the target tells us which element to display.</li></ul></div>
+                            <p>A rendered modal with header, body, and set of actions in the footer.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html"> &lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot; data-toggle=&quot;modal&quot; data-target=&quot;#basicModal&quot;&gt;Basic Modal&lt;/a&gt;
+ &lt;div class=&quot;modal&quot; id=&quot;basicModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myBasicModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+   &lt;div class=&quot;modal-dialog&quot;&gt;
+     &lt;div class=&quot;modal-content&quot;&gt;
+       &lt;div class=&quot;modal-header&quot;&gt;
+       &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
+       &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;modal-body&quot;&gt;
+       Modal body
+       &lt;/div&gt;
+       &lt;div class=&quot;modal-footer&quot;&gt;
+       &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+       &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                             <a href="#" class="btn btn-success" data-toggle="modal" data-target="#basicModal">Basic Modal</a>
+ <div class="modal" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+       </div>
+       <div class="modal-body">
+       Modal body
+       </div>
+       <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary">Save changes</button>
+       </div>
+     </div>
+   </div>
+ </div>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-javascript-modals-sizes"></span>
+                        <h3>Optional sizes</h3>
+                            <p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html"> &lt;!-- Large modal --&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; data-toggle=&quot;modal&quot; data-target=&quot;#dv-example-modal-lg&quot;&gt;Large modal&lt;/button&gt;
+ &lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; id=&quot;dv-example-modal-lg&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot;&gt;
+   &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+     &lt;div class=&quot;modal-content&quot;&gt;
+       &lt;div class=&quot;modal-header&quot;&gt;
+         &lt;button typ e=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;&lt;/button&gt;
+         &lt;h4 class=&quot;modal-title&quot; id=&quot;myLargeModalLabel&quot;&gt;Large modal&lt;/h4&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;modal-body&quot;&gt;
+       ...
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;!-- Small modal --&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; data-toggle=&quot;modal&quot; data-target=&quot;#dv-example-modal-sm&quot;&gt;Small modal&lt;/button&gt;
+ &lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; id=&quot;dv-example-modal-sm&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot;&gt;
+ &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+     &lt;div class=&quot;modal-content&quot;&gt;
+       &lt;div class=&quot;modal-header&quot;&gt;
+         &lt;button typ e=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;&lt;/button&gt;
+         &lt;h4 class=&quot;modal-title&quot; id=&quot;myLargeModalLabel&quot;&gt;Small modal&lt;/h4&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;modal-body&quot;&gt;
+       ...
+       &lt;/div&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                             <!-- Large modal -->
+ <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dv-example-modal-lg">Large modal</button>
+ <div class="modal" tabindex="-1" id="dv-example-modal-lg" role="dialog" aria-labelledby="myLargeModalLabel">
+   <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button typ e="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+         <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+       </div>
+       <div class="modal-body">
+       ...
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Small modal -->
+ <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dv-example-modal-sm">Small modal</button>
+ <div class="modal" tabindex="-1" id="dv-example-modal-sm" role="dialog" aria-labelledby="mySmallModalLabel">
+ <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button typ e="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+         <h4 class="modal-title" id="myLargeModalLabel">Small modal</h4>
+       </div>
+       <div class="modal-body">
+       ...
+       </div>
+     </div>
+ </div>
+ </div>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-javascript-modals-individual-usage"></span>
+                        <h3>Individual usage</h3>
+                            <p>The modal is a jQuery plugin, so if you want to control the modal using jQuery, then you need to call the .modal() function on the modal’s selector.</p>
+<p><pre class="prettyprint"><code class="html">$(&#39;#basicModal&#39;).modal(options);</code></pre></p>
+<p><p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=&quot;&quot;</code>.</p></p>
+<div class="table-responsive">
+<table class="table table-bordered table-striped js-options-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>backdrop</td>
+<td>boolean or the string <code>&#39;static&#39;</code></td>
+<td>true</td>
+<td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn&#39;t close the modal on click.</td>
+       </tr>
+       <tr>
+         <td>keyboard</td>
+         <td>boolean</td>
+         <td>true</td>
+         <td>Closes the modal when escape key is pressed</td>
+       </tr>
+       <tr>
+         <td>show</td>
+         <td>boolean</td>
+         <td>true</td>
+         <td>Shows the modal when initialized.</td>
+       </tr>
+      </tbody>
+    </table>
+  </div>
+                        <span class="sg-anchor" id="sg-javascript-modals-events"></span>
+                        <h3>Events</h3>
+                            <p>You can further customize the normal behaviour of the modals by using various events that are triggered while opening and closing the modal. These events have to be bound using jQuery’s <code>.on()</code> method.</p>
+<p><div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+       <tr>
+         <th>Event Type</th>
+         <th>Description</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>show.bs.modal</td>
+         <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+       </tr>
+       <tr>
+         <td>shown.bs.modal</td>
+         <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+       </tr>
+       <tr>
+         <td>hide.bs.modal</td>
+         <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+       </tr>
+       <tr>
+         <td>hidden.bs.modal</td>
+         <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+       </tr>
+       <tr>
+         <td>loaded.bs.modal</td>
+         <td>This event is fired when the modal has loaded content using the <code>remote</code> option.</td>
+       </tr>
+      </tbody>
+    </table>
+  </div>
+ <pre class="prettyprint"><code class="html">$(&#39;#myModal&#39;).on(&#39;hidden.bs.modal&#39;, function (e) {
+   do something...
+ })</code></pre></p>
+
+                        <span class="sg-anchor" id="sg-javascript-tabs"></span>
+                        <h2>Tabs</h2>
+                            <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+<pre class="prettyprint"><code class="html">$('#myTab a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})</code></pre>
+                        <span class="sg-anchor" id="sg-javascript-tabs-individual-usage"></span>
+                        <h3>Individual usage</h3>
+                            <p>You can activate individual tabs in several ways:</p>
+<pre class="prettyprint"><code class="html">$('#myTab a[href="#profile"]').tab('show') // Select tab by name
+$('#myTab a:first').tab('show') // Select first tab
+$('#myTab a:last').tab('show') // Select last tab
+$('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)</code></pre>
+                        <span class="sg-anchor" id="sg-javascript-tooltip"></span>
+                        <h2>Tooltip</h2>
+                            <p>Tooltips don&#39;t rely on images, we use CSS3 for animations, and data-attributes for local title storage.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip: left&quot;&gt;left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip: top&quot;&gt;top&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip: bottom&quot;&gt;bottom&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default tip&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip: right&quot;&gt;right&lt;/button&gt;
+&lt;script&gt;window.onload = function() { jQuery(document).ready(function() { jQuery(&#x27;.tip&#x27;).tooltip(); }); }&lt;/script&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="left" title="Tooltip: left">left</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="top" title="Tooltip: top">top</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="bottom" title="Tooltip: bottom">bottom</button>
+<button type="button" class="btn btn-default tip" data-toggle="tooltip" data-placement="right" title="Tooltip: right">right</button>
+<script>window.onload = function() { jQuery(document).ready(function() { jQuery('.tip').tooltip(); }); }</script>
+                                        </div>
+                                    </div>
+            </section>
+        </div>
+    </article>
+    <footer class="sg-footer">
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="text-muted"><span class="text-uppercase">dux</span> v1.0.0</p>
+            </div>
+            <div class="col-xs-6">
+                <p class="pull-right"><a href="http://www.d-velop.com/" target="_blank">d.velop AG</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#0" class="sg-top">Top</a>
+    <script src="public/prettify.js"></script>
+    <script>
+    prettyPrint();
+    </script>
+    <script src="../js/dux.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="public/sg-top.min.js"></script>
+    <script src="public/toastertry.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/tipuesearch_set.js"></script>
+    <script src="public/tipuesearch.min.js"></script>
+</body>
+</html>

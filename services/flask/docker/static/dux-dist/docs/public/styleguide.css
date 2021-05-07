@@ -1,0 +1,112 @@
+#styleguide .sg-container {
+    padding-bottom: 60px;
+}
+
+#styleguide ul.sg-modifier {
+    padding: 0;
+}
+
+#styleguide .sg-modifier > li:nth-child(n) {
+    padding: 5px 0;
+    list-style: none;
+}
+
+#styleguide .sg-subtitle {
+    padding-left: 6px;
+    border-left: 3px solid #c2003f;
+    line-height: 14px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+#styleguide .sg-anchor {
+    display: block;
+    height: 60px; /*same height as padding of sg-container-sticky*/
+    margin-top: -60px; /*same height as padding of sg-container-sticky*/
+    visibility: hidden;
+}
+
+#styleguide .sg-icons > [class*="col-"] {
+    margin-bottom:2%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#styleguide .sg-icons > [class*="col-"]:hover {
+    color: #c2003f;
+    cursor: pointer;
+}
+
+#styleguide p[class^="bg-"] {
+    padding: 10px;
+}
+
+#styleguide .sg-footer {
+    background: #f8f8f8;
+    position: fixed;
+    bottom: 0;
+    z-index: 1030;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    border-top: 1px solid #e7e7e7;
+}
+
+#styleguide .fixed-top {
+    position: absolute;
+    top: 160px;
+}
+
+#styleguide .sg-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 65px;
+    right: 15px;
+    border-radius: 4px;
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: #333333 url(../public/sg-top-arrow.svg) no-repeat center 50%;;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+#styleguide .sg-top.sg-is-visible, .sg-top.sg-fade-out, .no-touch .sg-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+#styleguide .sg-top.sg-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+#styleguide .sg-top.sg-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+}
+#styleguide .no-touch .sg-top:hover {
+    background-color: #eeeeee;
+    opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+    #styleguide .sg-top {
+        right: 15px;
+        bottom: 65px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #styleguide .sg-top {
+        height: 60px;
+        width: 60px;
+        right: 15px;
+        bottom: 65px;
+    }
+}

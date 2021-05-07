@@ -1,0 +1,266 @@
+.resource-header{
+  margin-top: 1%;
+}
+header span{
+  margin-left: 5%;
+}
+header{
+  position: relative;
+  float: left;
+  width: 100%;
+  z-index: 5;
+}
+
+#UserInput{
+  width: 80%;
+  float: left;
+}
+
+.sortBtn{
+  margin-left: 10px;
+}
+
+#upload{
+  float: right;
+  margin-right: 200px;
+  background: #9CF6FB;
+}
+
+#back{
+  float: right;
+  margin-right: 200px;
+  background: #E1FCFD;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  z-index: 2;
+}
+.viewer{
+  position: relative;
+  height: 25%;
+  width: 100%;
+  z-index: 1;
+}
+
+.btn-info{
+  padding: 15pt;
+  z-index: 0;
+  border-radius: 52px;
+}
+
+#tip-success,#tip-danger,#tip-info{
+  display: none;
+  height: 75px;
+  border-radius: 11px;
+  padding: 5px;
+  position: absolute;
+  left: 36%;
+  top: 5%;
+  padding-top: 25px; 
+}
+
+/* d3one view  */
+.resultframe{
+  position: relative;
+  /* float: left; */
+  width: 90%;
+  height: 78%;
+  margin-left: 5%;
+  color: #777;
+  z-index: 1;
+}
+
+.elementItems{
+  width: 100%;
+}
+
+.element{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 125px;
+    margin-bottom: 0;
+    min-height: 34px;
+    max-height: 125px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1pt solid #ddd;
+    cursor: pointer;
+}
+
+.element:hover{
+  background-color: #f5f5f5;
+}
+
+.elementIconBox{
+  height: 100%;
+  float: left;
+  padding: 5pt;
+  margin-right: 5pt;
+}
+.elementIcon{
+  height: 50px;
+  width: 50px;
+}
+.elementContentPrimary, .elementContentSecondary, .elementContentTertiary{
+  display: block;
+  width: 30%;
+  padding-top: 15pt;
+  float: left;
+}
+
+section>ul>li{
+  list-style-type: none; /* Remove bullets */
+}
+
+section ul li{
+  font-size: 14px;
+}
+
+.lieferant{
+  position: relative;
+  top: 18px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding-top: 15pt;
+}
+
+
+.first{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.old{
+  position: relative;
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.new{
+  position: relative;
+  height: 100%;
+  width: 50%;
+  float: left;
+  -webkit-transition: opacity 0.15s linear;
+  transition: width 0.15s linear;
+}
+
+
+
+
+
+
+/* ENDE d3one view  */
+  .form-group{
+    position: relative;
+    float: left;
+    width: 60%;
+    left: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 5;
+  }
+
+  #sort{
+    float: right;
+  }
+
+
+  /* Responsive Outlook View */
+  @media only screen and (max-width: 1200px) {
+    #hidden{
+      visibility:hidden;
+      display: none;
+  }
+    .element1 {
+      height: 250px;
+      max-height: 250px;
+    }
+    .lieferant{
+      font-size: 14px;    
+    }
+    .form-group{
+      position: relative;
+      float:left;
+      width: 50%;
+      left: 30%;
+    }
+    iframe:first-of-type{
+      display: none;
+    }
+    .new{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 900px){
+    .elementContentTertiary{
+      display: none;
+    }
+    .element1{
+      height: 140px;
+      max-height: 140px;
+    }
+  }
+  /* ENDE Responsive Outlook View */
+  
+  
+
+
+  .table-box{
+    width: 80%;
+    margin-left: 9%;    
+  }
+
+#search{
+    width: 96%;
+    margin-left: 0.5%;
+  }
+  #add{
+    width: 3%;
+    height: 100%;
+  }
+  #search,#add{
+    float: left;
+  }
+  #formset{
+    display: table;
+    table-layout:fixed;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#formset td {
+white-space: nowrap;
+padding: 0;
+}
+.submit{
+padding-top: 5pt;
+}
+#update, #edit{
+width: 50%;
+}
+#update:hover, #edit:hover{
+width: 50%;
+background-color: #eee;
+}
+
+thead tr{
+    background-color:#eee;
+}

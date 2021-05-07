@@ -1,0 +1,12 @@
+{
+    "platform": [{
+            "name": "Windows"
+        },
+        {
+            "name": "Linux"
+        },
+        {
+            "name": "MacOs"
+        }
+    ]
+}

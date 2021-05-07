@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="public/styleguide.css" type="text/css" />
+    <link rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="../css/dux.min.css">
+
+</head>
+<body id="styleguide" data-target="#navbar-sub">
+<noscript>
+You're using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+</noscript>
+<div class="modal" role="dialog" aria-labelledby="about" tabindex="-1" id="modal-about">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">About</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h3><span class="text-uppercase">dux</span> v1.0.0</h3>
+                            <p>The most valuable front-end framework around the d.velop group for developing web-based projects.</p>
+                            <p class="text-muted">Copyright d.velop AG. All rights reserved.</p>
+                        </div>
+                        <div class="col-xs-5">
+                            <address>
+                                <strong>d.velop AG</strong><br>
+                                Schildarpstraße 6-8<br>
+                                48712 Gescher<br>
+                                Germany<br>
+                            </address>
+                            <address>
+                                <span class="text-muted">Phone:</span> +49 2542 93070
+                            </address>
+                            <address>
+                                <span class="text-muted">Email:</span> info@d-velop.de
+                            </address>
+                            <address>
+                                <span class="text-muted">Web:</span> <a href="http://www.d-velop.de" target="_blank">http://www.d-velop.de</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><span class="text-uppercase">dux</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav" data-kss-ref="styleguide.homepage">
+                    <li><a href="section-css.html"><strong>CSS</strong></a></li>
+                    <li><a href="section-components.html"><strong>Components</strong></a></li>
+                    <li><a href="section-javascript.html"><strong>Javascript</strong></a></li>
+                    <li><a href="section-helpers.html"><strong>Helpers</strong></a></li>
+                </ul>
+                <form action="section-search.html" class="navbar-form navbar-left" role="search">
+                    <div class="input-group">
+                        <input id="tipue_search_input" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="toastrTry"><strong>Toast it!</strong></a></li>
+                    <li><a href="section-changes.html"><strong>What's new</strong></a></li>
+                    <li><a href="" data-toggle="modal" data-target="#modal-about"><strong>About</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="page-header bg-primary container-fluid">
+        <div class="container bg-primary">
+            <h1><span class="text-uppercase">dux</span></h1>
+            <p>The most valuable ready-to-use framework around the d.velop group.</p>
+        </div>
+    </header>
+    <article class="container sg-container">
+                 <p>DUX (d.velop user experience) offers on the basis of HTML, CSS and JavaScript different templates for typography or buttons. 
+The basic thought is to bring developers and designers closer together. DUX can be compared with a tool-box 
+from which the structure and the styling of the Web-Frontends can be built or even optimised. 
+Above all DUX stands for for responsive web design where the composition of the website occurs dynamically.</p>
+<p>Enjoy and have fun!</p>
+<h1 id="installation">Installation</h1>
+<p>To install DUX, run the following command (after configuring bower):</p>
+<p><code>bower install dvelop-dux</code></p>
+<h2 id="configure-bower">Configure bower</h2>
+<p>To configure Bower to use the dvelop-bower ProGet feed, add this registry to your <code>.bowerrc</code> file:</p>
+<p><code>&quot;registry&quot;: &quot;http://nuget.d-velop.de/bower/dvelop-bower&quot;</code></p>
+<p>If your feed does not allow anonymous access, you will need to supply credentials in the URL:</p>
+<p><code>&quot;registry&quot;: &quot;http://user:password@nuget.d-velop.de/bower/dvelop-bower&quot;</code></p>
+<h2 id="include-css">Include CSS</h2>
+<p>Please reference the relevant files in the <code>&lt;head&gt;</code> section of your html file.</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;example&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/dux.css&quot; type=&quot;text/css&quot; media=&quot;screen,projection,print&quot;/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;first-element&gt;&lt;/first-element&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="include-javascript">Include Javascript</h2>
+<p>To refer the javascript file please use the src attribute in the <code>&lt;script&gt;</code> tag as the last element of the <code>&lt;body&gt;</code>.</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;example&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;last-element&gt;&lt;/last-element&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;js/libs.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="in-combination-with-iis">In combination with IIS</h2>
+<p>The IIS uses the &quot;static content&quot; module  for static files .
+To let the IIS know what mime type to be sent for which file extension, it has a integrated &quot;MimeMap&quot;
+With th default settings the entries for .svg- and .woff files that are delivered with DUX are missing.</p>
+<p>Please add them to your web.config as follows.</p>
+<pre><code>&lt;configuration&gt;
+  &lt;system.webServer&gt;
+    &lt;staticContent&gt;
+      &lt;remove fileExtension=&quot;.svg&quot; /&gt;
+      &lt;remove fileExtension=&quot;.woff&quot; /&gt;
+      &lt;remove fileExtension=&quot;.woff2&quot; /&gt;
+      &lt;mimeMap fileExtension=&quot;.svg&quot; mimeType=&quot;image/svg+xml&quot; /&gt;
+      &lt;mimeMap fileExtension=&quot;.woff&quot; mimeType=&quot;application/font-woff&quot; /&gt;
+      &lt;mimeMap fileExtension=&quot;.woff2&quot; mimeType=&quot;application/font-woff2&quot; /&gt;
+    &lt;/staticContent&gt;
+  &lt;/system.webServer&gt;
+&lt;/configuration&gt;
+</code></pre><p>Alternatively, add these entries manually at a higher config level. Adding these entries via the web.config is more simple.</p>
+
+    </article>
+    <footer class="sg-footer">
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="text-muted"><span class="text-uppercase">dux</span> v1.0.0</p>
+            </div>
+            <div class="col-xs-6">
+                <p class="pull-right"><a href="http://www.d-velop.com/" target="_blank">d.velop AG</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#0" class="sg-top">Top</a>
+    <script src="public/prettify.js"></script>
+    <script>
+    prettyPrint();
+    </script>
+    <script src="../js/dux.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="public/sg-top.min.js"></script>
+    <script src="public/toastertry.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/tipuesearch_set.js"></script>
+    <script src="public/tipuesearch.min.js"></script>
+</body>
+</html>

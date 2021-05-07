@@ -1,0 +1,18 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+@mixin ellipsis ($width: 100%, $no-wrap: true) {
+  @if $no-wrap {
+    white-space: nowrap;
+  } @else {
+    @include word-wrap();
+  }
+  overflow: hidden;
+  display: inline-block;
+  width: $width;
+  text-overflow: ellipsis;
+}

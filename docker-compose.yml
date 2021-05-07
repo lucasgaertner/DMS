@@ -9,7 +9,7 @@ services:
       - pg_volume:/var/lib/postgresql/data
       - ./services/postgres/docker/:/docker-entrypoint-initdb.d/
     ports:
-      - "5432:5432"  
+      - "5432:5432"
     networks:
       - postgres
     restart: unless-stopped
@@ -17,8 +17,8 @@ services:
     container_name: pg_admin
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: "type in your emailaddress"
-      PGADMIN_DEFAULT_PASSWORD: "secret"
+      PGADMIN_DEFAULT_EMAIL: "bartner@msn.com"
+      PGADMIN_DEFAULT_PASSWORD: "start.123"
       PGADMIN_LISTEN_PORT: 80
     volumes:
        - ./pgadmin:/root/.pgadmin     
@@ -58,6 +58,7 @@ services:
 
 networks:
   postgres:
+    name: pg_drive
     driver: bridge
     
 volumes:

@@ -1,0 +1,58 @@
+/* ------ START OF THEME ------ */
+/*
+ * Rainbow
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+/*pre.prettyprint {
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+    padding: 1em 0;
+    font-size: 1em;
+    color: #3498db;
+    margin: 10px 0;
+}*/
+pre.prettyprint code {
+    font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+pre.prettyprint .pln {
+    color: #3498db;
+}
+pre.prettyprint .str {
+    color: #c78feb;
+}
+pre.prettyprint .kwd {
+    color: #B3CC57;
+}
+pre.prettyprint .com {
+    color: #424c55;
+}
+pre.prettyprint .typ {
+    color: #EF746F;
+}
+pre.prettyprint .lit {
+    color: #FFBE40;
+}
+pre.prettyprint .pun,
+pre.prettyprint .opn,
+pre.prettyprint .clo {
+    color: #3498db;
+}
+pre.prettyprint .tag {
+    color: #B3CC57;
+}
+pre.prettyprint .atn {
+    color: #EF746F;
+}
+pre.prettyprint .atv {
+    color: #FFBE40;
+}
+pre.prettyprint .dec,
+pre.prettyprint .var {
+    color: #c78feb;
+}
+pre.prettyprint .fun {
+    color: #B3CC57;
+}
+/* ------- END OF THEME ------- */

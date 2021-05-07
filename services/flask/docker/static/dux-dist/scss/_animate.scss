@@ -1,0 +1,30 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+// Always required
+@import 'vendor/animate/properties';
+
+// Import the animations
+//@import 'vendor/animate/_attention/attention';
+//@import 'vendor/animate/_bouncing-entrances/bouncing-entrances';
+//@import 'vendor/animate/_bouncing-exits/bouncing-exits';
+@import 'vendor/animate/_fading-entrances/fading-entrances';
+@import 'vendor/animate/_fading-exits/fading-exits';
+//@import 'vendor/animate/_flippers/flippers';
+//@import 'vendor/animate/_lightspeed/lightspeed';
+//@import 'vendor/animate/_rotating-entrances/rotating-entrances';
+//@import 'vendor/animate/_rotating-exits/rotating-exits';
+//@import 'vendor/animate/_specials/specials';
+
+
+.dv-animate-fadeInLeft {
+  @include fadeInLeft();
+ }
+
+.dv-animate-fadeOutLeft {
+  @include fadeOutLeft();
+}

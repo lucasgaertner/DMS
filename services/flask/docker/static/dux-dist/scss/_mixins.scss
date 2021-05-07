@@ -1,0 +1,70 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+// DUX: Mixins
+// --------------------------------------------------
+@import 'mixins/font-face';
+@import 'mixins/word-wrap';
+@import 'mixins/toastr-variant';
+@import 'mixins/position';
+@import 'mixins/icons';
+@import 'mixins/tiles';
+@import 'mixins/helper';
+
+// Vendor Mixins
+// --------------------------------------------------
+
+// Breakpoints
+@import 'vendor/mappy-breakpoints/mappy-breakpoints';
+
+// Utilities
+@import 'vendor/bootstrap/mixins/hide-text';
+@import 'vendor/bootstrap/mixins/opacity';
+@import 'vendor/bootstrap/mixins/image';
+@import 'vendor/bootstrap/mixins/labels';
+@import 'vendor/bootstrap/mixins/reset-filter';
+@import 'vendor/bootstrap/mixins/resize';
+@import 'vendor/bootstrap/mixins/responsive-visibility';
+@import 'vendor/bootstrap/mixins/size';
+// --------------------------------------------------
+// DUX: Custom mixing for tab-focus tp prevent outline border
+@import 'mixins/tab-focus';
+//@import 'vendor/bootstrap/mixins/tab-focus';
+// --------------------------------------------------
+@import 'vendor/bootstrap/mixins/reset-text';
+@import 'vendor/bootstrap/mixins/text-emphasis';
+@import 'vendor/bootstrap/mixins/text-overflow';
+@import 'vendor/bootstrap/mixins/vendor-prefixes';
+
+// Components
+@import 'vendor/bootstrap/mixins/alerts';
+@import 'vendor/bootstrap/mixins/buttons';
+@import 'vendor/bootstrap/mixins/panels';
+@import 'vendor/bootstrap/mixins/pagination';
+@import 'vendor/bootstrap/mixins/list-group';
+@import 'vendor/bootstrap/mixins/nav-divider';
+@import 'vendor/bootstrap/mixins/forms';
+@import 'vendor/bootstrap/mixins/progress-bar';
+@import 'vendor/bootstrap/mixins/table-row';
+
+// Skins
+@import 'vendor/bootstrap/mixins/background-variant';
+@import 'vendor/bootstrap/mixins/border-radius';
+@import 'vendor/bootstrap/mixins/gradients';
+
+// Layout
+@import 'vendor/bootstrap/mixins/clearfix';
+@import 'vendor/bootstrap/mixins/center-block';
+@import 'vendor/bootstrap/mixins/nav-vertical-align';
+// --------------------------------------------------
+// DUX: Custom grid mixins
+@import 'mixins/grid-framework';
+@import 'mixins/grid';
+//@import 'vendor/bootstrap/mixins/grid-framework';
+//@import 'vendor/bootstrap/mixins/grid';
+// --------------------------------------------------
+

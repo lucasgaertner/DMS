@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Stammdaten
+        </title>
+    </head>
+<link rel="stylesheet" href="{{ url_for('static', filename='dux-dist/css/dux.css') }}" type="text/css" media="screen,projection,print"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='dux-dist/css/style.css') }}" type="text/css" media="screen,projection,print"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='dux-dist/css/app.css') }}" type="text/css" media="screen,projection,print"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, height=device-height">
+<body>
+    
+      <main>
+   
+        <div class="resource-element first main">
+  
+          <header class="resource-header">
+            <center><h1><span>Dokumenten Übersicht</span>
+            <button id="upload" class="btn btn-info"  type="submit"><a href="/">
+                <img class="elementIcon" src="{{ url_for('static', filename='dux-dist/images/light/file.png') }}" alt="Upload Documents">
+            </a></button>
+        </h1></center>
+     </header>
+        <div class="form-group">
+         <input onkeyup="SearchAndFilter()" type="text" id="UserInput" class="form-control input-lg" autocomplete="off" name="input" placeholder="Search"  autofocus>
+         <button class="sortBtn" onclick="location.href='/overview'">
+          <img id="sort" class="elementIcon" src="{{ url_for('static', filename='dux-dist/images/light/sortasc-64x64.png') }}"  alt="Sortier Dokumente aufsteigend">
+        </button>
+        <button class="sortBtn" onclick="location.href='/overview/rev'">
+          <img id="sort" class="elementIcon" src="{{ url_for('static', filename='dux-dist/images/light/sortdesc-64x64.png') }}" alt="Sortier"  alt="Sortier Dokumente absteigend">
+        </button>
+        </div>
+         
+  
+  <div class="resultframe">
+ 
+    <div id="elementList" class="item-details ng-scope">
+  
+        {% for result in data %}
+
+ 
+      <div id="{{ result.filename }}" class="element" onclick="location.href='/view/{{ result.id }}'">
+      <div class="elementIconBox">  
+        <img class="elementIcon" src="{{ url_for('static', filename='dux-dist/images/red/doctypesmall-32x32.png') }}">
+      </div>
+  
+      <span class="filename">{{ result.filename }}</span>
+      <span id="hidden" class="content">{{ result.content }}</span>
+  <div class="elementItems">
+      <div class="elementContentPrimary">
+        <section>
+   <ul>
+  <li>
+    <label> Hochlade Datum:</label>
+      <span class="timestamp">{{ result.timestamp }}</span> 
+  </li>
+  
+          </ul>
+        </section>
+      </div>
+    </div>
+    </div>
+    {% endfor %}
+
+        </div>
+        </div>
+        </div>
+      </main>
+      <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+      <!-- <script src="{{ url_for('static', filename='scripts/apps.js') }}"></script> -->
+
+    </body>
+</html>

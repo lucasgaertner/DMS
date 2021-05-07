@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Components</title>
+    <link rel="stylesheet" href="public/styleguide.css" type="text/css" />
+    <link rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="../css/dux.min.css">
+
+</head>
+<body id="styleguide" data-target="#navbar-sub">
+<noscript>
+You're using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+</noscript>
+<div class="modal" role="dialog" aria-labelledby="about" tabindex="-1" id="modal-about">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">About</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h3><span class="text-uppercase">dux</span> v1.0.0</h3>
+                            <p>The most valuable front-end framework around the d.velop group for developing web-based projects.</p>
+                            <p class="text-muted">Copyright d.velop AG. All rights reserved.</p>
+                        </div>
+                        <div class="col-xs-5">
+                            <address>
+                                <strong>d.velop AG</strong><br>
+                                Schildarpstraße 6-8<br>
+                                48712 Gescher<br>
+                                Germany<br>
+                            </address>
+                            <address>
+                                <span class="text-muted">Phone:</span> +49 2542 93070
+                            </address>
+                            <address>
+                                <span class="text-muted">Email:</span> info@d-velop.de
+                            </address>
+                            <address>
+                                <span class="text-muted">Web:</span> <a href="http://www.d-velop.de" target="_blank">http://www.d-velop.de</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><span class="text-uppercase">dux</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav" data-kss-ref="components">
+                    <li><a href="section-css.html"><strong>CSS</strong></a></li>
+                    <li><a href="section-components.html"><strong>Components</strong></a></li>
+                    <li><a href="section-javascript.html"><strong>Javascript</strong></a></li>
+                    <li><a href="section-helpers.html"><strong>Helpers</strong></a></li>
+                </ul>
+                <form action="section-search.html" class="navbar-form navbar-left" role="search">
+                    <div class="input-group">
+                        <input id="tipue_search_input" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="toastrTry"><strong>Toast it!</strong></a></li>
+                    <li><a href="section-changes.html"><strong>What's new</strong></a></li>
+                    <li><a href="" data-toggle="modal" data-target="#modal-about"><strong>About</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                <header class="page-header bg-primary container-fluid">
+                    <div class="container bg-primary">
+                    <h1>Components</h1>
+                        <p>Reusable components built to provide iconography and much more.</p>
+
+                    </div>
+                </header>
+    <article class="container sg-container">
+        <div class="row">
+            <nav class="hidden-xs fixed-top" id="navbar-sub">
+                        <ul class="nav nav-pills nav-stacked" data-kss-ref="components">
+                                            <li><a href="#sg-components-alerts"><strong>Alerts</strong></a></li>
+                                            <li><a href="#sg-components-badges"><strong>Badges</strong></a></li>
+                                            <li><a href="#sg-components-button-groups"><strong>Button Groups</strong></a></li>
+                                            <!--2.3.1.-->
+                                            <li><a href="#sg-components-button-groups-justified">Justified</a></li>
+                                            <!--2.3.2.-->
+                                            <li><a href="#sg-components-button-groups-sizing">Sizing</a></li>
+                                            <li><a href="#sg-components-icons"><strong>Icons</strong></a></li>
+                                            <!--2.4.1.-->
+                                            <li><a href="#sg-components-icons-animated">Animated Icons</a></li>
+                                            <!--2.4.2.-->
+                                            <li><a href="#sg-components-icons-fixed">Fixed Width Icons</a></li>
+                                            <!--2.4.3.-->
+                                            <li><a href="#sg-components-icons-larger">Larger Icons</a></li>
+                                            <!--2.4.4.-->
+                                            <li><a href="#sg-components-icons-rotated-flipped">Rotated &amp; Flipped</a></li>
+                                            <li><a href="#sg-components-input-groups"><strong>Input Groups</strong></a></li>
+                                            <!--2.5.1.-->
+                                            <li><a href="#sg-components-input-groups-dropdowns">Dropdowns</a></li>
+                                            <!--2.5.2.-->
+                                            <li><a href="#sg-components-input-groups-sizing">Sizing</a></li>
+                                            <li><a href="#sg-components-labels"><strong>Labels</strong></a></li>
+                                            <li><a href="#sg-components-list-group"><strong>List Group</strong></a></li>
+                                            <!--2.7.1.-->
+                                            <li><a href="#sg-components-list-group-badges">Badges</a></li>
+                                            <li><a href="#sg-components-navs"><strong>Navs</strong></a></li>
+                                            <!--2.8.1.-->
+                                            <li><a href="#sg-components-navs-disabled-links">Disabled links</a></li>
+                                            <!--2.8.2.-->
+                                            <li><a href="#sg-components-navs-pills">Pills</a></li>
+                                            <!--2.8.2.1.-->
+                                            <li><a href="#sg-components-navs-pills-justified">Justified</a></li>
+                                            <!--2.8.2.2.-->
+                                            <li><a href="#sg-components-navs-pills-stacked">Stacked</a></li>
+                                            <!--2.8.3.-->
+                                            <li><a href="#sg-components-navs-tabs">Tabs</a></li>
+                                            <li><a href="#sg-components-tiles"><strong>Tiles</strong></a></li>
+                        </ul>
+            </nav>
+            <section class="col-sm-9 col-sm-offset-3">
+                        <span class="sg-anchor" id="sg-components-alerts"></span>
+                        <h2>Alerts</h2>
+                            <p><span class="label label-primary">Notification</span>&nbsp;<span class="label label-primary">Feedback</span>&nbsp;<span class="label label-primary">Alerts</span></p>
+                            <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div class=&quot;alert [modifier]&quot;&gt;Well done! You successfully read this important alert message.&lt;/div&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="alert alert-success">Well done! You successfully read this important alert message.</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            success
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.alert-success</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="alert alert-info">Well done! You successfully read this important alert message.</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            information
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.alert-info</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="alert alert-warning">Well done! You successfully read this important alert message.</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            warning
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.alert-warning</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="alert alert-danger">Well done! You successfully read this important alert message.</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            danger
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.alert-danger</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-badges"></span>
+                        <h2>Badges</h2>
+                            <p><span class="label label-primary">Badges</span></p>
+                            <p>Easily highlight new or unread items by adding a <code>&lt;span class=&quot;badge&quot;&gt;</code> to links, dux navs, and more.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;Messages &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt; &lt;/button&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button class="btn btn-primary" type="button">Messages <span class="badge">42</span> </button>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-components-button-groups"></span>
+                        <h2>Button Groups</h2>
+                            <p><span class="label label-primary">Buttons</span>&nbsp;<span class="label label-primary">Navigation</span>&nbsp;<span class="label label-primary">Groups</span></p>
+                            <p>Group a series of buttons together on a single line with the button group.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div class=&quot;[modifier]&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="btn-group" role="group" aria-label="...">
+ <button type="button" class="btn btn-default">Left</button>
+ <button type="button" class="btn btn-default">Middle</button>
+ <button type="button" class="btn btn-default">Right</button>
+</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-group</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-button-groups-justified"></span>
+                        <h3>Justified</h3>
+                            <p>Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.
+With <code>&lt;a&gt;</code> elements just wrap a series of <code>.btns</code> in <code>.btn-group.btn-group-justified</code>.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div class=&quot;btn-group [modifier]&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+ &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+ <div class="btn-group" role="group">
+   <button type="button" class="btn btn-default">Left</button>
+ </div>
+ <div class="btn-group" role="group">
+   <button type="button" class="btn btn-default">Middle</button>
+ </div>
+ <div class="btn-group" role="group">
+   <button type="button" class="btn btn-default">Right</button>
+ </div>
+</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Justified button group
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-group-justified</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-button-groups-sizing"></span>
+                        <h3>Sizing</h3>
+                            <p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div class=&quot;btn-group [modifier]&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="btn-group btn-group-lg" role="group" aria-label="...">
+ <button type="button" class="btn btn-default">Left</button>
+ <button type="button" class="btn btn-default">Middle</button>
+ <button type="button" class="btn btn-default">Right</button>
+</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Large button group
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-group-lg</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+ <button type="button" class="btn btn-default">Left</button>
+ <button type="button" class="btn btn-default">Middle</button>
+ <button type="button" class="btn btn-default">Right</button>
+</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Small button group
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-group-sm</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <div class="btn-group btn-group-xs" role="group" aria-label="...">
+ <button type="button" class="btn btn-default">Left</button>
+ <button type="button" class="btn btn-default">Middle</button>
+ <button type="button" class="btn btn-default">Right</button>
+</div>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Extra small button group
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-group-xs</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-icons"></span>
+                        <h2>Icons</h2>
+                            <p><span class="label label-primary">Fonts</span>&nbsp;<span class="label label-primary">Icons</span>&nbsp;<span class="label label-primary">Navigation</span>&nbsp;<span class="label label-primary">Glyphs</span></p>
+                            <div class="alert alert-info" role="alert"><ul class="fa-ul"><li><i class="fa fa-info-circle fa-li fa-lg"></i>If you are in need of further shapes, do not hesitate to contact us.</li></ul></div>
+                            <p>These icons are a part of the d.velop icon font. Feel free to use them.</p>
+<p><p class="text-danger"><i class="dv dv-warning dv-fw text-warning"></i>The <strong>dark</strong> color of PNGs was set to deprecated and will be removed in next the major release. Please use <strong>gray</strong> instead.</p>
+<a class="btn btn-default" href="../images/dux_v1.0.0_PNGs.zip"><i class="dv dv-download dv-fw"></i>Download PNGs</a></p>
+<p><h3 class="sg-subtitle">Example</h3><pre class="prettyprint"><code class="html"><span class="tag">&lt;i</span> class=&quot;dv [modifier] dv-lg&quot;&gt;<span class="tag">&lt;/i&gt;</span></code></pre></p>
+<div class="row sg-icons"><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-addfav dv-2x"></i><div class="center">addfav</div><div class="label label-default">.dv-addfav</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-attached dv-2x"></i><div class="center">attached</div><div class="label label-default">.dv-attached</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-avatar dv-2x"></i><div class="center">avatar</div><div class="label label-default">.dv-avatar</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-bolt dv-2x"></i><div class="center">bolt</div><div class="label label-default">.dv-bolt</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-camera dv-2x"></i><div class="center">camera</div><div class="label label-default">.dv-camera</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-cancel dv-2x"></i><div class="center">cancel</div><div class="label label-default">.dv-cancel</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-close dv-2x"></i><div class="center">close</div><div class="label label-default">.dv-close</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-connected dv-2x"></i><div class="center">connected</div><div class="label label-default">.dv-connected</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-content dv-2x"></i><div class="center">content</div><div class="label label-default">.dv-content</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-date dv-2x"></i><div class="center">date</div><div class="label label-default">.dv-date</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-decrypt dv-2x"></i><div class="center">decrypt</div><div class="label label-default">.dv-decrypt</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-delete dv-2x"></i><div class="center">delete</div><div class="label label-default">.dv-delete</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-desktop dv-2x"></i><div class="center">desktop</div><div class="label label-default">.dv-desktop</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-disconnected dv-2x"></i><div class="center">disconnected</div><div class="label label-default">.dv-disconnected</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-doctypesmall dv-2x"></i><div class="center">doctypesmall</div><div class="label label-default">.dv-doctypesmall</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-dossier dv-2x"></i><div class="center">dossier</div><div class="label label-default">.dv-dossier</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-dossiersmall dv-2x"></i><div class="center">dossiersmall</div><div class="label label-default">.dv-dossiersmall</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-download dv-2x"></i><div class="center">download</div><div class="label label-default">.dv-download</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-edit dv-2x"></i><div class="center">edit</div><div class="label label-default">.dv-edit</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-error dv-2x"></i><div class="center">error</div><div class="label label-default">.dv-error</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-first dv-2x"></i><div class="center">first</div><div class="label label-default">.dv-first</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-fullscreen dv-2x"></i><div class="center">fullscreen</div><div class="label label-default">.dv-fullscreen</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-graduate dv-2x"></i><div class="center">graduate</div><div class="label label-default">.dv-graduate</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-guard dv-2x"></i><div class="center">guard</div><div class="label label-default">.dv-guard</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-halfscreen dv-2x"></i><div class="center">halfscreen</div><div class="label label-default">.dv-halfscreen</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-height dv-2x"></i><div class="center">height</div><div class="label label-default">.dv-height</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-help dv-2x"></i><div class="center">help</div><div class="label label-default">.dv-help</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-house dv-2x"></i><div class="center">house</div><div class="label label-default">.dv-house</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-ie dv-2x"></i><div class="center">ie</div><div class="label label-default">.dv-ie</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-image dv-2x"></i><div class="center">image</div><div class="label label-default">.dv-image</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-import dv-2x"></i><div class="center">import</div><div class="label label-default">.dv-import</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-infocircle dv-2x"></i><div class="center">infocircle</div><div class="label label-default">.dv-infocircle</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-last dv-2x"></i><div class="center">last</div><div class="label label-default">.dv-last</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-link dv-2x"></i><div class="center">link</div><div class="label label-default">.dv-link</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-mapping dv-2x"></i><div class="center">mapping</div><div class="label label-default">.dv-mapping</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-menue dv-2x"></i><div class="center">menue</div><div class="label label-default">.dv-menue</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-message dv-2x"></i><div class="center">message</div><div class="label label-default">.dv-message</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-money dv-2x"></i><div class="center">money</div><div class="label label-default">.dv-money</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-multidoctype dv-2x"></i><div class="center">multidoctype</div><div class="label label-default">.dv-multidoctype</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-multidossier dv-2x"></i><div class="center">multidossier</div><div class="label label-default">.dv-multidossier</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-next dv-2x"></i><div class="center">next</div><div class="label label-default">.dv-next</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-notallowed dv-2x"></i><div class="center">notallowed</div><div class="label label-default">.dv-notallowed</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-number dv-2x"></i><div class="center">number</div><div class="label label-default">.dv-number</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-openwith dv-2x"></i><div class="center">openwith</div><div class="label label-default">.dv-openwith</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-page dv-2x"></i><div class="center">page</div><div class="label label-default">.dv-page</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-pdf dv-2x"></i><div class="center">pdf</div><div class="label label-default">.dv-pdf</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-pptx dv-2x"></i><div class="center">pptx</div><div class="label label-default">.dv-pptx</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-previous dv-2x"></i><div class="center">previous</div><div class="label label-default">.dv-previous</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-processportal dv-2x"></i><div class="center">processportal</div><div class="label label-default">.dv-processportal</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-read dv-2x"></i><div class="center">read</div><div class="label label-default">.dv-read</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-refresh dv-2x"></i><div class="center">refresh</div><div class="label label-default">.dv-refresh</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-removefav dv-2x"></i><div class="center">removefav</div><div class="label label-default">.dv-removefav</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-restore dv-2x"></i><div class="center">restore</div><div class="label label-default">.dv-restore</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-save dv-2x"></i><div class="center">save</div><div class="label label-default">.dv-save</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-search dv-2x"></i><div class="center">search</div><div class="label label-default">.dv-search</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-selfsign dv-2x"></i><div class="center">selfsign</div><div class="label label-default">.dv-selfsign</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-server dv-2x"></i><div class="center">server</div><div class="label label-default">.dv-server</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-settings dv-2x"></i><div class="center">settings</div><div class="label label-default">.dv-settings</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-share dv-2x"></i><div class="center">share</div><div class="label label-default">.dv-share</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sign dv-2x"></i><div class="center">sign</div><div class="label label-default">.dv-sign</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sortasc dv-2x"></i><div class="center">sortasc</div><div class="label label-default">.dv-sortasc</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sortdesc dv-2x"></i><div class="center">sortdesc</div><div class="label label-default">.dv-sortdesc</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-stretch dv-2x"></i><div class="center">stretch</div><div class="label label-default">.dv-stretch</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-success dv-2x"></i><div class="center">success</div><div class="label label-default">.dv-success</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-sync dv-2x"></i><div class="center">sync</div><div class="label label-default">.dv-sync</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-task dv-2x"></i><div class="center">task</div><div class="label label-default">.dv-task</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-thumbsoff dv-2x"></i><div class="center">thumbsoff</div><div class="label label-default">.dv-thumbsoff</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-thumbson dv-2x"></i><div class="center">thumbson</div><div class="label label-default">.dv-thumbson</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-tiff dv-2x"></i><div class="center">tiff</div><div class="label label-default">.dv-tiff</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-txt dv-2x"></i><div class="center">txt</div><div class="label label-default">.dv-txt</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-unknown dv-2x"></i><div class="center">unknown</div><div class="label label-default">.dv-unknown</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-wait dv-2x"></i><div class="center">wait</div><div class="label label-default">.dv-wait</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-warning dv-2x"></i><div class="center">warning</div><div class="label label-default">.dv-warning</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-width dv-2x"></i><div class="center">width</div><div class="label label-default">.dv-width</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-word dv-2x"></i><div class="center">word</div><div class="label label-default">.dv-word</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-workflow dv-2x"></i><div class="center">workflow</div><div class="label label-default">.dv-workflow</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-xlsx dv-2x"></i><div class="center">xlsx</div><div class="label label-default">.dv-xlsx</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-zip dv-2x"></i><div class="center">zip</div><div class="label label-default">.dv-zip</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-zoomin dv-2x"></i><div class="center">zoomin</div><div class="label label-default">.dv-zoomin</div></div><div class="col-xs-4 col-sm-3 text-center"><i class="dv dv-zoomout dv-2x"></i><div class="center">zoomout</div><div class="label label-default">.dv-zoomout</div></div></div>
+                        <span class="sg-anchor" id="sg-components-icons-animated"></span>
+                        <h3>Animated Icons</h3>
+                            <p>Use the <code>.dv-spin</code> class to get any icon to rotate. Works well with <code>.dv-wait</code>, <code>.dv-refresh</code>, or <code>.dv-settings</code>.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;i class=&quot;dv dv-wait dv-2x [modifier]&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;dv dv-image dv-2x [modifier]&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;dv dv-settings dv-2x [modifier]&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;dv dv-refresh dv-2x [modifier]&quot;&gt;&lt;/i&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-wait dv-2x dv-spin"></i>
+<i class="dv dv-image dv-2x dv-spin"></i>
+<i class="dv dv-settings dv-2x dv-spin"></i>
+<i class="dv dv-refresh dv-2x dv-spin"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Spinning icon
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-spin</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-icons-fixed"></span>
+                        <h3>Fixed Width Icons</h3>
+                            <p>Use <code>dv-fw</code> to set icons at a fixed width</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;
+ &lt;a class=&quot;list-group-item active&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;dv dv-delete dv-fw&quot;&gt;&lt;/i&gt; Delete&lt;/a&gt;
+ &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;dv dv-camera dv-fw&quot;&gt;&lt;/i&gt; Picture&lt;/a&gt;
+ &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;dv dv-openwith dv-fw&quot;&gt;&lt;/i&gt; Share&lt;/a&gt;
+ &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;dv dv-settings dv-fw&quot;&gt;&lt;/i&gt; Settings&lt;/a&gt;
+&lt;/ul&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <ul class="list-group">
+ <a class="list-group-item active" href="#"><i class="dv dv-delete dv-fw"></i> Delete</a>
+ <a class="list-group-item" href="#"><i class="dv dv-camera dv-fw"></i> Picture</a>
+ <a class="list-group-item" href="#"><i class="dv dv-openwith dv-fw"></i> Share</a>
+ <a class="list-group-item" href="#"><i class="dv dv-settings dv-fw"></i> Settings</a>
+</ul>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            To increase icon sizes relative to their container, use the fa-lg (33% increase)
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-fw</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-icons-larger"></span>
+                        <h3>Larger Icons</h3>
+                            <p>You can display all the icons in different sizes.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;i class=&quot;dv dv-camera [modifier]&quot;&gt;&lt;/i&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-camera dv-lg"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            To increase icon sizes relative to their container, use the fa-lg (33% increase)
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-lg</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-camera dv-2x"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            To increase icon sizes 2x
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-2x</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-camera dv-3x"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            To increase icon sizes 3x
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-3x</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-camera dv-4x"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            To increase icon sizes 4x
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-4x</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-camera dv-5x"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            To increase icon sizes 5x
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-5x</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-icons-rotated-flipped"></span>
+                        <h3>Rotated &amp; Flipped</h3>
+                            <p>To arbitrarily rotate and flip icons, use the <code>dv-rotate-*</code> and <code>dv-flip-*</code> classes.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;i class=&quot;dv dv-number dv-2x [modifier]&quot;&gt;&lt;/i&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-number dv-2x dv-rotate-90"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Rotate 90
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-rotate-90</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-number dv-2x dv-rotate-180"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Rotate 180
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-rotate-180</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-number dv-2x dv-rotate-270"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Rotate 270
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-rotate-270</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-number dv-2x dv-flip-horizontal"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Flip horizontal
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-flip-horizontal</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <i class="dv dv-number dv-2x dv-flip-vertical"></i>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Flip vertical
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.dv-flip-vertical</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-input-groups"></span>
+                        <h2>Input Groups</h2>
+                            <p><span class="label label-primary">Input</span>&nbsp;<span class="label label-primary">Text</span>&nbsp;<span class="label label-primary">Forms</span>&nbsp;<span class="label label-primary">Buttons</span>&nbsp;<span class="label label-primary">Dropdowns</span></p>
+                            <p>Extend form controls by adding text or buttons before, after, or on both sides of any text-based <code>&lt;input&gt;</code>. Use <code>.input-group</code> with an <code>.input-group-addon</code> to prepend or append elements to a single <code>.form-control</code>. Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon</code>, you&#39;ll need to use <code>.input-group-btn</code> to wrap the buttons. This is required due to default browser styles that cannot be overridden.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;col-lg-6&quot;&gt;
+   &lt;div class=&quot;input-group&quot;&gt;
+     &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search for...&quot;&gt;
+     &lt;span class=&quot;input-group-btn&quot;&gt;
+       &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;Go!&lt;/button&gt;
+     &lt;/span&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="row">
+ <div class="col-lg-6">
+   <div class="input-group">
+     <input type="text" class="form-control" placeholder="Search for...">
+     <span class="input-group-btn">
+       <button class="btn btn-default" type="button">Go!</button>
+     </span>
+   </div>
+ </div>
+</div>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-components-input-groups-dropdowns"></span>
+                        <h3>Dropdowns</h3>
+                            <p>Use Dropdown Buttons in your <code>input-group</code>.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html"> &lt;div class=&quot;row&quot;&gt;
+ &lt;div class=&quot;col-lg-6&quot;&gt;
+     &lt;div class=&quot;input-group&quot;&gt;
+       &lt;div class=&quot;input-group-btn&quot;&gt;
+         &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Categories &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+         &lt;ul class=&quot;dropdown-menu&quot;&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+           &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;/div&gt;
+       &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search for...&quot; aria-label=&quot;...&quot;&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                             <div class="row">
+ <div class="col-lg-6">
+     <div class="input-group">
+       <div class="input-group-btn">
+         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></button>
+         <ul class="dropdown-menu">
+           <li><a href="#">One</a></li>
+           <li><a href="#">Next</a></li>
+           <li><a href="#">Something else here</a></li>
+           <li role="separator" class="divider"></li>
+           <li><a href="#">Separated</a></li>
+         </ul>
+         </div>
+       <input type="text" class="form-control" placeholder="Search for..." aria-label="...">
+     </div>
+ </div>
+ </div>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-components-input-groups-sizing"></span>
+                        <h3>Sizing</h3>
+                            <p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div class=&quot;input-group input-group-lg&quot;&gt;
+ &lt;span class=&quot;input-group-addon&quot; id=&quot;sizing-addon1&quot;&gt;&lt;i class=&quot;dv dv-avatar dv-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+ &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;sizing-addon1&quot;&gt;
+&lt;/div&gt;&lt;br /&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+ &lt;span class=&quot;input-group-addon&quot; id=&quot;sizing-addon2&quot;&gt;&lt;i class=&quot;dv dv-avatar dv-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+ &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;sizing-addon2&quot;&gt;
+&lt;/div&gt;&lt;br /&gt;
+&lt;div class=&quot;input-group input-group-sm&quot;&gt;
+ &lt;span class=&quot;input-group-addon&quot; id=&quot;sizing-addon3&quot;&gt;&lt;i class=&quot;dv dv-avatar dv-fw&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+ &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;sizing-addon3&quot;&gt;
+&lt;/div&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="input-group input-group-lg">
+ <span class="input-group-addon" id="sizing-addon1"><i class="dv dv-avatar dv-fw"></i></span>
+ <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+</div><br />
+<div class="input-group">
+ <span class="input-group-addon" id="sizing-addon2"><i class="dv dv-avatar dv-fw"></i></span>
+ <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+</div><br />
+<div class="input-group input-group-sm">
+ <span class="input-group-addon" id="sizing-addon3"><i class="dv dv-avatar dv-fw"></i></span>
+ <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+</div>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-components-labels"></span>
+                        <h2>Labels</h2>
+                            <p><span class="label label-primary">Labels</span></p>
+                            <p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;h5&gt;Example heading &lt;span class=&quot;label [modifier]&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <h5>Example heading <span class="label label-default">New</span></h5>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Default
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.label-default</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <h5>Example heading <span class="label label-primary">New</span></h5>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Primary
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.label-primary</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <h5>Example heading <span class="label label-success">New</span></h5>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Success
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.label-success</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <h5>Example heading <span class="label label-info">New</span></h5>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Info
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.label-info</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <h5>Example heading <span class="label label-warning">New</span></h5>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Warning
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.label-warning</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <h5>Example heading <span class="label label-danger">New</span></h5>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Danger
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.label-danger</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-list-group"></span>
+                        <h2>List Group</h2>
+                            <p><span class="label label-primary">Lists</span>&nbsp;<span class="label label-primary">Navigation</span>&nbsp;<span class="label label-primary">Links</span></p>
+                            <p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <ul class="list-group">
+<li class="list-group-item">Cras justo odio</li>
+<li class="list-group-item">Dapibus ac facilisis in</li>
+<li class="list-group-item">Morbi leo risus</li>
+<li class="list-group-item">Porta ac consectetur ac</li>
+<li class="list-group-item">Vestibulum at eros</li>
+</ul>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-components-list-group-badges"></span>
+                        <h3>Badges</h3>
+                            <p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;ul class=&quot;list-group&quot;&gt;
+&lt;li class= &quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;14&lt;/span&gt;Cras justo odio&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;2&lt;/span&gt;Dapibus ac facilisis in&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;1&lt;/span&gt;Morbi leo risus&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <ul class="list-group">
+<li class= "list-group-item"><span class="badge">14</span>Cras justo odio</li>
+<li class="list-group-item"><span class="badge">2</span>Dapibus ac facilisis in</li>
+<li class="list-group-item"><span class="badge">1</span>Morbi leo risus</li>
+</ul>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-components-navs"></span>
+                        <h2>Navs</h2>
+                            <p><span class="label label-primary">Navigation</span></p>
+                            <p>Navs available in DUX have shared markup, starting with the base .nav class, as well as shared states. Swap modifier classes to switch between each style.</p>
+
+                        <span class="sg-anchor" id="sg-components-navs-disabled-links"></span>
+                        <h3>Disabled links</h3>
+                            <p>For any nav component (tabs or pills), add <code>.disabled</code> for gray links and no hover effects.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;ul class=&quot;nav nav-pills&quot;&gt;
+&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot; class=&quot;[modifier]&quot;&gt;&lt;a href=&quot;#&quot;&gt;Disabled Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <ul class="nav nav-pills">
+<li role="presentation" class="active"><a href="#">Home</a></li>
+<li role="presentation"><a href="#">Profile</a></li>
+<li role="presentation" class="disabled"><a href="#">Disabled Link</a></li>
+</ul>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Disable nav components
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.disabled</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-navs-pills"></span>
+                        <h3>Pills</h3>
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;ul class=&quot;nav [modifier]&quot;&gt;
+&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <ul class="nav nav-pills">
+<li role="presentation" class="active"><a href="#">Home</a></li>
+<li role="presentation"><a href="#">Profile</a></li>
+<li role="presentation"><a href="#">Messages</a></li>
+</ul>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Simple navigation
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.nav-pills</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-navs-pills-justified"></span>
+                        <h4>Justified</h4>
+                            <p>Easily make tabs or pills equal widths of their parent at screens wider than 768px with <code>.nav-justified</code>. On smaller screens, the nav links are stacked</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;ul class=&quot;nav nav-pills [modifier]&quot;&gt;
+&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <ul class="nav nav-pills nav-justified">
+<li role="presentation" class="active"><a href="#">Home</a></li>
+<li role="presentation"><a href="#">Profile</a></li>
+<li role="presentation"><a href="#">Messages</a></li>
+</ul>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Justified Pills
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.nav-justified</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-navs-pills-stacked"></span>
+                        <h4>Stacked</h4>
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;ul class=&quot;nav nav-pills [modifier]&quot;&gt;
+&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <ul class="nav nav-pills nav-stacked">
+<li role="presentation" class="active"><a href="#">Home</a></li>
+<li role="presentation"><a href="#">Profile</a></li>
+<li role="presentation"><a href="#">Messages</a></li>
+</ul>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Pills are also vertically stackable.
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.nav-stacked</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-components-navs-tabs"></span>
+                        <h3>Tabs</h3>
+                            <p><span class="label label-primary">Tabs</span>&nbsp;<span class="label label-primary">Navigation</span>&nbsp;<span class="label label-primary">Links</span>&nbsp;<span class="label label-primary">Views</span></p>
+                            <p>Use tabs to display various content.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div role=&quot;tabpanel&quot;&gt;
+&lt;!-- Tab panes --&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+ &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;Content of home&lt;/div&gt;
+ &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;profile&quot;&gt;Content of profile&lt;/div&gt;
+ &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;messages&quot;&gt;Content of messages&lt;/div&gt;
+ &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;settings&quot;&gt;Content of settings&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Nav tabs bottom--&gt;
+ &lt;ul class=&quot;nav nav-tabs-bottom nav-justified&quot; role=&quot;tablist&quot;&gt;
+ &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; aria-controls=&quot;home&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#profile&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+ &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+ &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#settings&quot; aria-controls=&quot;settings&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div role="tabpanel">
+<!-- Tab panes -->
+<div class="tab-content">
+ <div role="tabpanel" class="tab-pane active" id="home">Content of home</div>
+ <div role="tabpanel" class="tab-pane" id="profile">Content of profile</div>
+ <div role="tabpanel" class="tab-pane" id="messages">Content of messages</div>
+ <div role="tabpanel" class="tab-pane" id="settings">Content of settings</div>
+</div>
+<!-- Nav tabs bottom-->
+ <ul class="nav nav-tabs-bottom nav-justified" role="tablist">
+ <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+ <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+ <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+ <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+ </ul>
+</div>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-components-tiles"></span>
+                        <h2>Tiles</h2>
+                            <p><span class="label label-primary">Tiles</span>&nbsp;<span class="label label-primary">Navigation</span>&nbsp;<span class="label label-primary">Links</span>&nbsp;<span class="label label-primary">Home</span>&nbsp;<span class="label label-primary">Feature</span></p>
+                            <div class="alert alert-info" role="alert"><ul class="fa-ul"><li><i class="fa fa-info-circle fa-li fa-lg"></i>Tiles are working with the icon font as well as with raster images like e. g. PNGs (optimal size: 32x32px).</li></ul></div>
+                            <p>Use tiles to display your feature on the home screen. Please refer to <a href="examples/tiles/tiles.html" target="_blank"><i class="dv dv-infocircle"></i> this example</a> and resize your browser window to see the tiles navigation behavior.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html"> &lt;nav class=&quot;nav-tiles&quot;&gt;
+   &lt;section&gt;
+   &lt;!-- Tiles using an iframe --&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-dossiers.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-messages.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-dossiers.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-messages.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-dossiers.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-messages.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-dossiers.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-messages.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-dossiers.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-messages.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-dossiers.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;iframe src=&quot;tile-messages.html&quot;&gt;&lt;/iframe&gt;
+     &lt;/article&gt;
+     &lt;!-- Legacy tiles without using an iframe --&gt;
+     &lt;article&gt;
+       &lt;a class=&quot;tile green&quot; href=&quot;#&quot;&gt;
+       &lt;h1&gt;Search&lt;/h1&gt;
+       &lt;h2&gt;Enjoy your results&lt;/h2&gt;
+       &lt;!-- No need to use a raster image. &lt;p&gt; owns the icon class &#x27;dv-search&#x27; to display a magnifier --&gt;
+       &lt;img src=&quot;&quot;/&gt;
+       &lt;p class=&quot;dv-search&quot;&gt;Finding pleasure&lt;/p&gt;
+       &lt;/a&gt;
+     &lt;/article&gt;
+     &lt;article&gt;
+       &lt;a class=&quot;tile blue&quot; href=&quot;#&quot;&gt;
+       &lt;h1&gt;Dossiers&lt;/h1&gt;
+       &lt;!-- Using an raster image to display a symbol --&gt;
+       &lt;img src=&quot;dossier.png&quot;/&gt;
+       &lt;p&gt;Browse your dossiers&lt;/p&gt;
+       &lt;aside&gt;
+       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+       Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+       &lt;/aside&gt;
+       &lt;/a&gt;
+     &lt;/article&gt;
+   &lt;/section&gt;
+ &lt;/nav&gt;</code></pre>
+                                    
+            </section>
+        </div>
+    </article>
+    <footer class="sg-footer">
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="text-muted"><span class="text-uppercase">dux</span> v1.0.0</p>
+            </div>
+            <div class="col-xs-6">
+                <p class="pull-right"><a href="http://www.d-velop.com/" target="_blank">d.velop AG</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#0" class="sg-top">Top</a>
+    <script src="public/prettify.js"></script>
+    <script>
+    prettyPrint();
+    </script>
+    <script src="../js/dux.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="public/sg-top.min.js"></script>
+    <script src="public/toastertry.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/tipuesearch_set.js"></script>
+    <script src="public/tipuesearch.min.js"></script>
+</body>
+</html>

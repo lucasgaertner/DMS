@@ -1,0 +1,299 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+// Custom control breakpoints
+// --------------------------------------------------
+$breakpoints: (
+        'h-tiles-xs' : 80px,
+        'h-tiles-sm' : 120px,
+        'h-tiles-md' : 160px,
+        'w-tiles-xs' : 450px,
+        'w-tiles-sm' : 600px,
+        'w-tiles-md' : 900px,
+        'w-tiles-lg' : 1200px,
+        'w-tiles-xl' : 1800px
+);
+
+$grid-gutter-width: $tiles-grid-gutter-width;
+
+.nav-tiles {
+
+  @include container-fixed();
+  padding-top: $tile-padding-vertical / 2;
+
+  > section {
+    @include make-row();
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  article {
+    @include set-columns(12);
+    height:  floor(($font-size-base * $line-height-small)) + ($tile-padding-vertical + 1px) * 2;
+    margin-bottom: $tiles-spacing;
+    overflow: hidden;
+
+    @include mappy-bp(w-tiles-xs) {
+      @include set-columns(4, w-tiles-xs);
+      height: 80px;
+      margin-bottom: $tiles-spacing * 2;
+    }
+
+    @include mappy-bp(w-tiles-sm) {
+      @include set-columns(3, w-tiles-sm);
+      height: 120px;
+    }
+
+    @include mappy-bp(w-tiles-md w-tiles-lg) {
+      @include set-columns(4, w-tiles-md);
+      height: 160px;
+      margin-bottom: $tiles-spacing * 3;
+
+      &:not(:nth-child(3n+1)) {
+        padding-left: 15px;
+      }
+    }
+
+    @include mappy-bp(w-tiles-lg w-tiles-xl) {
+      @include set-columns(3, w-tiles-lg);
+      height: 160px;
+      margin-bottom: $tiles-spacing * 3;
+      &:not(:nth-child(4n+1)) {
+        padding-left: 15px;
+      }
+    }
+
+    @include mappy-bp(w-tiles-xl) {
+      @include set-columns(2, w-tiles-xl);
+      height: 160px;
+      margin-bottom: $tiles-spacing * 3;
+      &:not(:nth-child(6n+1)) {
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+%tile-base {
+  @include tile-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  display: block;
+  padding: $tile-padding;
+  text-align: center;
+  line-height: 0;
+  text-decoration: none;
+  border-radius: $border-radius-base;
+
+  // Contextual variations
+  &.tile-default, &.white {
+    @include tile-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  }
+  // Primary appears as brand color
+  &.tile-primary, &.primary {
+    @include tile-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  }
+  // Success appears as green
+  &.tile-success, &.green {
+    @include tile-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  }
+  // Info appears as blue-green
+  &.tile-info, &.blue {
+    @include tile-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  }
+  // Warning appears as orange
+  &.tile-warning, &.yellow {
+    @include tile-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+  }
+  // Danger and error appear as red
+  &.tile-danger, &.red {
+    @include tile-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  }
+
+  h1 {
+    @include ellipsis();
+    font-weight: normal;
+    line-height: $line-height-small;
+    font-size: $font-size-base;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2, img, p, aside {
+    display: none;
+  }
+
+  p:before {
+    @extend .dv;
+    @extend .dv-lg;
+  }
+
+  aside {
+    @extend .small;
+    margin: 0;
+  }
+
+}
+
+// legacy tile
+//-----------------------------------------------
+article > a.tile {
+  @extend %tile-base;
+  @include mappy-bp(w-tiles-xs) {
+    @include set-tile-style-for-screen(xs);
+    height: 80px;
+  }
+  @include mappy-bp(w-tiles-sm) {
+    @include set-tile-style-for-screen(sm);
+    height: 120px;
+  }
+  @include mappy-bp(w-tiles-md) {
+    @include set-tile-style-for-screen(md);
+    height: 160px;
+  }
+}
+
+// iframe tile
+//-----------------------------------------------
+body > a.tile {
+  @extend %tile-base;
+
+  @include mappy-bp(h h-tiles-xs) {
+    @include set-tile-style-for-screen(xs);
+    height: 80px;
+  }
+
+  @include mappy-bp(h h-tiles-sm) {
+    @include set-tile-style-for-screen(sm);
+    height: 120px;
+  }
+
+  @include mappy-bp(h h-tiles-md) {
+    @include set-tile-style-for-screen(md);
+    height: 160px;
+  }
+}
+
+//@include mappy-bp(w-tiles-sm) {
+//  padding: ($padding-small-vertical / 2) ($padding-small-horizontal / 2);
+//}
+//
+//    > a {
+//      border-radius: $nav-pills-border-radius;
+//      display: block;
+//      margin-bottom: 5px;
+//      padding: $nav-link-padding;
+//      position: relative;
+//      text-align: center;
+//
+//      &:hover,
+//      &:focus {
+//        text-decoration: none;
+//      }
+//
+//      @include mappy-bp(w-tiles-sm) {
+//        border-radius: 0;
+//        height: 70px;
+//      }
+//
+//      @include mappy-bp(w-tiles-md) {
+//        height: 150px;
+//      }
+//
+//      @include mappy-bp(w-tiles-lg) {
+//        text-align: left;
+//
+//        &:hover,
+//        &:focus {
+//
+//          > .overlay {
+//            @include absolute(fill);
+//            @include square(100%);
+//            display: block;
+//            background: inherit;
+//            z-index: $zindex-tooltip - 1;
+//            padding: $padding-small-vertical $padding-small-horizontal;
+//          }
+//        }
+//      }
+//    }
+//
+//    h1 {
+//      font-size: $font-size-base;
+//      font-weight: normal;
+//      line-height: $line-height-small;
+//      margin: 0;
+//      padding: 0;
+//
+//      @include mappy-bp(w-tiles-sm) {
+//        display: none;
+//      }
+//
+//    @include mappy-bp(w-tiles-md) {
+//        color: $headings-color;
+//        display: block;
+//        font-family: $headings-font-family;
+//        font-size: $font-size-h3;
+//        font-weight: $headings-font-weight;
+//        line-height: $headings-line-height;
+//        margin-bottom: ($line-height-computed / 2);
+//        margin-top: $line-height-computed;
+//      }
+//    }
+//
+//    h2 {
+//      display: none;
+//
+//      @include mappy-bp(w-tiles-lg) {
+//        color: $headings-color;
+//        display: block;
+//        font-family: $headings-font-family;
+//        font-size: $font-size-h5;
+//        font-weight: 600;
+//        line-height: $headings-line-height;
+//        margin-bottom: ($line-height-computed / 2);
+//        margin-top: 0;
+//      }
+//    }
+//
+//    span {
+//      display: none;
+//
+//      @include mappy-bp(w-tiles-lg) {
+//        @include size(90%, $line-height-computed);
+//        @include text-overflow();
+//        display: inline-block;
+//        line-height: $line-height-large;
+//        padding-left: ($padding-large-horizontal / 2);
+//        vertical-align: middle;
+//      }
+//    }
+//
+//    i {
+//      display: none;
+//
+//      @include mappy-bp(w-tiles-sm) {
+//        display: block;
+//        line-height: 46px;
+//      }
+//
+//      @include mappy-bp(w-tiles-lg) {
+//        display: inline-block;
+//        line-height: $line-height-computed;
+//      }
+//    }
+//
+//    .overlay {
+//      @extend .small;
+//      display: none;
+//      margin: 0;
+//    }
+//  }
+//}

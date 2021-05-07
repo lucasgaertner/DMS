@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Helpers</title>
+    <link rel="stylesheet" href="public/styleguide.css" type="text/css" />
+    <link rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="../css/dux.min.css">
+
+</head>
+<body id="styleguide" data-target="#navbar-sub">
+<noscript>
+You're using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+</noscript>
+<div class="modal" role="dialog" aria-labelledby="about" tabindex="-1" id="modal-about">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">About</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h3><span class="text-uppercase">dux</span> v1.0.0</h3>
+                            <p>The most valuable front-end framework around the d.velop group for developing web-based projects.</p>
+                            <p class="text-muted">Copyright d.velop AG. All rights reserved.</p>
+                        </div>
+                        <div class="col-xs-5">
+                            <address>
+                                <strong>d.velop AG</strong><br>
+                                Schildarpstraße 6-8<br>
+                                48712 Gescher<br>
+                                Germany<br>
+                            </address>
+                            <address>
+                                <span class="text-muted">Phone:</span> +49 2542 93070
+                            </address>
+                            <address>
+                                <span class="text-muted">Email:</span> info@d-velop.de
+                            </address>
+                            <address>
+                                <span class="text-muted">Web:</span> <a href="http://www.d-velop.de" target="_blank">http://www.d-velop.de</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><span class="text-uppercase">dux</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav" data-kss-ref="helpers">
+                    <li><a href="section-css.html"><strong>CSS</strong></a></li>
+                    <li><a href="section-components.html"><strong>Components</strong></a></li>
+                    <li><a href="section-javascript.html"><strong>Javascript</strong></a></li>
+                    <li><a href="section-helpers.html"><strong>Helpers</strong></a></li>
+                </ul>
+                <form action="section-search.html" class="navbar-form navbar-left" role="search">
+                    <div class="input-group">
+                        <input id="tipue_search_input" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="toastrTry"><strong>Toast it!</strong></a></li>
+                    <li><a href="section-changes.html"><strong>What's new</strong></a></li>
+                    <li><a href="" data-toggle="modal" data-target="#modal-about"><strong>About</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                <header class="page-header bg-primary container-fluid">
+                    <div class="container bg-primary">
+                    <h1>Helpers</h1>
+                        <p>Enjoy the benefits of having a helper. Helper classes bring joy and simplicity into your projects.</p>
+
+                    </div>
+                </header>
+    <article class="container sg-container">
+        <div class="row">
+            <nav class="hidden-xs fixed-top" id="navbar-sub">
+                        <ul class="nav nav-pills nav-stacked" data-kss-ref="helpers">
+                                            <li><a href="#sg-helpers-typography"><strong>Typography</strong></a></li>
+                                            <li><a href="#sg-helpers-typography"><strong>Responsive visibility</strong></a></li>
+                                            <!--4.1.1.-->
+                                            <li><a href="#sg-helpers-typography-text-align">Text alignment</a></li>
+                                            <!--4.1.1.1.-->
+                                            <li><a href="#sg-helpers-typography-text-align-responsive">Responsive alignment</a></li>
+                                            <li><a href="#sg-helpers-text"><strong>Contextual colors</strong></a></li>
+                                            <li><a href="#sg-helpers-background"><strong>Contextual backgrounds</strong></a></li>
+                        </ul>
+            </nav>
+            <section class="col-sm-9 col-sm-offset-3">
+                        <span class="sg-anchor" id="sg-helpers-typography"></span>
+                        <h2>Typography</h2>
+                            <p><span class="label label-primary">Ellipsis</span>&nbsp;<span class="label label-primary">Truncated</span>&nbsp;<span class="label label-primary">Text</span>&nbsp;<span class="label label-primary">Helpers</span></p>
+                            <p>If you want the text to appear truncated and to prevent word wrap.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;p class=&quot;[modifier]&quot;&gt;Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.&lt;/p&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-truncate">Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Truncated text
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-truncate</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-helpers-typography"></span>
+                        <h2>Responsive visibility</h2>
+                            <p><span class="label label-primary">Utilities</span>&nbsp;<span class="label label-primary">Responsive</span>&nbsp;<span class="label label-primary">Hide</span>&nbsp;<span class="label label-primary">Show</span>&nbsp;<span class="label label-primary">Helpers</span></p>
+                            <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device&#39;s presentation.</p>
+<p><div class="table-responsive"></p>
+<p><table class="table table-bordered table-striped"></p>
+<p><thead></p>
+<p><tr></p>
+<p><th></th></p>
+<p><th>Extra small</th></p>
+<p><th>Small</th></p>
+<p><th>Medium</th></p>
+<p><th>Large</th>
+</tr>
+</thead></p>
+<p><tbody></p>
+<p><tr></p>
+<p><td><code>.visible-xs-&#42;</code></td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-disabled">Hidden</td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.visible-sm-&#42;</code></td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-disabled">Hidden</td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.visible-md-&#42;</code></td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-disabled">Hidden</td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.visible-lg-&#42;</code></td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-success text-success">Visible</td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.hidden-xs</code></td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-success text-success">Visible</td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.hidden-sm</code></td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-success text-success">Visible</td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.hidden-md</code></td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-disabled">Hidden</td></p>
+<p><td class="bg-success text-success">Visible</td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.hidden-lg</code></td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-success text-success">Visible</td></p>
+<p><td class="bg-disabled">Hidden</td>
+</table>
+</tr>
+</tbody>
+</div></p>
+<p><div class="table-responsive"></p>
+<p><table class="table table-bordered table-striped"></p>
+<p><thead></p>
+<p><tr></p>
+<p><th>Group of classes</th></p>
+<p><th>CSS <code>display</code></th>
+</tr>
+</thead></p>
+<p><tbody></p>
+<p><tr></p>
+<p><td><code>.visible-&#42;-block</code></td></p>
+<p><td><code>display: block;</code></td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.visible-&#42;-inline</code></td></p>
+<p><td><code>display: inline;</code></td>
+</tr></p>
+<p><tr></p>
+<p><td><code>.visible-&#42;-inline-block</code></td></p>
+<p><td><code>display: inline-block;</code></td>
+</tr>
+</tbody>
+</table>
+</div></p>
+<p>So, for extra small (<code>xs</code>) screens for example, the available <code>.visible-&#42;-&#42;</code> classes are: <code>.visible-xs-block</code>, <code>.visible-xs-inline</code>, and <code>.visible-xs-inline-block</code>.</p>
+                        <span class="sg-anchor" id="sg-helpers-typography-text-align"></span>
+                        <h3>Text alignment</h3>
+                            <p><span class="label label-primary">Alignment</span>&nbsp;<span class="label label-primary">Text</span>&nbsp;<span class="label label-primary">Helpers</span></p>
+                            <p>If you want text to be aligned left, right or justified, please refer to following css.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;p class=&quot;[modifier]&quot;&gt;Integer tincidunt.&lt;/p&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-left">Integer tincidunt.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Align left
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-left</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-center">Integer tincidunt.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Align center
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-center</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-right">Integer tincidunt.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Align right
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-right</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-justify">Integer tincidunt.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Justify text
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-justify</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-nowrap">Integer tincidunt.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Do not wrap text
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-nowrap</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-helpers-typography-text-align-responsive"></span>
+                        <h4>Responsive alignment</h4>
+                            <p><span class="label label-primary">Alignment</span>&nbsp;<span class="label label-primary">Responsive</span>&nbsp;<span class="label label-primary">Text</span>&nbsp;<span class="label label-primary">Helpers</span></p>
+                            <div class="alert alert-info" role="alert"><ul class="fa-ul"><li><i class="fa fa-info-circle fa-li fa-lg"></i>To apply alignments for any screen sizes except a certain screen size  use e. g. <strong>text-right-not-lg</strong>.</li></ul></div>
+                            <p>If you want text to be aligned left, right or justified in association with the current screen size, please refer to the following classes. Resize your browser or load on different devices to test the responsive alignment classes.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;p class=&quot;[modifier]&quot;&gt;Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. &lt;/p&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-right-xs">Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Align right on extra small screens, only
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-right-xs</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-center-sm">Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Center on small screens, only
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-center-sm</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-left-md">Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Align left on medium screens, only
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-left-md</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-justify-lg">Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Justify text on larger screens, only
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-justify-lg</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-helpers-text"></span>
+                        <h2>Contextual colors</h2>
+                            <p><span class="label label-primary">Colors</span>&nbsp;<span class="label label-primary">Text</span>&nbsp;<span class="label label-primary">Helpers</span></p>
+                            <p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;p class=&quot;[modifier]&quot;&gt;Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.&lt;/p&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-muted">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Muted text color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-muted</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-success">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Success text color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-success</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-info">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Info text color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-info</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-warning">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Warning text color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-warning</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-danger">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Danger text color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-danger</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="text-primary">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Primary text color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.text-primary</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-helpers-background"></span>
+                        <h2>Contextual backgrounds</h2>
+                            <p><span class="label label-primary">Colors</span>&nbsp;<span class="label label-primary">Text</span>&nbsp;<span class="label label-primary">Background</span>&nbsp;<span class="label label-primary">Helpers</span></p>
+                            <p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;p class=&quot;[modifier]&quot;&gt;Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.&lt;/p&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="bg-success">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Success background color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.bg-success</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="bg-info">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Info background color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.bg-info</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="bg-warning">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Warning background color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.bg-warning</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="bg-danger">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Danger background color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.bg-danger</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="bg-primary">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Primary background color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.bg-primary</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <p class="bg-disabled">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Disabled background color
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.bg-disabled</span>
+                                        </div>
+                                    </li>
+                                </ul>
+            </section>
+        </div>
+    </article>
+    <footer class="sg-footer">
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="text-muted"><span class="text-uppercase">dux</span> v1.0.0</p>
+            </div>
+            <div class="col-xs-6">
+                <p class="pull-right"><a href="http://www.d-velop.com/" target="_blank">d.velop AG</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#0" class="sg-top">Top</a>
+    <script src="public/prettify.js"></script>
+    <script>
+    prettyPrint();
+    </script>
+    <script src="../js/dux.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="public/sg-top.min.js"></script>
+    <script src="public/toastertry.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/tipuesearch_set.js"></script>
+    <script src="public/tipuesearch.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+gini = 0.0
+samples = 46
+value = [0, 46, 0]
+
+X[3] <= 1.65
+
+gini = 0.042
+
+samples = 47
+value = [0, 46, 1]
+
+gini = 0.0
+samples = 1
+value = [0, 0, 1]
+
+X[3] <= 0.8
+gini = 0.667
+
+samples = 147
+value = [49, 49, 49]
+
+False
+
+ 
+
+True
+
+X([3] <= 1.75
+gini = 0.5
+samples = 98
+value = [0, 49, 49]
+
+gini= 0.0
+samples = 49
+value = [49, 0, 0]
+
+X([2] <= 4.95
+
+gini = 0.171
+
+samples = 53
+value = [0, 48, 5]
+
+X[2] <= 4.85
+
+gini = 0.043
+
+samples = 45
+value = [0, 1, 44]
+
+X[3] <= 1.55
+
+gini = 0.444
+
+samples = 6
+value = [0, 2, 4]
+
+X[1] <= 3.1
+
+gini= 0.444
+
+samples = 3
+value = [0, 1, 2]
+
+X[0] <= 6.95
+
+gini = 0.444
+
+samples = 3
+value = [0, 2, 1]
+
+gini = 0.0
+samples = 3
+value = [0, 0, 3]
+
+gini = 0.0
+samples = 2
+value = [0, 0, 2]
+
+gini = 0.0
+samples = 2
+value = [0, 2, 0]
+
+gini = 0.0
+samples = 1
+value = [0, 0, 1]
+
+gini = 0.0
+samples = 42
+value = [0, 0, 42]
+
+gini = 0.0
+samples = 1
+value = [0, 1, 0]
+
+ 
+

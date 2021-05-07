@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='dux-dist/css/style.css') }}" type="text/css" media="screen,projection,print"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='dux-dist/css/app.css') }}" type="text/css" media="screen,projection,print"/>
+
+<div class="overlay">
+
+    <button id="upload" class="btn btn-info"  type="submit"><a href="/">
+        <img class="elementIcon" src="{{ url_for('static', filename='dux-dist/images/light/file.png') }}" alt="Upload Documents">
+    </a></button>
+    <button id="back" class="btn btn-info"  type="submit"><a href="javascript:history.back()">
+        <img class="elementIcon" src="{{ url_for('static', filename='dux-dist/images/light/left-arrow.png') }}" alt="Upload Documents">
+    </a></button>
+</div>
+
+<div class="viewer">
+<object data="{{ url_for('static', filename='/' + data.filename )}}" type="application/pdf" style="min-height:100vh;width:100%"></object>
+</div>

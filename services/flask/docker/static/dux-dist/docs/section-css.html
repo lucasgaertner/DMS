@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS</title>
+    <link rel="stylesheet" href="public/styleguide.css" type="text/css" />
+    <link rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="../css/dux.min.css">
+
+</head>
+<body id="styleguide" data-target="#navbar-sub">
+<noscript>
+You're using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+</noscript>
+<div class="modal" role="dialog" aria-labelledby="about" tabindex="-1" id="modal-about">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">About</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h3><span class="text-uppercase">dux</span> v1.0.0</h3>
+                            <p>The most valuable front-end framework around the d.velop group for developing web-based projects.</p>
+                            <p class="text-muted">Copyright d.velop AG. All rights reserved.</p>
+                        </div>
+                        <div class="col-xs-5">
+                            <address>
+                                <strong>d.velop AG</strong><br>
+                                Schildarpstraße 6-8<br>
+                                48712 Gescher<br>
+                                Germany<br>
+                            </address>
+                            <address>
+                                <span class="text-muted">Phone:</span> +49 2542 93070
+                            </address>
+                            <address>
+                                <span class="text-muted">Email:</span> info@d-velop.de
+                            </address>
+                            <address>
+                                <span class="text-muted">Web:</span> <a href="http://www.d-velop.de" target="_blank">http://www.d-velop.de</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><span class="text-uppercase">dux</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav" data-kss-ref="css">
+                    <li><a href="section-css.html"><strong>CSS</strong></a></li>
+                    <li><a href="section-components.html"><strong>Components</strong></a></li>
+                    <li><a href="section-javascript.html"><strong>Javascript</strong></a></li>
+                    <li><a href="section-helpers.html"><strong>Helpers</strong></a></li>
+                </ul>
+                <form action="section-search.html" class="navbar-form navbar-left" role="search">
+                    <div class="input-group">
+                        <input id="tipue_search_input" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="toastrTry"><strong>Toast it!</strong></a></li>
+                    <li><a href="section-changes.html"><strong>What's new</strong></a></li>
+                    <li><a href="" data-toggle="modal" data-target="#modal-about"><strong>About</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+                <header class="page-header bg-primary container-fluid">
+                    <div class="container bg-primary">
+                    <h1>CSS</h1>
+                        <p>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.</p>
+
+                    </div>
+                </header>
+    <article class="container sg-container">
+        <div class="row">
+            <nav class="hidden-xs fixed-top" id="navbar-sub">
+                        <ul class="nav nav-pills nav-stacked" data-kss-ref="css">
+                                            <li><a href="#sg-css-buttons"><strong>Buttons</strong></a></li>
+                                            <!--1.1.1.-->
+                                            <li><a href="#sg-css-buttons-sizes">Sizes</a></li>
+                                            <li><a href="#sg-css-forms"><strong>Forms</strong></a></li>
+                                            <!--1.2.1.-->
+                                            <li><a href="#sg-css-forms-horizontal">Horizontal</a></li>
+                                            <!--1.2.2.-->
+                                            <li><a href="#sg-css-forms-inline">Inline</a></li>
+                                            <li><a href="#sg-css-grid"><strong>Grid</strong></a></li>
+                                            <!--1.3.1.-->
+                                            <li><a href="#sg-css-grid-media-queries">Media Queries</a></li>
+                                            <!--1.3.2.-->
+                                            <li><a href="#sg-css-grid-options">Grid Options</a></li>
+                                            <li><a href="#sg-css-tables"><strong>Tables</strong></a></li>
+                                            <!--1.4.1.-->
+                                            <li><a href="#sg-css-tables-contextual-classes">Contextual classes</a></li>
+                                            <!--1.4.2.-->
+                                            <li><a href="#sg-css-tables-responsive">Responsive tables</a></li>
+                                            <li><a href="#sg-css-typography"><strong>Typography</strong></a></li>
+                                            <!--1.5.1.-->
+                                            <li><a href="#sg-css-typography-headings">Headings</a></li>
+                                            <!--1.5.2.-->
+                                            <li><a href="#sg-css-typography-paragraph">Paragraph</a></li>
+                        </ul>
+            </nav>
+            <section class="col-sm-9 col-sm-offset-3">
+                        <span class="sg-anchor" id="sg-css-buttons"></span>
+                        <h2>Buttons</h2>
+                            <p><span class="label label-primary">Buttons</span>&nbsp;<span class="label label-primary">Core</span>&nbsp;<span class="label label-primary">Links</span></p>
+                            <p>Use any of the available button classes to quickly create a styled button.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn [modifier]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-default">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Default
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-default</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-success">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Success
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-success</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-info">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Info
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-info</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-warning">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Warning
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-warning</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-danger">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Danger
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-danger</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-link">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Link
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-link</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-css-buttons-sizes"></span>
+                        <h3>Sizes</h3>
+                            <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-md</code>,<code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default [modifier]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-default btn-lg">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Large
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-lg</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-default btn-md">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Medium
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-md</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-default btn-sm">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Small
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-sm</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <button type="button" class="btn btn-default btn-xs">Button</button>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Extra small
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.btn-xs</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-css-forms"></span>
+                        <h2>Forms</h2>
+                            <p><span class="label label-primary">Forms</span>&nbsp;<span class="label label-primary">Core</span></p>
+                            <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in .form-group for optimum spacing.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;form role=&quot;form&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label&gt;Email address&lt;/label&gt;
+&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter email&quot; name=&quot;email&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label&gt;Password&lt;/label&gt;
+&lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Password&quot; name=&quot;password&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label&gt;File input&lt;/label&gt;
+&lt;input type=&quot;file&quot; name=&quot;file&quot;&gt;
+&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+&lt;label&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;check&quot;&gt; Check me out
+&lt;/label&gt;
+&lt;/div&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <form role="form">
+<div class="form-group">
+<label>Email address</label>
+<input type="email" class="form-control" placeholder="Enter email" name="email">
+</div>
+<div class="form-group">
+<label>Password</label>
+<input type="password" class="form-control" placeholder="Password" name="password">
+</div>
+<div class="form-group">
+<label>File input</label>
+<input type="file" name="file">
+<p class="help-block">Example block-level help text here.</p>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="check"> Check me out
+</label>
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-css-forms-horizontal"></span>
+                        <h3>Horizontal</h3>
+                            <p>Use predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form (which doesn&#39;t have to be a <code>&lt;form&gt;</code>).</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;form class=[modifier]&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+&lt;label&gt;
+&lt;input type=&quot;checkbox&quot;&gt; Remember me
+&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <form class=form-horizontal>
+<div class="form-group">
+<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+<div class="col-sm-10">
+<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+</div>
+</div>
+<div class="form-group">
+<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<div class="checkbox">
+<label>
+<input type="checkbox"> Remember me
+</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-default">Sign in</button>
+</div>
+</div>
+</form>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Horizontal form
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.form-horizontal</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-css-forms-inline"></span>
+                        <h3>Inline</h3>
+                            <p>Add <code>.form-inline</code> to your form (which doesn&#39;t have to be a <code>&lt;form&gt;</code>) for left-aligned and inline-block controls. This only applies to forms within viewports that are at least 768px wide.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;form class=[modifier]&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;exampleInputName2&quot;&gt;Name&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInputName2&quot; placeholder=&quot;Jane Doe&quot;&gt;
+&lt;/div&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Send invitation&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <form class=form-inline>
+<div class="form-group">
+<label for="exampleInputName2">Name</label>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+</div>
+<button type="submit" class="btn btn-default">Send invitation</button>
+</form>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Inline form
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.form-inline</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-css-grid"></span>
+                        <h2>Grid</h2>
+                            <p><span class="label label-primary">Grid</span>&nbsp;<span class="label label-primary">Core</span>&nbsp;<span class="label label-primary">Mobile</span>&nbsp;<span class="label label-primary">Tablet</span>&nbsp;<span class="label label-primary">Desktop</span>&nbsp;<span class="label label-primary">Media Queries</span></p>
+                            <div class="alert alert-danger" role="alert"><ul class="fa-ul"><li><i class="fa fa-bolt fa-li fa-lg"></i>Content should be placed within columns, and only columns may be immediate children of rows</li></ul></div>
+                            <p>DUX includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts. Please refer also to the bootstrap grid system <a href="http://getbootstrap.com/css/#grid" target="_blank">@http://getbootstrap.com/css/#grid</a></p>
+<p><p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here&#39;s how the grid system works:</p></p>
+<ul>
+    <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
+    <li>Use rows to create horizontal groups of columns.</li>
+    <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+    <li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Mixins can also be used for more semantic layouts.</li>
+    <li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
+    <li>The negative margin is why the examples below are outdented. It&#39;s so that content within grid columns is lined up with non-grid content.</li>
+    <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
+    <li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</li>
+    <li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any <code>.col-md-</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-</code> class is not present.</li>
+</ul>
+                        <span class="sg-anchor" id="sg-css-grid-media-queries"></span>
+                        <h3>Media Queries</h3>
+                            <p>We use the following media queries in our files to create the key breakpoints in our grid system.</p>
+<pre class="prettyprint"><code class="scss">/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+</code></pre>
+<p>We occasionally expand on these media queries to include a max-width to limit CSS to a narrower set of devices.</p>
+<pre class="prettyprint"><code class="scss">@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+</code></pre>
+                        <span class="sg-anchor" id="sg-css-grid-options"></span>
+                        <h3>Grid Options</h3>
+                            <p>See how aspects of the grid system work across multiple devices with a handy table.</p>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th></th>
+<th>
+ Extra small devices
+<small>Phones (&lt;768px)</small>
+</th>
+<th>
+ Small devices
+<small>Tablets (≥768px)</small>
+</th>
+<th>
+ Medium devices
+<small>Desktops (≥992px)</small>
+</th>
+<th>
+ Large devices
+<small>Desktops (≥1200px)</small>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="text-nowrap" scope="row">Grid behavior</th>
+<td>Horizontal at all times</td>
+<td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row">Container width</th>
+<td>None (auto)</td>
+<td>750px</td>
+<td>970px</td>
+<td>1170px</td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row">Class prefix</th>
+<td><code>.col-xs-</code></td>
+<td><code>.col-sm-</code></td>
+<td><code>.col-md-</code></td>
+<td><code>.col-lg-</code></td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row"># of columns</th>
+<td colspan="4">12</td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row">Column width</th>
+<td class="text-muted">Auto</td>
+<td>~62px</td>
+<td>~81px</td>
+<td>~97px</td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row">Gutter width</th>
+<td colspan="4">30px (15px on each side of a column)</td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row">Nestable</th>
+<td colspan="4">Yes</td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row">Offsets</th>
+<td colspan="4">Yes</td>
+</tr>
+<tr>
+<th class="text-nowrap" scope="row">Column ordering</th>
+<td colspan="4">Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+                        <span class="sg-anchor" id="sg-css-tables"></span>
+                        <h2>Tables</h2>
+                            <p><span class="label label-primary">Tables</span>&nbsp;<span class="label label-primary">Core</span></p>
+                            <p>For basic styling -- light padding and only horizontal dividers -- add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we&#39;ve opted to isolate our custom table styles.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;table class=&quot;table [modifier]&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;#&lt;/th&gt;
+&lt;th&gt;First Name&lt;/th&gt;
+&lt;th&gt;Last Name&lt;/th&gt;
+&lt;th&gt;Username&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Mark&lt;/td&gt;
+&lt;td&gt;Otto&lt;/td&gt;
+&lt;td&gt;@mdo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Jacob&lt;/td&gt;
+&lt;td&gt;Thornton&lt;/td&gt;
+&lt;td&gt;@fat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Larry&lt;/td&gt;
+&lt;td&gt;the Bird&lt;/td&gt;
+&lt;td&gt;@twitter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table table-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Username</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Mark</td>
+<td>Otto</td>
+<td>@mdo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Jacob</td>
+<td>Thornton</td>
+<td>@fat</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Larry</td>
+<td>the Bird</td>
+<td>@twitter</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.table-striped</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table table-bordered">
+<thead>
+<tr>
+<th>#</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Username</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Mark</td>
+<td>Otto</td>
+<td>@mdo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Jacob</td>
+<td>Thornton</td>
+<td>@fat</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Larry</td>
+<td>the Bird</td>
+<td>@twitter</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Add <code>.table-bordered</code> for borders on all sides of the table and cells.
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.table-bordered</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table table-hover">
+<thead>
+<tr>
+<th>#</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Username</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Mark</td>
+<td>Otto</td>
+<td>@mdo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Jacob</td>
+<td>Thornton</td>
+<td>@fat</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Larry</td>
+<td>the Bird</td>
+<td>@twitter</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Add <code>.table-hover</code> to enable a hover state on table rows within a &lt;tbody&gt;.
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.table-hover</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table table-condensed">
+<thead>
+<tr>
+<th>#</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Username</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Mark</td>
+<td>Otto</td>
+<td>@mdo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Jacob</td>
+<td>Thornton</td>
+<td>@fat</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Larry</td>
+<td>the Bird</td>
+<td>@twitter</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.table-condensed</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-css-tables-contextual-classes"></span>
+                        <h3>Contextual classes</h3>
+                            <p>Use contextual classes to color table rows or individual cells.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;table class=&quot;table&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;#&lt;/th&gt;
+&lt;th&gt;Column heading&lt;/th&gt;
+&lt;th&gt;Column heading&lt;/th&gt;
+&lt;th&gt;Column heading&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;[modifier]&quot;&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                                <ul class="sg-modifier">
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Column heading</th>
+<th>Column heading</th>
+<th>Column heading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr class="active">
+<td>2</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Applies the hover color to a particular row or cell
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.active</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Column heading</th>
+<th>Column heading</th>
+<th>Column heading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr class="success">
+<td>2</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Indicates a successful or positive action
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.success</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Column heading</th>
+<th>Column heading</th>
+<th>Column heading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr class="info">
+<td>2</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Indicates a neutral informative change or action
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.info</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Column heading</th>
+<th>Column heading</th>
+<th>Column heading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr class="warning">
+<td>2</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Indicates a warning that might need attention
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.warning</span>
+                                        </div>
+                                    </li>
+                                        <li class="row">
+                                            <div class="col-xs-6 col-sm-8">
+                                                <table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Column heading</th>
+<th>Column heading</th>
+<th>Column heading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr class="danger">
+<td>2</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+</tbody>
+</table>
+                                            </div>
+                                        <div class="hidden-xs col-sm-2">
+                                            Indicates a dangerous or potentially negative action
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <span class="label label-default pull-right">.danger</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <span class="sg-anchor" id="sg-css-tables-responsive"></span>
+                        <h3>Responsive tables</h3>
+                            <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;div class=&quot;table-responsive&quot;&gt;
+&lt;table class=&quot;table&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;#&lt;/th&gt;
+&lt;th&gt;Column heading&lt;/th&gt;
+&lt;th&gt;Column heading&lt;/th&gt;
+&lt;th&gt;Column heading&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;td&gt;Column content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Column heading</th>
+<th>Column heading</th>
+<th>Column heading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Column content</td>
+<td>Column content</td>
+<td>Column content</td>
+</tr>
+</tbody>
+</table>
+</div>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-css-typography"></span>
+                        <h2>Typography</h2>
+                            <p><span class="label label-primary">Typography</span>&nbsp;<span class="label label-primary">Fonts</span>&nbsp;<span class="label label-primary">Headings</span>&nbsp;<span class="label label-primary">Paragraphs</span></p>
+                            <p>Use any of the available button classes to quickly create a styled button.</p>
+
+                        <span class="sg-anchor" id="sg-css-typography-headings"></span>
+                        <h3>Headings</h3>
+                            <p>Default styling of typography headings.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+                                        </div>
+                                    </div>
+                        <span class="sg-anchor" id="sg-css-typography-paragraph"></span>
+                        <h3>Paragraph</h3>
+                            <p>Default styling of typography paragraphs.</p>
+
+                        <h3 class="sg-subtitle">Example</h3>
+                            <pre class="prettyprint"><code class="html">&lt;p&gt;The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
+lovably dim wiki-girl. Watch &quot;Jeopardy!&quot;, Alex Trebek&#x27;s fun TV quiz game. How
+razorback-jumping frogs can level six piqued gymnasts! All questions asked by
+five watched experts — amaze the judge.&lt;/p&gt;</code></pre>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p>The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
+lovably dim wiki-girl. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. How
+razorback-jumping frogs can level six piqued gymnasts! All questions asked by
+five watched experts — amaze the judge.</p>
+                                        </div>
+                                    </div>
+            </section>
+        </div>
+    </article>
+    <footer class="sg-footer">
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="text-muted"><span class="text-uppercase">dux</span> v1.0.0</p>
+            </div>
+            <div class="col-xs-6">
+                <p class="pull-right"><a href="http://www.d-velop.com/" target="_blank">d.velop AG</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#0" class="sg-top">Top</a>
+    <script src="public/prettify.js"></script>
+    <script>
+    prettyPrint();
+    </script>
+    <script src="../js/dux.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="public/sg-top.min.js"></script>
+    <script src="public/toastertry.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/tipuesearch_set.js"></script>
+    <script src="public/tipuesearch.min.js"></script>
+</body>
+</html>

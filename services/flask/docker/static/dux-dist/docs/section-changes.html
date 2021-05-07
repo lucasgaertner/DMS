@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Changelog</title>
+    <link rel="stylesheet" href="public/styleguide.css" type="text/css" />
+    <link rel="stylesheet" href="../css/dux.min.css">
+</head>
+<body id="styleguide">
+<noscript>
+    You're using this site with javascript disabled. Javascript is essential for using this site. Please enable it.
+</noscript>
+<div class="modal" role="dialog" aria-labelledby="about" tabindex="-1" id="modal-about">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">About</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h3><span class="text-uppercase">dux</span> v1.0.0</h3>
+                            <p>The most valuable front-end framework around the d.velop group for developing web-based projects.</p>
+                            <p class="text-muted">Copyright d.velop AG. All rights reserved.</p>
+                        </div>
+                        <div class="col-xs-5">
+                            <address>
+                                <strong>d.velop AG</strong><br>
+                                Schildarpstraße 6-8<br>
+                                48712 Gescher<br>
+                                Germany<br>
+                            </address>
+                            <address>
+                                <span class="text-muted">Phone:</span> +49 2542 93070
+                            </address>
+                            <address>
+                                <span class="text-muted">Email:</span> info@d-velop.de
+                            </address>
+                            <address>
+                                <span class="text-muted">Web:</span> <a href="http://www.d-velop.de" target="_blank">http://www.d-velop.de</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">DUX</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav" data-kss-ref="styleguide.homepage">
+                <li><a href="section-css.html"><strong>CSS</strong></a></li>
+                <li><a href="section-components.html"><strong>Components</strong></a></li>
+                <li><a href="section-javascript.html"><strong>Javascript</strong></a></li>
+                <li><a href="section-helpers.html"><strong>Helpers</strong></a></li>
+            </ul>
+            <form action="section-search.html" class="navbar-form navbar-left" role="search">
+                <div class="input-group">
+                    <input id="tipue_search_input" name="q" autocomplete="off" type="text" class="form-control" placeholder="Search" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="toastrTry"><strong>Toast it!</strong></a></li>
+                <li><a href="section-changes.html"><strong>What's new</strong></a></li>
+                <li><a href="" data-toggle="modal" data-target="#modal-about"><strong>About</strong></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <header class="page-header bg-primary container-fluid">
+        <div class="container bg-primary">
+            <h1>Changelog</h1>
+            <p>The most valuable front-end framework around the d.velop group for developing web-based projects.</p>
+        </div>
+    </header>
+    <article class="container sg-container">
+        <h3 id="v1-0-0">v1.0.0</h3>
+<ul>
+<li><i class="dv dv-bolt dv-fw text-danger"></i>Breaking change in tiles-specifications was necessary (DU-86). Please refer to the <a href="section-components.html#sg-components-tiles">component section</a>.</li>
+<li>PNGs available in company&#39;s spot color <i class="dv dv-warning dv-fw text-warning"></i>The <strong>dark</strong> color was set to deprecated and will be removed in next the major release. Please use <strong>gray</strong> instead.</li>
+<li>Fixed: checkboxes and radio buttons disappear with selection (DU-105)</li>
+<li>Tabs keeping appearance and shape independently from global breakpoints (DSWEB-11398)</li>
+<li>New Icon<ul>
+<li>dv-multidoctype</li>
+</ul>
+</li>
+<li>Improved icons (DU-17)<ul>
+<li>dv-doctypesmall</li>
+<li>dv-dossiersmall</li>
+<li>dv-dossier</li>
+<li>dv-multidossier</li>
+</ul>
+</li>
+<li>Other improved icons<ul>
+<li>dv-txt</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0-9-0">v0.9.0</h3>
+<ul>
+<li>Styling <code>&lt;noscript&gt;</code> (DU-92)</li>
+<li>New helper classes to align text in particular situations</li>
+<li>New helper classes for responsive visibility</li>
+<li>Background for disabled context <code>.bg-disabled</code></li>
+<li>New Icon<ul>
+<li>dv-multidossier (DU-104)</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0-8-1">v0.8.1</h3>
+<ul>
+<li><i class="dv dv-bolt dv-fw text-danger"></i>Reactivated automatic maven deployment</li>
+<li>More accurate js-optimizing &amp; -packaging</li>
+<li>Fixed cropping of transparent space in PNGs</li>
+</ul>
+<h3 id="v0-8-0">v0.8.0</h3>
+<ul>
+<li><i class="dv dv-warning dv-fw text-danger"></i>Move git repository to common group (please run <code>bower cache clean</code> before updating)</li>
+<li>Update fallback-iconfont (fontawesome) to version 4.4.0</li>
+<li>New helper class <code>.text-truncate</code> (DSWEB-11399)</li>
+<li><i class="dv dv-infocircle dv-fw text-info"></i>New name for icon class <code>.dv-decrypt</code> (formerly known as <code>.dv-crypt</code>) -&gt; thx@mkais <i class="fa fa-thumbs-up fa-fw"></i></li>
+<li>Smoother button-green to avoid eye-pain -&gt; thx@skir <i class="fa fa-thumbs-up fa-fw"></i></li>
+<li>Download shapes from d.velop iconfont as colored PNGs</li>
+<li>Improved visibility of active tab (DSWEB-12049)</li>
+<li>New icons<ul>
+<li>dv-dossier</li>
+</ul>
+</li>
+<li>Improved icons (DU-17)<ul>
+<li>dv-dossiersmall</li>
+<li>dv-doctypesmall</li>
+</ul>
+</li>
+<li>Changed sidebar-scrolling-behavior in online docs</li>
+<li>Fixed wrong postal code of Gescher</li>
+</ul>
+<h3 id="v0-7-0">v0.7.0</h3>
+<ul>
+<li>Fixed: Spinning icons in IE seem to rotate around incorrect origin (DSWEB-11794)</li>
+<li>Bring modals in front of your content to display extra information (please refer to the about dialog or the javascript section)</li>
+<li>New icons<ul>
+<li>dv-page</li>
+<li>dv-task</li>
+<li>dv-connected</li>
+<li>dv-disconncted</li>
+</ul>
+</li>
+<li>Improved icons<ul>
+<li>dv-sortdesc</li>
+<li>dv-sortasc</li>
+</ul>
+</li>
+<li>New helper classes for text and backgrounds</li>
+<li>Better javascript bundling (removed useless plugins from dux)</li>
+</ul>
+<h3 id="v0-6-0">v0.6.0</h3>
+<ul>
+<li>Very simple search for docs (works online and from local directory)</li>
+<li>Removed link-hover-decoration (underline) on hyperlinks</li>
+<li>New icons<ul>
+<li>dv-import</li>
+<li>dv-mapping</li>
+<li>dv-server</li>
+<li>dv-graduate</li>
+<li>dv-guard</li>
+<li>dv-selfsign</li>
+<li>dv-sync</li>
+<li>dv-sortdesc</li>
+<li>dv-sortasc</li>
+</ul>
+</li>
+<li>Improved icons<ul>
+<li>dv-desktop</li>
+<li>dv-halfscreen</li>
+<li>dv-crypt</li>
+<li>dv-sign</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0-5-0">v0.5.0</h3>
+<ul>
+<li>This log to show important changes, fixes or features</li>
+<li>Version und project information as file header (css, js and scss)</li>
+<li>Improved: Downsize headlines from h1 to h3 (DSWEB-10655)</li>
+<li>New icons<ul>
+<li>dv-bolt</li>
+<li>dv-crypt</li>
+<li>dv-desktop</li>
+<li>dv-infocircle</li>
+<li>dv-sign</li>
+<li>dv-success</li>
+</ul>
+</li>
+<li>Maven installation available (com.dvelop.dux)</li>
+</ul>
+<h3 id="v0-4-1">v0.4.1</h3>
+<ul>
+<li>Improved: Hide tab in details view, except there are more than one single tab (DSWEB-11411)</li>
+</ul>
+<h3 id="v0-4-0">v0.4.0</h3>
+<ul>
+<li>Bootstrap 3.3.5 Update</li>
+<li>Woff2 as additional web font-format for d.velop iconfont</li>
+</ul>
+<h3 id="v0-3-0">v0.3.0</h3>
+<ul>
+<li>New screen positions for toastr-messages</li>
+</ul>
+<h3 id="v0-2-0">v0.2.0</h3>
+<ul>
+<li>Split screen icon added</li>
+<li>Debug improvements (maps)</li>
+</ul>
+<h3 id="v0-1-2">v0.1.2</h3>
+<ul>
+<li>Add IIS-settings to README</li>
+<li>Build-infratructure improvements</li>
+<li>Annotation about the basic grid-system</li>
+</ul>
+<h3 id="v0-1-1">v0.1.1</h3>
+<ul>
+<li>Display current version in footer</li>
+<li>Raise sass precision (more accurate calculation)</li>
+<li>Documentation: display icons in responsive columns</li>
+</ul>
+<h3 id="v0-1-0">v0.1.0</h3>
+<ul>
+<li>New d.velop iconfont to display symbols</li>
+<li>Automated documentation</li>
+<li>Rotating and flipping icons</li>
+<li>Bootstrap 3.3.4 as backend</li>
+<li>Bower installation available (dvelop-dux)</li>
+</ul>
+
+    </article>
+    <footer class="sg-footer">
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="text-muted"><span style="text-transform: uppercase">dux</span> v1.0.0</p>
+            </div>
+            <div class="col-xs-6">
+                <p class="pull-right"><a href="http://www.d-velop.com/" target="_blank">d.velop AG</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#0" class="sg-top">Top</a>
+<script src="../js/dux.min.js"></script>
+<script src="public/sg-top.min.js"></script>
+<script src="public/toastertry.js"></script>
+<script src="public/tipuesearch_set.js"></script>
+<script src="public/tipuesearch.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+@mixin tile-variant($color, $background, $border) {
+
+  background-color: $background;
+  border: 1px solid $border;
+  color: $color;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+    color: $color;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled] {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background;
+      border-color: $border;
+    }
+  }
+
+  .badge {
+    background-color: $color;
+    color: $background;
+  }
+}
+
+@mixin set-tile-style-for-screen($breakpoint) {
+  @if ($breakpoint == 'xs') {
+    border-radius: 0;
+
+    h1 {
+      display: none;
+    }
+
+    img {
+      display: block;
+      height: 32px;
+      width: 32px;
+      margin: 14px auto;
+
+      &[src=""] {
+        display: none;
+      }
+    }
+
+    p {
+      display: block;
+      margin-bottom: 0;
+      font-size: 0;
+      letter-spacing: -1px;
+
+      &:before {
+        font-size: 32px;
+        margin: 14px auto;
+        line-height: 1;
+        letter-spacing: normal;
+      }
+
+      &:not([class*="dv-"]) {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @if ($breakpoint == 'sm') {
+
+    h1 {
+      display: block;
+      font-family: $headings-font-family;
+      font-size: $font-size-h3;
+      font-weight: $headings-font-weight;
+      margin: 10px 0;
+    }
+
+    img, p:before {
+      margin: 0 auto;
+    }
+
+  }
+  @if ($breakpoint == 'md') {
+
+    position: relative;
+    text-align: left;
+
+    h1 {
+
+    }
+
+    h2 {
+      display: block;
+      color: $headings-color;
+      font-family: $headings-font-family;
+      font-size: $font-size-h5;
+      font-weight: 600;
+      margin-bottom: $line-height-computed;
+      margin-top: 0;
+    }
+
+    img, p {
+      display: inline-block;
+    }
+
+    img {
+      margin-right: 6px;
+    }
+
+
+    p {
+      font-size: $font-size-small;
+      letter-spacing: normal;
+      line-height: 32px;
+
+      &:before {
+        margin-right: 10px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+
+      > aside {
+        @include absolute(fill);
+        @include square(100%);
+        display: block;
+        line-height: $line-height-small;
+        background: inherit;
+        z-index: $zindex-tooltip - 1;
+        padding: $tile-padding;
+      }
+    }
+
+
+  }
+}

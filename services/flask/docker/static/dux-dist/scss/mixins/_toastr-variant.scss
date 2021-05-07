@@ -1,0 +1,34 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+@mixin toastr-variant($background, $border, $text-color, $icon: $fa-var-info-circle) {
+  background-color: $background;
+  border-color: $border;
+  color: $text-color;
+
+  &:before {
+    content: $icon;
+  }
+
+  &:hover {
+    background-color: darken($background, 5%);
+  }
+
+  a:hover {
+    color: darken($text-color, 20%);
+    text-decoration: none;
+  }
+
+  > .toast-progress {
+    @include opacity(.5);
+    background-color: $text-color;
+    bottom: 0;
+    height: 4px;
+    left: 0;
+    position: absolute;
+  }
+}

@@ -1,0 +1,129 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+// Custom control breakpoints
+// --------------------------------------------------
+$breakpoints: (
+'screen-tabs-sm' : $screen-sm / 2
+);
+
+.nav-tabs-bottom {
+  border-top: 1px solid $nav-tabs-border-color;
+
+  > li {
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-top: -1px;
+
+    &:first-child:last-child {
+      @extend .hidden;
+    }
+
+    // Actual tabs (as links)
+    > a {
+      border: 1px solid transparent;
+      border-radius: 0 0 $border-radius-base $border-radius-base;
+      line-height: $line-height-base;
+      margin-right: 2px;
+
+      &:hover {
+        border-color: $nav-tabs-link-hover-border-color;
+
+        @include mappy-bp(screen-tabs-sm) {
+          border-color: $nav-tabs-border-color $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color;
+        }
+      }
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        @include box-shadow(0 (-($border-radius-base)) 0 $brand-primary inset);
+        background-color: $nav-tabs-active-link-hover-bg;
+        border: 1px solid $nav-tabs-active-link-hover-border-color;
+        border-top-color: transparent;
+        color: $nav-tabs-active-link-hover-color;
+        cursor: default;
+      }
+    }
+  }
+
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    @extend .nav-bottom-justified;
+    @extend .nav-tabs-bottom-justified;
+  }
+}
+
+
+// Custom nav variations
+// --------------------------------------------------
+
+.nav-bottom-justified {
+  width: 100%;
+
+  > li {
+    float: none;
+    > a {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+  }
+
+  @include mappy-bp(screen-tabs-sm) {
+    > li {
+      display: table-cell;
+      width: 1%;
+      > a {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.nav-tabs-bottom-justified {
+
+  border-top: 0;
+
+  > li {
+    > a {
+      // Override margin from .nav-tabs-bottom
+      border-radius: $border-radius-base;
+      margin-right: 0;
+    }
+
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      border: 1px solid $nav-tabs-active-link-hover-border-color;
+      border-top-color: $nav-tabs-justified-link-border-color;
+    }
+  }
+
+  @include mappy-bp(screen-tabs-sm) {
+
+    > li {
+      > a {
+        border-radius: 0 0 $border-radius-base $border-radius-base;
+        border-top-color: $nav-tabs-justified-link-border-color;
+      }
+
+      &.active > a,
+      &.active > a:hover,
+      &.active > a:focus {
+        border-top-color: $nav-tabs-justified-active-link-border-color;
+      }
+    }
+  }
+}

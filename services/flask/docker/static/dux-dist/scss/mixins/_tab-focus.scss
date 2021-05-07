@@ -1,0 +1,17 @@
+/*!
+ * dux
+ * The most valuable front-end framework around the d.velop group for developing web-based projects.
+ * @version v1.0.0
+ *
+ * Copyright d.velop AG. All rights reserved.
+ */
+// WebKit-style focus
+
+@mixin tab-focus() {
+  // Default
+  outline: none;
+  // WebKit
+  //-webkit-appearance: none;
+  outline: 5px auto transparent;
+  outline-offset: -2px;
+}

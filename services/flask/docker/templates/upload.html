@@ -24,19 +24,30 @@
 <center>
 <form method="POST" action="/" enctype="multipart/form-data">			
 			<label class ="buttonText" for="upload"> <center>add</center> </label>
-			<input id="upload" class="btn btn-outline-primary" type="file" name="files[]" multiple="true" autocomplete="off" accept="image/*" capture="camera">
+			<input id="upload" class="btn btn-outline-primary" type="file" name="files[]" multiple="true" autocomplete="off" capture="camera">
 
 		<input id="submit" class="btn btn-outline-success" type="submit" value="Upload">
 </form>
 </center>
 </div>
 </div>
+<div id="alert" class="alert-success">Das Dokument wurde hochgeladen bitte den Upload button drücken!</div>
+
 </body>
 </html>
 <style>
 body{
     font-family: 'Alegreya', serif;
     }
+#alert{
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 35%;
+	width: 30%;
+	padding: 15px;
+	z-index: 10;
+}
 h2{
 	font-size: 6em;
 	margin-left: 15%;
@@ -54,10 +65,12 @@ h2{
 	background-color: #7345FF;
 }
 .container {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	z-index: 1;
 }
 
 form{
@@ -102,7 +115,13 @@ input[type="file"] {
     font-size: 7vw;
     color: #2A00D7; 
 }
-
-#upload{
-}
 </style>
+
+<script>
+
+	var inpt = document.getElementById("upload");
+	inpt.onchange = function(){
+		document.getElementById("alert").style.display = "block"
+	}
+
+</script>
