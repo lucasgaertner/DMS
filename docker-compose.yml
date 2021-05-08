@@ -3,11 +3,13 @@ services:
   postgres:
     container_name: postgres_db
     image: postgres
+    expose:
+      - "5432"
     env_file:
       - ./config/postgres.env
     volumes:
-      - pg_volume:/var/lib/postgresql/data
-      - ./services/postgres/docker/:/docker-entrypoint-initdb.d/
+      - ./pg_volume:/var/lib/postgresql/data
+      - ./services/postgres/docker/00_create_user.sh:/docker-entrypoint-initdb.d/00_create_user.sh
     ports:
       - "5432:5432"
     networks:
@@ -21,7 +23,7 @@ services:
       PGADMIN_DEFAULT_PASSWORD: "start.123"
       PGADMIN_LISTEN_PORT: 80
     volumes:
-       - ./pgadmin:/root/.pgadmin     
+       - ./pg_admin:/root/.pgadmin     
     ports:
       - 5050:80
     links:
@@ -63,6 +65,4 @@ networks:
     
 volumes:
   pg_volume:
-    external: true
-    driver: local
   pg_admin:

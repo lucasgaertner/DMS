@@ -1,5 +1,5 @@
 # DMS
-
+CREATE TABLE IF NOT EXISTS document_informations (id SERIAL PRIMARY KEY,filename varchar(1000) NOT NULL,blob bytea NOT NULL,extension varchar(100),	timestamp timestamp,content text);	
 
 DMS is a microservice-Architecture, based on an AI-model with an offline-storage, Python3 powered and HTML5 Markdown.
 

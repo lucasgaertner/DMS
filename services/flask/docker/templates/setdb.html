@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Set the database Credentials</title>
+    </head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dux-dist/css/setdb.css') }}" type="text/css" media="screen,projection,print"/>
+
+    <body>
+        <div class="container">
+            <h1>Set database credentials</h1>
+            <form method="POST">
+<ul>
+<li>
+    <label>Server IP:</label>
+    <input type="text" name="ip">
+</li>
+<li>
+    <label>user:</label>
+    <input type="text" name="user">
+</li>
+<li>
+    <label>password:</label>
+    <input type="password" name="password">
+</li>
+<li>
+    <label>port:</label>
+    <input type="text" name="port">
+</li>
+<li>
+    <label>Database:</label>
+    <input type="text" name="database">
+</li>
+</ul>
+<input class="submit" type="submit" value="submit">
+        </div>
+    </form>
+    </body>
+</html>

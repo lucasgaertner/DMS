@@ -1,0 +1,30 @@
+body{
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.container{
+    position: relative;
+    width: 50%;
+    margin-left: 33%;
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+label{
+    float: left;
+    width: 50%;
+}
+li, input{
+    width: 77%;
+    padding: 18pt;
+}
+.submit{
+    float: left;
+}

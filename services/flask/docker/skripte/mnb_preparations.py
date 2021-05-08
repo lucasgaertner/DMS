@@ -1,7 +1,7 @@
+import string
+import re
+import os 
 def get_data(path):
-    import string
-    import re
-    import os 
     train_txt_dict = {}
     corpus = []
     path_list = os.listdir(path)
@@ -12,7 +12,6 @@ def get_data(path):
         pass
     for folder in path_list:
         train_txt_dict[folder] = {}
-        print(folder)
         for test_txt_docs in os.listdir(path + "/" + folder):
             tmp_list = []
             train_txt_dict[folder][test_txt_docs] = []

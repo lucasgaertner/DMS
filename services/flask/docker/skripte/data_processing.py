@@ -3,10 +3,7 @@ def normalize(data_path, file_name):
 
         import os
         import nltk
-        #     print(os.getcwd())
-        ##   print(os.listdir())
         #nltk.download("wordnet", data_path + "/" + "nltk")
-        print(data_path, "LUCas:w")
         nltk.data.path.append(os.path.join(data_path ,"nltk"))
         from nltk.stem import WordNetLemmatizer
         import re
@@ -19,12 +16,8 @@ def normalize(data_path, file_name):
         file = open(os.path.join(data_path, file_name) + ".txt","r", encoding="latin-1")
        
         tmp_list.append(file.read())
-
         corpus.append(tmp_list)
-
         file.close()
-
-
 
         documents = []
         stemmer = WordNetLemmatizer()
